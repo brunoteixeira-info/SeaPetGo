@@ -1,10 +1,11 @@
 --!SerializeField
-local Timed : boolean = false
+local pileMesh : MeshRenderer = nil
 --!SerializeField
-local Lightning : boolean = false
+local pileCollider : Collider = nil
 --!SerializeField
 local shells : number = 20
 
+local Timed : boolean = false
 local shellsInside
 local hp
 
@@ -14,6 +15,7 @@ local playerManagerScript = require("PlayerManager")
 SpawnerScript = nil
 
 function SetPile()
+    SpawnerScript = self.gameObject:GetComponentInParent(StageManager)
     shellsInside = math.random(shells - 10, shells + 10)
     hp = shellsInside
     print(hp)
@@ -35,17 +37,11 @@ function self:OnTriggerEnter(collider)
     end
     player = colliderCharacter.player -- Player Info
     if(client.localPlayer == player)then
-
-        gameAudio.playSound(Clip)
-
         playerManagerScript.AddEnergy(Energy)
-        if(SpawnerScript)then SpawnerScript.activeOrbs = SpawnerScript.activeOrbs - 1 end -- Only change the Spawner Script's orb count if it is spawned by the spawner
-
-        if(Lightning)then
-            playerManagerScript.StrikeKaiju(Energy)
-        end
-
-        Object.Destroy(self.gameObject)
+        pileMesh.enabled = false
+        pileCollider.enabled = false
+        timer = math.random(7, 12)
+        Timed = true
     end
 end
 
@@ -55,6 +51,7 @@ function self:Update()
             timer = timer - Time.deltaTime
         else
             --Timer Ended
+            SpawnerScript.SpawnPile(self.transform.position)
             Object.Destroy(self.gameObject)
         end
     end
