@@ -121,38 +121,40 @@ MonoBehaviour:
   _networkId: 0
   _script: {fileID: -974389366465450183, guid: 041090b23ea15d2479f94c982537c760, type: 3}
   _properties:
-  - Property: {fileID: -7422346354590167810, guid: 041090b23ea15d2479f94c982537c760,
+  - Property: {fileID: 1683439976544081063, guid: 041090b23ea15d2479f94c982537c760,
       type: 3}
     Value:
-      rid: 3787035360475480251
-  - Property: {fileID: 8590296805089276627, guid: 041090b23ea15d2479f94c982537c760,
+      rid: 3787035372265406506
+  - Property: {fileID: 5392628201623073620, guid: 041090b23ea15d2479f94c982537c760,
       type: 3}
     Value:
-      rid: 3787035360475480252
+      rid: 3787035372265406507
   - Property: {fileID: 515918735956853257, guid: 041090b23ea15d2479f94c982537c760,
       type: 3}
     Value:
-      rid: 3787035360475480253
+      rid: 3787035372265406508
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
-  m_Timed: 0
-  m_Lightning: 0
+  m_pileMesh: {fileID: 2549328962446081570}
+  m_pileCollider: {fileID: 316532782731996022}
   m_shells: 20
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 3787035360475480251
-      type: {class: BooleanLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+    - rid: 3787035372265406506
+      type: {class: MeshRendererGlue/MeshRendererLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
       data:
-        _value: 0
-    - rid: 3787035360475480252
-      type: {class: BooleanLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+        _value: {fileID: 2549328962446081570}
+    - rid: 3787035372265406507
+      type: {class: ColliderGlue/ColliderLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
       data:
-        _value: 0
-    - rid: 3787035360475480253
+        _value: {fileID: 316532782731996022}
+    - rid: 3787035372265406508
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 20

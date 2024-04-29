@@ -1,21 +1,25 @@
---!SerializeField
+
 local pileMesh : MeshRenderer = nil
---!SerializeField
 local pileCollider : Collider = nil
+
+--!SerializeField
+local spawner : GameObject = nil
 --!SerializeField
 local shells : number = 20
 
 local Timed : boolean = false
 local shellsInside
 local hp
-
 local timer = 10
-
-local playerManagerScript = require("PlayerManager")
-SpawnerScript = nil
+local spawnerScript = nil
 
 function SetPile()
-    SpawnerScript = self.gameObject:GetComponentInParent(StageManager)
+    MeshRenderer = self.gameObject:GetComponent(MeshRenderer)
+    print(MeshRenderer)
+    Collider = self.gameObject:GetComponent(Collider)
+    print(Collider)
+    spawnerScript = spawner.gameObject:GetComponent(StageManager)
+    print(spawnerScript)
     shellsInside = math.random(shells - 10, shells + 10)
     hp = shellsInside
     print(hp)
@@ -26,7 +30,7 @@ function UpdateSize(currentHealth)
     self.transform.localScale = Vector3.new(1 + currentHealth/10, 1 + currentHealth/10, 1 + currentHealth/10)
 end
 
-function self:Start()
+function self:ClientStart()
     SetPile()
 end
 
@@ -37,7 +41,6 @@ function self:OnTriggerEnter(collider)
     end
     player = colliderCharacter.player -- Player Info
     if(client.localPlayer == player)then
-        playerManagerScript.AddEnergy(Energy)
         pileMesh.enabled = false
         pileCollider.enabled = false
         timer = math.random(7, 12)
@@ -51,7 +54,7 @@ function self:Update()
             timer = timer - Time.deltaTime
         else
             --Timer Ended
-            SpawnerScript.SpawnPile(self.transform.position)
+            spawnerScript.SpawnPile(self.transform.position)
             Object.Destroy(self.gameObject)
         end
     end

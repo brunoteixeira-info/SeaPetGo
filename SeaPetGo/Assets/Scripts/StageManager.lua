@@ -29,7 +29,7 @@ function SpawnPile(oldPilePos)
     end
     newPile.transform.position = oldPilePos
     local pileScript = newPile:GetComponent("Pile")
-    pileScript.SpawnerScript = self.gameObject:GetComponent("StageManager")
+    --pileScript.SpawnerScript = self.gameObject:GetComponent("StageManager")
     pileScript.SetPile()
 end
 
