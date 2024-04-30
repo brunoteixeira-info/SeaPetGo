@@ -21,8 +21,11 @@ local pet5Chance : number = 100
 --!SerializeField
 local petRollCost : number = 150
 
+local gameManagerScript : module = require("GameManager")
+
 function GetPet()
     local petRoll = math.random(1,100)
+    print(petRoll)
     if petRoll <= pet1Chance then
         --Spawn Pet1
         local newPet = Object.Instantiate(pet1)    
@@ -46,17 +49,13 @@ end
 
 function BuyPet()
     print("Buying Pet")
-    local PlayerInventory playerInventory = client.localPlayer.character.gameObject:GetComponent(PlayerInventory)
-    if(playerInventory ~= nil) then
-        if(playerInventory.PlayerShells >= petRollCost) then
-            print("Bought a Pet")
-            GetPet()
-            playerInventory.PlayerShells -= petRollCost
-        else
-            print("Not Enough Shells")
-        end
+    if gameManagerScript.VerifyShellsAgainst(petRollCost) then
+        print("Bought a Pet")
+        GetPet()
+        gameManagerScript.AddShells(-petRollCost)
     else
-        print("No Player Inventory Found")
+        print("Not Enough Shells")
+        --IMPLEMENT UI HERE
     end
 end
 
