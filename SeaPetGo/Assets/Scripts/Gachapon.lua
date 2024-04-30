@@ -18,6 +18,8 @@ local pet4Chance : number = 90
 local pet5 : GameObject = nil
 --!SerializeField
 local pet5Chance : number = 100
+--!SerializeField
+local petRollCost : number = 150
 
 function GetPet()
     local petRoll = math.random(1,100)
@@ -40,4 +42,22 @@ function GetPet()
 
     --GET PET UI
     --RECEIVE/DENY PET
+end
+
+function BuyPet()
+    print("Buying Pet")
+    local PlayerInventory playerInventory = client.localPlayer.character.gameObject:GetComponent(PlayerInventory)
+    if(playerInventory ~= nil) then
+        print("Bought a Pet")
+        GetPet()
+        playerInventory.PlayerShells -= petRollCost
+    else
+        print("Not Enough Shells")
+    end
+end
+
+function self:Awake()
+    self.gameObject:GetComponent(TapHandler).Tapped:Connect(function() 
+        BuyPet()
+    end)
 end

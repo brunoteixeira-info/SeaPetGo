@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.71026325, g: 0.8900581, b: 0.99999946, a: 1}
+  m_IndirectSpecularColor: {r: 0.7128875, g: 0.89025044, b: 0.99999946, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -540,31 +540,31 @@ MonoBehaviour:
   - Property: {fileID: -2487679651543698528, guid: 5bf9b46e92aad47ed9faec56891fc6e3,
       type: 3}
     Value:
-      rid: 3787035378275057809
+      rid: 3787035392749077059
   - Property: {fileID: 427459632973059124, guid: 5bf9b46e92aad47ed9faec56891fc6e3,
       type: 3}
     Value:
-      rid: 3787035378275057810
+      rid: 3787035392749077060
   - Property: {fileID: 4269188703926874057, guid: 5bf9b46e92aad47ed9faec56891fc6e3,
       type: 3}
     Value:
-      rid: 3787035378275057811
+      rid: 3787035392749077061
   - Property: {fileID: 7674784592742225608, guid: 5bf9b46e92aad47ed9faec56891fc6e3,
       type: 3}
     Value:
-      rid: 3787035378275057812
+      rid: 3787035392749077062
   - Property: {fileID: 4823445463608216645, guid: 5bf9b46e92aad47ed9faec56891fc6e3,
       type: 3}
     Value:
-      rid: 3787035378275057813
+      rid: 3787035392749077063
   - Property: {fileID: 8980195292836664827, guid: 5bf9b46e92aad47ed9faec56891fc6e3,
       type: 3}
     Value:
-      rid: 3787035378275057814
+      rid: 3787035392749077064
   - Property: {fileID: 3731020602240347621, guid: 5bf9b46e92aad47ed9faec56891fc6e3,
       type: 3}
     Value:
-      rid: 3787035378275057815
+      rid: 3787035392749077065
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -580,34 +580,101 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 3787035378275057809
+    - rid: 3787035392749077059
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 15
-    - rid: 3787035378275057810
+    - rid: 3787035392749077060
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 10
-    - rid: 3787035378275057811
+    - rid: 3787035392749077061
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 50
-    - rid: 3787035378275057812
+    - rid: 3787035392749077062
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 30
-    - rid: 3787035378275057813
+    - rid: 3787035392749077063
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 30
-    - rid: 3787035378275057814
+    - rid: 3787035392749077064
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 45
-    - rid: 3787035378275057815
+    - rid: 3787035392749077065
       type: {class: BooleanLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 1
+--- !u!1 &1238930602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1238930604}
+  - component: {fileID: 1238930605}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1238930604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238930602}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1238930605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238930602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1435629550, guid: 991a4badf00d28384a32b2c089782f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkId: 0
+  _script: {fileID: -974389366465450183, guid: 8bce6ce872b30cd419b0df5a26283d2f, type: 3}
+  _properties:
+  - Property: {fileID: 313911367776615040, guid: 8bce6ce872b30cd419b0df5a26283d2f,
+      type: 3}
+    Value:
+      rid: 3787035392749077046
+  _uiOutput: 0
+  _uiOutputSettings:
+    rid: -2
+  m_inventoryScript: {fileID: -974389366465450183, guid: 572e6b242c5beba41925c37eca7ffe95,
+    type: 3}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 3787035392749077046
+      type: {class: LuaScriptGlue/LuaScriptLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: -974389366465450183, guid: 572e6b242c5beba41925c37eca7ffe95,
+          type: 3}
 --- !u!1 &1277134859
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,11 +896,11 @@ MonoBehaviour:
   - Property: {fileID: -8236834929619004153, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 3787035378275057805
+      rid: 3787035392749077047
   - Property: {fileID: -941190523921835400, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 3787035378275057806
+      rid: 3787035392749077048
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -844,11 +911,11 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 3787035378275057805
+    - rid: 3787035392749077047
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 
-    - rid: 3787035378275057806
+    - rid: 3787035392749077048
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 0
@@ -1001,507 +1068,542 @@ PrefabInstance:
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[0].Value
-      value: 3787035378275057876
+      value: 3787035392749077121
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[1].Value
-      value: 3787035378275057877
+      value: 3787035392749077122
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[2].Value
-      value: 3787035378275057878
+      value: 3787035392749077123
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[3].Value
-      value: 3787035378275057879
+      value: 3787035392749077124
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[4].Value
-      value: 3787035378275057880
+      value: 3787035392749077125
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[5].Value
-      value: 3787035378275057881
+      value: 3787035392749077126
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[6].Value
-      value: 3787035378275057882
+      value: 3787035392749077127
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[7].Value
-      value: 3787035378275057883
+      value: 3787035392749077128
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[8].Value
-      value: 3787035378275057884
+      value: 3787035392749077129
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[9].Value
-      value: 3787035378275057885
+      value: 3787035392749077130
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057795]
+      propertyPath: _properties.Array.data[10].Value
+      value: 3787035392749077131
+      objectReference: {fileID: 0}
+    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
+        type: 3}
+      propertyPath: managedReferences[3787035392749077035]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057796]
+      propertyPath: managedReferences[3787035392749077036]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057797]
+      propertyPath: managedReferences[3787035392749077037]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057798]
+      propertyPath: managedReferences[3787035392749077038]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057799]
+      propertyPath: managedReferences[3787035392749077039]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057800]
+      propertyPath: managedReferences[3787035392749077040]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057801]
+      propertyPath: managedReferences[3787035392749077041]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057802]
+      propertyPath: managedReferences[3787035392749077042]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057803]
+      propertyPath: managedReferences[3787035392749077043]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057804]
+      propertyPath: managedReferences[3787035392749077044]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057876]
+      propertyPath: managedReferences[3787035392749077045]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
+        type: 3}
+      propertyPath: managedReferences[3787035392749077121]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057877]
+      propertyPath: managedReferences[3787035392749077122]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057878]
+      propertyPath: managedReferences[3787035392749077123]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057879]
+      propertyPath: managedReferences[3787035392749077124]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057880]
+      propertyPath: managedReferences[3787035392749077125]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057881]
+      propertyPath: managedReferences[3787035392749077126]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057882]
+      propertyPath: managedReferences[3787035392749077127]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057883]
+      propertyPath: managedReferences[3787035392749077128]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057884]
+      propertyPath: managedReferences[3787035392749077129]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057885]
+      propertyPath: managedReferences[3787035392749077130]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057795]._value
+      propertyPath: managedReferences[3787035392749077131]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
+        type: 3}
+      propertyPath: managedReferences[3787035392749077035]._value
       value: 
+      objectReference: {fileID: 2775946702059985045, guid: dff3d0b95f7907646bc8132b210737ff,
+        type: 3}
+    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
+        type: 3}
+      propertyPath: managedReferences[3787035392749077036]._value
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057796]._value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
-        type: 3}
-      propertyPath: managedReferences[3787035378275057797]._value
+      propertyPath: managedReferences[3787035392749077037]._value
       value: 
+      objectReference: {fileID: 2228164492658691536, guid: 2d287e9d3206c404481285790bcbe073,
+        type: 3}
+    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
+        type: 3}
+      propertyPath: managedReferences[3787035392749077038]._value
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057798]._value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
-        type: 3}
-      propertyPath: managedReferences[3787035378275057799]._value
+      propertyPath: managedReferences[3787035392749077039]._value
       value: 
+      objectReference: {fileID: 6612649754053701419, guid: cb27bea5473ba0042aaf14e3a024c797,
+        type: 3}
+    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
+        type: 3}
+      propertyPath: managedReferences[3787035392749077040]._value
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057800]._value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
-        type: 3}
-      propertyPath: managedReferences[3787035378275057801]._value
+      propertyPath: managedReferences[3787035392749077041]._value
       value: 
+      objectReference: {fileID: 6331825049418754682, guid: 13d492632b543cb4da0d16adc8362c00,
+        type: 3}
+    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
+        type: 3}
+      propertyPath: managedReferences[3787035392749077042]._value
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057802]._value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
-        type: 3}
-      propertyPath: managedReferences[3787035378275057803]._value
+      propertyPath: managedReferences[3787035392749077043]._value
       value: 
+      objectReference: {fileID: 5085887513842435443, guid: 9596f854e9fb23b49a791e20c7aefcf4,
+        type: 3}
+    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
+        type: 3}
+      propertyPath: managedReferences[3787035392749077044]._value
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057804]._value
-      value: 0
+      propertyPath: managedReferences[3787035392749077045]._value
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057876]._value
+      propertyPath: managedReferences[3787035392749077121]._value
       value: 
+      objectReference: {fileID: 2775946702059985045, guid: dff3d0b95f7907646bc8132b210737ff,
+        type: 3}
+    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
+        type: 3}
+      propertyPath: managedReferences[3787035392749077122]._value
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057877]._value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
-        type: 3}
-      propertyPath: managedReferences[3787035378275057878]._value
+      propertyPath: managedReferences[3787035392749077123]._value
       value: 
+      objectReference: {fileID: 2228164492658691536, guid: 2d287e9d3206c404481285790bcbe073,
+        type: 3}
+    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
+        type: 3}
+      propertyPath: managedReferences[3787035392749077124]._value
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057879]._value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
-        type: 3}
-      propertyPath: managedReferences[3787035378275057880]._value
+      propertyPath: managedReferences[3787035392749077125]._value
       value: 
+      objectReference: {fileID: 6612649754053701419, guid: cb27bea5473ba0042aaf14e3a024c797,
+        type: 3}
+    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
+        type: 3}
+      propertyPath: managedReferences[3787035392749077126]._value
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057881]._value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
-        type: 3}
-      propertyPath: managedReferences[3787035378275057882]._value
+      propertyPath: managedReferences[3787035392749077127]._value
       value: 
+      objectReference: {fileID: 6331825049418754682, guid: 13d492632b543cb4da0d16adc8362c00,
+        type: 3}
+    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
+        type: 3}
+      propertyPath: managedReferences[3787035392749077128]._value
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057883]._value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
-        type: 3}
-      propertyPath: managedReferences[3787035378275057884]._value
+      propertyPath: managedReferences[3787035392749077129]._value
       value: 
+      objectReference: {fileID: 5085887513842435443, guid: 9596f854e9fb23b49a791e20c7aefcf4,
+        type: 3}
+    - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
+        type: 3}
+      propertyPath: managedReferences[3787035392749077130]._value
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 725766075826359166, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057885]._value
-      value: 0
+      propertyPath: managedReferences[3787035392749077131]._value
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[0].Value
-      value: 3787035378275057868
+      value: 3787035392749077132
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[1].Value
-      value: 3787035378275057869
+      value: 3787035392749077133
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[2].Value
-      value: 3787035378275057870
+      value: 3787035392749077134
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[3].Value
-      value: 3787035378275057871
+      value: 3787035392749077135
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[4].Value
-      value: 3787035378275057872
+      value: 3787035392749077136
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[5].Value
-      value: 3787035378275057873
+      value: 3787035392749077137
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[6].Value
-      value: 3787035378275057874
+      value: 3787035392749077138
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[7].Value
-      value: 3787035378275057875
+      value: 3787035392749077139
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057777]
+      propertyPath: managedReferences[3787035392749077049]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057778]
+      propertyPath: managedReferences[3787035392749077050]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057779]
+      propertyPath: managedReferences[3787035392749077051]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057780]
+      propertyPath: managedReferences[3787035392749077052]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057781]
+      propertyPath: managedReferences[3787035392749077053]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057782]
+      propertyPath: managedReferences[3787035392749077054]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057783]
+      propertyPath: managedReferences[3787035392749077055]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057784]
+      propertyPath: managedReferences[3787035392749077056]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057868]
+      propertyPath: managedReferences[3787035392749077132]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057869]
+      propertyPath: managedReferences[3787035392749077133]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057870]
+      propertyPath: managedReferences[3787035392749077134]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057871]
+      propertyPath: managedReferences[3787035392749077135]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057872]
+      propertyPath: managedReferences[3787035392749077136]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057873]
+      propertyPath: managedReferences[3787035392749077137]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057874]
+      propertyPath: managedReferences[3787035392749077138]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057875]
+      propertyPath: managedReferences[3787035392749077139]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057777]._value
+      propertyPath: managedReferences[3787035392749077049]._value
       value: 
       objectReference: {fileID: 5987173987078021764, guid: fff7cf4cbb288114696afe862b9416cf,
         type: 3}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057778]._value
+      propertyPath: managedReferences[3787035392749077050]._value
       value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057779]._value
+      propertyPath: managedReferences[3787035392749077051]._value
       value: 
       objectReference: {fileID: 6774863088047930988, guid: 8faf3e2ab7edd76449d70e7542653778,
         type: 3}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057780]._value
+      propertyPath: managedReferences[3787035392749077052]._value
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057781]._value
+      propertyPath: managedReferences[3787035392749077053]._value
       value: 
       objectReference: {fileID: 3681523605284453934, guid: 5d09ea2ec678b494ba1d1430aea933d4,
         type: 3}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057782]._value
+      propertyPath: managedReferences[3787035392749077054]._value
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057783]._value
+      propertyPath: managedReferences[3787035392749077055]._value
       value: 
       objectReference: {fileID: 224669436}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057784]._value
+      propertyPath: managedReferences[3787035392749077056]._value
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057868]._value
+      propertyPath: managedReferences[3787035392749077132]._value
       value: 
       objectReference: {fileID: 5987173987078021764, guid: fff7cf4cbb288114696afe862b9416cf,
         type: 3}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057869]._value
+      propertyPath: managedReferences[3787035392749077133]._value
       value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057870]._value
+      propertyPath: managedReferences[3787035392749077134]._value
       value: 
       objectReference: {fileID: 6774863088047930988, guid: 8faf3e2ab7edd76449d70e7542653778,
         type: 3}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057871]._value
+      propertyPath: managedReferences[3787035392749077135]._value
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057872]._value
+      propertyPath: managedReferences[3787035392749077136]._value
       value: 
       objectReference: {fileID: 3681523605284453934, guid: 5d09ea2ec678b494ba1d1430aea933d4,
         type: 3}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057873]._value
+      propertyPath: managedReferences[3787035392749077137]._value
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057874]._value
+      propertyPath: managedReferences[3787035392749077138]._value
       value: 
       objectReference: {fileID: 224669436}
     - target: {fileID: 2848073770830870307, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057875]._value
+      propertyPath: managedReferences[3787035392749077139]._value
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4126273454653240606, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[0].Value
-      value: 3787035378275057886
+      value: 3787035392749077140
       objectReference: {fileID: 0}
     - target: {fileID: 4126273454653240606, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
       propertyPath: _properties.Array.data[1].Value
-      value: 3787035378275057887
+      value: 3787035392749077141
       objectReference: {fileID: 0}
     - target: {fileID: 4126273454653240606, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057807]
+      propertyPath: managedReferences[3787035392749077057]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 4126273454653240606, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057808]
+      propertyPath: managedReferences[3787035392749077058]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 4126273454653240606, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057886]
+      propertyPath: managedReferences[3787035392749077140]
       value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 4126273454653240606, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057887]
+      propertyPath: managedReferences[3787035392749077141]
       value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
       objectReference: {fileID: 0}
     - target: {fileID: 4126273454653240606, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057807]._value
+      propertyPath: managedReferences[3787035392749077057]._value
       value: 
       objectReference: {fileID: 544279997}
     - target: {fileID: 4126273454653240606, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057808]._value
+      propertyPath: managedReferences[3787035392749077058]._value
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4126273454653240606, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057886]._value
+      propertyPath: managedReferences[3787035392749077140]._value
       value: 
       objectReference: {fileID: 544279997}
     - target: {fileID: 4126273454653240606, guid: 2375eb130c87df34e97198b6461c3038,
         type: 3}
-      propertyPath: managedReferences[3787035378275057887]._value
+      propertyPath: managedReferences[3787035392749077141]._value
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6436349863784144170, guid: 2375eb130c87df34e97198b6461c3038,
@@ -1573,3 +1675,4 @@ SceneRoots:
   - {fileID: 877443471}
   - {fileID: 2991441690398450474}
   - {fileID: 1368338830}
+  - {fileID: 1238930604}

@@ -1,8 +1,6 @@
 --!SerializeField
-local inventoryScript : LuaScript = nil
+local PlayerShells : number = 30
+--!SerializeField
+local playerPearls : number = 0
 
-scene.PlayerJoined:Connect(function(scene, player)
-    player.CharacterChanged:Connect(function(player, newCharacter, oldCharacter)
-        newCharacter.gameObject:AddScript(inventoryScript);
-    end)
-end)
+arrayPets = {};
