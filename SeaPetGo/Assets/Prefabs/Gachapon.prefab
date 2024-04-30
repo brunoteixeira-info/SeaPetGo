@@ -9,8 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8825380232830888156}
-  - component: {fileID: 407877500193259390}
-  - component: {fileID: 5498949838352520608}
   - component: {fileID: 416253836921570337}
   - component: {fileID: 79077955857990583}
   - component: {fileID: 8243305489561789632}
@@ -33,59 +31,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5835955564167585974}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &407877500193259390
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7183231696793445284}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &5498949838352520608
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7183231696793445284}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!136 &416253836921570337
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -127,47 +76,47 @@ MonoBehaviour:
   - Property: {fileID: -8388648464281058231, guid: 825184b4de7bff847b84524515a49d62,
       type: 3}
     Value:
-      rid: 3787035391787532914
+      rid: 3787035395722576378
   - Property: {fileID: 5691914692046439115, guid: 825184b4de7bff847b84524515a49d62,
       type: 3}
     Value:
-      rid: 3787035391787532915
+      rid: 3787035395722576379
   - Property: {fileID: -5411825257488182749, guid: 825184b4de7bff847b84524515a49d62,
       type: 3}
     Value:
-      rid: 3787035391787532916
+      rid: 3787035395722576380
   - Property: {fileID: -6156763812337996663, guid: 825184b4de7bff847b84524515a49d62,
       type: 3}
     Value:
-      rid: 3787035391787532917
+      rid: 3787035395722576381
   - Property: {fileID: -4233163811671056611, guid: 825184b4de7bff847b84524515a49d62,
       type: 3}
     Value:
-      rid: 3787035391787532918
+      rid: 3787035395722576382
   - Property: {fileID: -3684120875541354216, guid: 825184b4de7bff847b84524515a49d62,
       type: 3}
     Value:
-      rid: 3787035391787532919
+      rid: 3787035395722576383
   - Property: {fileID: 1458240739407174696, guid: 825184b4de7bff847b84524515a49d62,
       type: 3}
     Value:
-      rid: 3787035391787532920
+      rid: 3787035395722576384
   - Property: {fileID: 2111636029133467593, guid: 825184b4de7bff847b84524515a49d62,
       type: 3}
     Value:
-      rid: 3787035391787532921
+      rid: 3787035395722576385
   - Property: {fileID: -2561778567646350347, guid: 825184b4de7bff847b84524515a49d62,
       type: 3}
     Value:
-      rid: 3787035391787532922
+      rid: 3787035395722576386
   - Property: {fileID: 1817524387237715270, guid: 825184b4de7bff847b84524515a49d62,
       type: 3}
     Value:
-      rid: 3787035391787532923
+      rid: 3787035395722576387
   - Property: {fileID: -5048517891111075688, guid: 825184b4de7bff847b84524515a49d62,
       type: 3}
     Value:
-      rid: 3787035391787532924
+      rid: 3787035395722576388
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -187,52 +136,52 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 3787035391787532914
+    - rid: 3787035395722576378
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
         _value: {fileID: 0}
-    - rid: 3787035391787532915
+    - rid: 3787035395722576379
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 0
-    - rid: 3787035391787532916
+    - rid: 3787035395722576380
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
         _value: {fileID: 0}
-    - rid: 3787035391787532917
+    - rid: 3787035395722576381
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 0
-    - rid: 3787035391787532918
+    - rid: 3787035395722576382
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
         _value: {fileID: 0}
-    - rid: 3787035391787532919
+    - rid: 3787035395722576383
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 0
-    - rid: 3787035391787532920
+    - rid: 3787035395722576384
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
         _value: {fileID: 0}
-    - rid: 3787035391787532921
+    - rid: 3787035395722576385
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 0
-    - rid: 3787035391787532922
+    - rid: 3787035395722576386
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
         _value: {fileID: 0}
-    - rid: 3787035391787532923
+    - rid: 3787035395722576387
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 0
-    - rid: 3787035391787532924
+    - rid: 3787035395722576388
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 0
@@ -249,5 +198,99 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _checkDistance: 1
-  _distance: 1.2
+  _distance: 1
   _moveTo: 1
+--- !u!1001 &7257534455613155343
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8825380232830888156}
+    m_Modifications:
+    - target: {fileID: 149131504176364202, guid: 6707883ede3858046ac6758f2c79c928,
+        type: 3}
+      propertyPath: m_Name
+      value: BigBottle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767977458588354745, guid: 6707883ede3858046ac6758f2c79c928,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767977458588354745, guid: 6707883ede3858046ac6758f2c79c928,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767977458588354745, guid: 6707883ede3858046ac6758f2c79c928,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767977458588354745, guid: 6707883ede3858046ac6758f2c79c928,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767977458588354745, guid: 6707883ede3858046ac6758f2c79c928,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767977458588354745, guid: 6707883ede3858046ac6758f2c79c928,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767977458588354745, guid: 6707883ede3858046ac6758f2c79c928,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767977458588354745, guid: 6707883ede3858046ac6758f2c79c928,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000021855694
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767977458588354745, guid: 6707883ede3858046ac6758f2c79c928,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767977458588354745, guid: 6707883ede3858046ac6758f2c79c928,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767977458588354745, guid: 6707883ede3858046ac6758f2c79c928,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767977458588354745, guid: 6707883ede3858046ac6758f2c79c928,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767977458588354745, guid: 6707883ede3858046ac6758f2c79c928,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767977458588354745, guid: 6707883ede3858046ac6758f2c79c928,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6707883ede3858046ac6758f2c79c928, type: 3}
+--- !u!4 &5835955564167585974 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3767977458588354745, guid: 6707883ede3858046ac6758f2c79c928,
+    type: 3}
+  m_PrefabInstance: {fileID: 7257534455613155343}
+  m_PrefabAsset: {fileID: 0}

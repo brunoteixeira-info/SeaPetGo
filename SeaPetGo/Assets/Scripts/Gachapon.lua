@@ -48,15 +48,19 @@ function BuyPet()
     print("Buying Pet")
     local PlayerInventory playerInventory = client.localPlayer.character.gameObject:GetComponent(PlayerInventory)
     if(playerInventory ~= nil) then
-        print("Bought a Pet")
-        GetPet()
-        playerInventory.PlayerShells -= petRollCost
+        if(playerInventory.PlayerShells >= petRollCost) then
+            print("Bought a Pet")
+            GetPet()
+            playerInventory.PlayerShells -= petRollCost
+        else
+            print("Not Enough Shells")
+        end
     else
-        print("Not Enough Shells")
+        print("No Player Inventory Found")
     end
 end
 
-function self:Awake()
+function self:ClientAwake()
     self.gameObject:GetComponent(TapHandler).Tapped:Connect(function() 
         BuyPet()
     end)

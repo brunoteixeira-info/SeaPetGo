@@ -1,5 +1,7 @@
 
+--!SerializeField
 local pileMesh : MeshRenderer = nil
+--!SerializeField
 local pileCollider : Collider = nil
 
 --!SerializeField
@@ -14,12 +16,7 @@ local timer = 10
 local spawnerScript = nil
 
 function SetPile()
-    MeshRenderer = self.gameObject:GetComponent(MeshRenderer)
-    print(MeshRenderer)
-    Collider = self.gameObject:GetComponent(Collider)
-    print(Collider)
     spawnerScript = spawner.gameObject:GetComponent(StageManager)
-    print(spawnerScript)
     shellsInside = math.random(shells - 10, shells + 10)
     hp = shellsInside
     print(hp)

@@ -1,0 +1,2748 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6613320383525354406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2593213790241558668}
+  - component: {fileID: 830324351057920132}
+  m_Layer: 0
+  m_Name: Stage1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2593213790241558668
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6613320383525354406}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.5, y: -0.04999943, z: 2.5000005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6988913300354013477}
+  - {fileID: 6291703589209296379}
+  - {fileID: 3852989346407834710}
+  - {fileID: 4623354549257964035}
+  - {fileID: 6294274919496880691}
+  - {fileID: 1852313938973124622}
+  - {fileID: 8414020660767255688}
+  - {fileID: 5784819705997345374}
+  - {fileID: 7279784092942829509}
+  - {fileID: 6204157710352522522}
+  - {fileID: 5381071118177201587}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &830324351057920132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6613320383525354406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -76824480, guid: 991a4badf00d28384a32b2c089782f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkId: 0
+  _script: {fileID: -974389366465450183, guid: ff12ad4ce5440794d9c7b30866456543, type: 3}
+  _properties:
+  - Property: {fileID: -28342864156234108, guid: ff12ad4ce5440794d9c7b30866456543,
+      type: 3}
+    Value:
+      rid: 3787035395722575934
+  - Property: {fileID: -5903609778001810894, guid: ff12ad4ce5440794d9c7b30866456543,
+      type: 3}
+    Value:
+      rid: 3787035395722575935
+  - Property: {fileID: 179362080860833636, guid: ff12ad4ce5440794d9c7b30866456543,
+      type: 3}
+    Value:
+      rid: 3787035395722575936
+  - Property: {fileID: -6931783639450992004, guid: ff12ad4ce5440794d9c7b30866456543,
+      type: 3}
+    Value:
+      rid: 3787035395722575937
+  - Property: {fileID: -298204344856401664, guid: ff12ad4ce5440794d9c7b30866456543,
+      type: 3}
+    Value:
+      rid: 3787035395722575938
+  - Property: {fileID: 829909396718224581, guid: ff12ad4ce5440794d9c7b30866456543,
+      type: 3}
+    Value:
+      rid: 3787035395722575939
+  - Property: {fileID: -7483549177529776369, guid: ff12ad4ce5440794d9c7b30866456543,
+      type: 3}
+    Value:
+      rid: 3787035395722575940
+  - Property: {fileID: -2936498744571243716, guid: ff12ad4ce5440794d9c7b30866456543,
+      type: 3}
+    Value:
+      rid: 3787035395722575941
+  _uiOutput: 0
+  _uiOutputSettings:
+    rid: -2
+  m_pileSmall: {fileID: 5987173987078021764, guid: fff7cf4cbb288114696afe862b9416cf,
+    type: 3}
+  m_pileSmallChance: 70
+  m_pileMedium: {fileID: 6774863088047930988, guid: 8faf3e2ab7edd76449d70e7542653778,
+    type: 3}
+  m_pileMediumChance: 90
+  m_pileBig: {fileID: 3681523605284453934, guid: 5d09ea2ec678b494ba1d1430aea933d4,
+    type: 3}
+  m_pileBigChance: 100
+  m_stageBarrier: {fileID: 8098412447611042805}
+  m_shellsRequired: 100
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 3787035395722575934
+      type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: 5987173987078021764, guid: fff7cf4cbb288114696afe862b9416cf,
+          type: 3}
+    - rid: 3787035395722575935
+      type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: 70
+    - rid: 3787035395722575936
+      type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: 6774863088047930988, guid: 8faf3e2ab7edd76449d70e7542653778,
+          type: 3}
+    - rid: 3787035395722575937
+      type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: 90
+    - rid: 3787035395722575938
+      type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: 3681523605284453934, guid: 5d09ea2ec678b494ba1d1430aea933d4,
+          type: 3}
+    - rid: 3787035395722575939
+      type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: 100
+    - rid: 3787035395722575940
+      type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: 8098412447611042805}
+    - rid: 3787035395722575941
+      type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: 100
+--- !u!1 &6738234933977814452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6988913300354013477}
+  - component: {fileID: 7853147633247984052}
+  - component: {fileID: 2656937203974905920}
+  - component: {fileID: 7662907651769964206}
+  m_Layer: 0
+  m_Name: Sand_Plane_Flat_A
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6988913300354013477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6738234933977814452}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -0.28, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2593213790241558668}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!33 &7853147633247984052
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6738234933977814452}
+  m_Mesh: {fileID: 4300102, guid: eb8566b6e75507e48bd8ec4fff8f4dd9, type: 3}
+--- !u!23 &2656937203974905920
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6738234933977814452}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e7476007b3e902f4fbacf11098082904, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7662907651769964206
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6738234933977814452}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 10.000002, z: 0.14741658}
+  m_Center: {x: 0, y: 0, z: 0.07370829}
+--- !u!1001 &1535978618178116888
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2593213790241558668}
+    m_Modifications:
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[0].Value
+      value: 3787035395722575926
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[1].Value
+      value: 3787035395722575927
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[2].Value
+      value: 3787035395722575928
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[3].Value
+      value: 3787035395722575929
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590429]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590430]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590431]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590432]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590433]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590434]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590435]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590436]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590437]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590438]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590439]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590440]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590460]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590461]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573097]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573098]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575926]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.MeshRendererGlue/MeshRendererLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575927]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.ColliderGlue/ColliderLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575928]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575929]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590429]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590430]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590431]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590432]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590433]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590434]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590435]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590436]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590437]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590438]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590439]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590440]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590460]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590461]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573097]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573098]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575926]._value
+      value: 
+      objectReference: {fileID: 2898630949734214213}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575927]._value
+      value: 
+      objectReference: {fileID: 2705004290745989236}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575928]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575929]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987173987078021764, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_Name
+      value: SandPileSmall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fff7cf4cbb288114696afe862b9416cf, type: 3}
+--- !u!65 &2705004290745989236 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 3520406951060596076, guid: fff7cf4cbb288114696afe862b9416cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 1535978618178116888}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2898630949734214213 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4425601474865035101, guid: fff7cf4cbb288114696afe862b9416cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 1535978618178116888}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8414020660767255688 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 1535978618178116888}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2431111657154116499
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2593213790241558668}
+    m_Modifications:
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[0].Value
+      value: 3787035395722575914
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[1].Value
+      value: 3787035395722575915
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[2].Value
+      value: 3787035395722575916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[3].Value
+      value: 3787035395722575917
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590429]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590430]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590431]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590432]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590433]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590434]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590454]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590455]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573091]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573092]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575914]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.MeshRendererGlue/MeshRendererLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575915]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.ColliderGlue/ColliderLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575916]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575917]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590429]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590430]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590431]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590432]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590433]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590434]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590454]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590455]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573091]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573092]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575914]._value
+      value: 
+      objectReference: {fileID: 2078391695044316366}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575915]._value
+      value: 
+      objectReference: {fileID: 1254239661706125055}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575916]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575917]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987173987078021764, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_Name
+      value: SandPileSmall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fff7cf4cbb288114696afe862b9416cf, type: 3}
+--- !u!65 &1254239661706125055 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 3520406951060596076, guid: fff7cf4cbb288114696afe862b9416cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 2431111657154116499}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2078391695044316366 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4425601474865035101, guid: fff7cf4cbb288114696afe862b9416cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 2431111657154116499}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4623354549257964035 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 2431111657154116499}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3590408508294083534
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2593213790241558668}
+    m_Modifications:
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[0].Value
+      value: 3787035395722575930
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[1].Value
+      value: 3787035395722575931
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[2].Value
+      value: 3787035395722575932
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[3].Value
+      value: 3787035395722575933
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590429]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590430]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590431]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590432]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590433]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590434]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590435]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590436]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590437]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590438]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590439]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590440]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590441]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590442]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590462]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590463]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573099]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573100]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575930]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.MeshRendererGlue/MeshRendererLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575931]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.ColliderGlue/ColliderLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575932]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575933]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590429]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590430]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590431]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590432]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590433]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590434]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590435]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590436]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590437]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590438]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590439]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590440]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590441]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590442]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590462]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590463]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573099]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573100]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575930]._value
+      value: 
+      objectReference: {fileID: 916856993873839251}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575931]._value
+      value: 
+      objectReference: {fileID: 74677711483754146}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575932]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575933]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987173987078021764, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_Name
+      value: SandPileSmall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fff7cf4cbb288114696afe862b9416cf, type: 3}
+--- !u!65 &74677711483754146 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 3520406951060596076, guid: fff7cf4cbb288114696afe862b9416cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 3590408508294083534}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &916856993873839251 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4425601474865035101, guid: fff7cf4cbb288114696afe862b9416cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 3590408508294083534}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5784819705997345374 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 3590408508294083534}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3949022372074185635
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2593213790241558668}
+    m_Modifications:
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[0].Value
+      value: 3787035395722575918
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[1].Value
+      value: 3787035395722575919
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[2].Value
+      value: 3787035395722575920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[3].Value
+      value: 3787035395722575921
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590429]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590430]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590431]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590432]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590433]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590434]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590435]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590436]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590456]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590457]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573093]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573094]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575918]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.MeshRendererGlue/MeshRendererLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575919]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.ColliderGlue/ColliderLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575920]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575921]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590429]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590430]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590431]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590432]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590433]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590434]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590435]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590436]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590456]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590457]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573093]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573094]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575918]._value
+      value: 
+      objectReference: {fileID: 839740990251799806}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575919]._value
+      value: 
+      objectReference: {fileID: 438891596482938575}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575920]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575921]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987173987078021764, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_Name
+      value: SandPileSmall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fff7cf4cbb288114696afe862b9416cf, type: 3}
+--- !u!65 &438891596482938575 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 3520406951060596076, guid: fff7cf4cbb288114696afe862b9416cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 3949022372074185635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &839740990251799806 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4425601474865035101, guid: fff7cf4cbb288114696afe862b9416cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 3949022372074185635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6294274919496880691 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 3949022372074185635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3986088519486236385
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2593213790241558668}
+    m_Modifications:
+    - target: {fileID: 5130225964496215316, guid: d3f2709e6591a8144b9621c0b1386635,
+        type: 3}
+      propertyPath: m_Name
+      value: StageBarrier
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918076000280750874, guid: d3f2709e6591a8144b9621c0b1386635,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918076000280750874, guid: d3f2709e6591a8144b9621c0b1386635,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.2200005
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918076000280750874, guid: d3f2709e6591a8144b9621c0b1386635,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.00000047683716
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918076000280750874, guid: d3f2709e6591a8144b9621c0b1386635,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918076000280750874, guid: d3f2709e6591a8144b9621c0b1386635,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918076000280750874, guid: d3f2709e6591a8144b9621c0b1386635,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918076000280750874, guid: d3f2709e6591a8144b9621c0b1386635,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918076000280750874, guid: d3f2709e6591a8144b9621c0b1386635,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918076000280750874, guid: d3f2709e6591a8144b9621c0b1386635,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918076000280750874, guid: d3f2709e6591a8144b9621c0b1386635,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7002331082455948097, guid: d3f2709e6591a8144b9621c0b1386635,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b8b66cb91cdd4b049bf5a17d8327fc0b, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d3f2709e6591a8144b9621c0b1386635, type: 3}
+--- !u!4 &6291703589209296379 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6918076000280750874, guid: d3f2709e6591a8144b9621c0b1386635,
+    type: 3}
+  m_PrefabInstance: {fileID: 3986088519486236385}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8098412447611042805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5130225964496215316, guid: d3f2709e6591a8144b9621c0b1386635,
+    type: 3}
+  m_PrefabInstance: {fileID: 3986088519486236385}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5378247680031158169
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2593213790241558668}
+    m_Modifications:
+    - target: {fileID: 1235254611762446, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_Name
+      value: Palm_Tree_B (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+--- !u!4 &5381071118177201587 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976,
+    type: 3}
+  m_PrefabInstance: {fileID: 5378247680031158169}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5693286557187001482
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2593213790241558668}
+    m_Modifications:
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: _properties.Array.data[0].Value
+      value: 3787035395722575903
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: _properties.Array.data[1].Value
+      value: 3787035395722575904
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: _properties.Array.data[2].Value
+      value: 3787035395722575905
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: _properties.Array.data[3].Value
+      value: 3787035395722575906
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: _properties.Array.data[4].Value
+      value: 3787035395722575907
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: _properties.Array.data[5].Value
+      value: 3787035395722575908
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: _properties.Array.data[6].Value
+      value: 3787035395722575909
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: _properties.Array.data[7].Value
+      value: 3787035395722575910
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: _properties.Array.data[8].Value
+      value: 3787035395722575911
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: _properties.Array.data[9].Value
+      value: 3787035395722575912
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: _properties.Array.data[10].Value
+      value: 3787035395722575913
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589846]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589847]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589848]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589849]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589850]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589851]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589852]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589853]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589854]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589855]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589856]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589879]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589880]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589881]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589882]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589883]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589884]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589885]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589886]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589887]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589888]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589889]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590405]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590406]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590407]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590408]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590409]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590410]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590411]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590412]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590413]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590414]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590415]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590443]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590444]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590445]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590446]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590447]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590448]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590449]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590450]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590451]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590452]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590453]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573080]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573081]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573082]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573083]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573084]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573085]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573086]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573087]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573088]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573089]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573090]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575903]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575904]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575905]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575906]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575907]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575908]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575909]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575910]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575911]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575912]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575913]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589846]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589847]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589848]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589849]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589850]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589851]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589852]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589853]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589854]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589855]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589856]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589879]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589880]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589881]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589882]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589883]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589884]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589885]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589886]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589887]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589888]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276589889]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590405]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590406]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590407]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590408]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590409]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590410]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590411]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590412]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590413]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590414]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590415]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590443]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590444]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590445]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590446]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590447]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590448]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590449]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590450]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590451]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590452]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590453]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573080]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573081]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573082]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573083]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573084]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573085]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573086]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573087]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573088]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573089]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573090]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575903]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575904]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575905]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575906]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575907]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575908]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575909]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575910]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575911]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575912]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79077955857990583, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575913]._value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7183231696793445284, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: m_Name
+      value: Gachapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825380232830888156, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825380232830888156, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825380232830888156, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825380232830888156, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825380232830888156, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825380232830888156, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825380232830888156, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825380232830888156, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825380232830888156, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825380232830888156, guid: 84a66c206755dee45b131d2e34e16014,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 84a66c206755dee45b131d2e34e16014, type: 3}
+--- !u!4 &3852989346407834710 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8825380232830888156, guid: 84a66c206755dee45b131d2e34e16014,
+    type: 3}
+  m_PrefabInstance: {fileID: 5693286557187001482}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6203604032633937712
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2593213790241558668}
+    m_Modifications:
+    - target: {fileID: 1235254611762446, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_Name
+      value: Palm_Tree_B
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b07f8384b5f7a4647bc66057056b2976, type: 3}
+--- !u!4 &6204157710352522522 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4002698735354410, guid: b07f8384b5f7a4647bc66057056b2976,
+    type: 3}
+  m_PrefabInstance: {fileID: 6203604032633937712}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7280467909533784473
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2593213790241558668}
+    m_Modifications:
+    - target: {fileID: 1108915491598832, guid: 1049cdd19c826f04496a357604dc0970, type: 3}
+      propertyPath: m_Name
+      value: Palm_Tree_C
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389170944532060, guid: 1049cdd19c826f04496a357604dc0970, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389170944532060, guid: 1049cdd19c826f04496a357604dc0970, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389170944532060, guid: 1049cdd19c826f04496a357604dc0970, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389170944532060, guid: 1049cdd19c826f04496a357604dc0970, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389170944532060, guid: 1049cdd19c826f04496a357604dc0970, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389170944532060, guid: 1049cdd19c826f04496a357604dc0970, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389170944532060, guid: 1049cdd19c826f04496a357604dc0970, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389170944532060, guid: 1049cdd19c826f04496a357604dc0970, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389170944532060, guid: 1049cdd19c826f04496a357604dc0970, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389170944532060, guid: 1049cdd19c826f04496a357604dc0970, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1049cdd19c826f04496a357604dc0970, type: 3}
+--- !u!4 &7279784092942829509 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4389170944532060, guid: 1049cdd19c826f04496a357604dc0970,
+    type: 3}
+  m_PrefabInstance: {fileID: 7280467909533784473}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8656132797543553438
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2593213790241558668}
+    m_Modifications:
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[0].Value
+      value: 3787035395722575922
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[1].Value
+      value: 3787035395722575923
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[2].Value
+      value: 3787035395722575924
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: _properties.Array.data[3].Value
+      value: 3787035395722575925
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590429]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590430]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590431]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590432]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590433]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590434]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590435]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590436]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590437]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590438]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590458]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590459]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573095]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573096]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575922]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.MeshRendererGlue/MeshRendererLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575923]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.ColliderGlue/ColliderLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575924]
+      value: com.pz.highrise.lua.glue Highrise.Lua.Glue.GameObjectGlue/GameObjectLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575925]
+      value: com.pz.highrise.lua Highrise.Lua.NumberLuaPropertyValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590429]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590430]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590431]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590432]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590433]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590434]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590435]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590436]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590437]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590438]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590458]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394276590459]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573095]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035394675573096]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575922]._value
+      value: 
+      objectReference: {fileID: 4992847105496673987}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575923]._value
+      value: 
+      objectReference: {fileID: 5258583214749482226}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575924]._value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249033920978077185, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: managedReferences[3787035395722575925]._value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987173987078021764, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_Name
+      value: SandPileSmall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fff7cf4cbb288114696afe862b9416cf, type: 3}
+--- !u!4 &1852313938973124622 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7031384953070711184, guid: fff7cf4cbb288114696afe862b9416cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 8656132797543553438}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &4992847105496673987 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4425601474865035101, guid: fff7cf4cbb288114696afe862b9416cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 8656132797543553438}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &5258583214749482226 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 3520406951060596076, guid: fff7cf4cbb288114696afe862b9416cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 8656132797543553438}
+  m_PrefabAsset: {fileID: 0}
