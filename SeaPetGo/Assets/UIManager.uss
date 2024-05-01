@@ -1,0 +1,64 @@
+.manager {
+    margin-top: 0px;
+    align-items: flex-start;
+}
+
+.manager #textPlayerShells{
+    color: rgba(0,0,0,1);
+    font-size: 200%;
+    letter-spacing: 5%;
+    left: 150px;
+    top: 50px;
+}
+
+.manager #containerPlayerShells{
+    width: 420px;
+    height: 130px;
+    left: 550px;
+    align-self: start;
+
+    background-image: resource("containerPlayerShells");
+}
+
+.manager #imagePlayerShells{
+    width: 90px;
+    height: 90px;
+    left: 18px;
+    top: -20px;
+    align-self: start;
+
+    background-image: resource("playerShells");
+}
+
+.manager {
+    margin-top: 0px;
+    margin-right: 500px;
+}
+
+.manager #textPlayerPearls{
+    color: rgba(0,0,0,1);
+    font-size: 200%;
+    letter-spacing: 5%;
+    left: 150px;
+    top: 50px;
+}
+
+.manager #containerPlayerPearls{
+    width: 420px;
+    height: 130px;
+    left: 1000px;
+    top: -130px;
+    align-self: start;
+
+    background-image: resource("containerPlayerShells");
+}
+
+.manager #imagePlayerPearls{
+    width: 90px;
+    height: 45px;
+    left: 18px;
+    top: 5px;
+    align-self: start;
+
+    background-image: resource("playerPearls");
+}

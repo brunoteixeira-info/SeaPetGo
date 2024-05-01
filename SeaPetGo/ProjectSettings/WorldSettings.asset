@@ -18,7 +18,7 @@ MonoBehaviour:
     type: 3}
   _scenePrefab: {fileID: 8457444051872364791, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
     type: 3}
-  _uiFactory: {fileID: -2017830929143987780, guid: daae40fc1c1e8d34fbc39783989f49dd,
+  _uiFactory: {fileID: -2017830929143987780, guid: 9b9df6689c1fa9f45b878a910f7eb100,
     type: 3}
   _hideVirtualPlayerScenes: 1
   _scenes:

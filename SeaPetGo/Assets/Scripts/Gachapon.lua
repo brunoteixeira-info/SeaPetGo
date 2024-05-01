@@ -26,21 +26,23 @@ local gameManagerScript : module = require("GameManager")
 function GetPet()
     local petRoll = math.random(1,100)
     print(petRoll)
+    local newPet = nil
+
     if petRoll <= pet1Chance then
         --Spawn Pet1
-        local newPet = Object.Instantiate(pet1)    
+        newPet = Object.Instantiate(pet1)    
     elseif petRoll > pet1Chance and petRoll <= pet2Chance then
         --Spawn Pet2
-        local newPet = Object.Instantiate(pet2)    
+        newPet = Object.Instantiate(pet2)    
     elseif petRoll > pet2Chance and petRoll <= pet3Chance then
         --Spawn Pet3
-        local newPet = Object.Instantiate(pet3)    
+        newPet = Object.Instantiate(pet3)    
     elseif petRoll > pet3Chance and petRoll <= pet4Chance then
         --Spawn Pet4
-        local newPet = Object.Instantiate(pet4)    
+        newPet = Object.Instantiate(pet4)    
     else
         --Spawn Pet5
-        local newPet = Object.Instantiate(pet5)    
+        newPet = Object.Instantiate(pet5)    
     end
 
     --GET PET UI
@@ -55,6 +57,7 @@ function BuyPet()
         gameManagerScript.AddShells(-petRollCost)
     else
         print("Not Enough Shells")
+        GetPet()
         --IMPLEMENT UI HERE
     end
 end

@@ -1,11 +1,11 @@
---!SerializeField
-local inventoryScript : LuaScript = nil
-
 addShellsRequest = Event.new("AddShellsRequest")
-verifyShellsAgainstRequest = Event.new("AddShellsRequest")
+verifyShellsAgainstRequest = Event.new("VerifyShellsAgainst")
 
 players = {}
 playerShells = {}
+
+--!SerializeField
+--local uiManagerScript : LuaScript = nil
 
 local function TrackPlayers(game, characterCallback)
     scene.PlayerJoined:Connect(function(scene, player)
@@ -31,12 +31,6 @@ local function TrackPlayers(game, characterCallback)
         playerShells[player] = nil
     end)
 end
-
-scene.PlayerJoined:Connect(function(scene, player)
-    player.CharacterChanged:Connect(function(player, newCharacter, oldCharacter)
-        newCharacter.gameObject:AddScript(inventoryScript);
-    end)
-end)
 
 function self:ClientAwake()
     function OnCharacterInstantiate(playerinfo)
@@ -64,6 +58,7 @@ function self:ServerAwake()
         local playerShell = playerInfo.shells.value
         local playerShell = playerShell + amount
         playerInfo.shells.value = playerShell
+        --uiManagerScript.SetPlayerShells(playerInfo.shells.value)
     end)
 
     verifyShellsAgainstRequest:Connect(function(player, amountToCompareTo) -- Here the player is just the client that sent the request to the server, so when AddShells() is called it gives Shells to whoever calls it
@@ -71,11 +66,19 @@ function self:ServerAwake()
         local playerShell = playerInfo.shells.value
         
         if playerShell >= amountToCompareTo then 
-            print("MORE Shells than amount")
+            print("MORE OR EQUAL Shells than amount")
             return true
         else
             print("LESS Shells than amount")
             return false
         end
+    end)
+
+    setPetTargetRequest:Connect(function(player, amount) -- Here the player is just the client that sent the request to the server, so when AddShells() is called it gives Shells to whoever calls it
+        local playerInfo = players[player]
+        local playerShell = playerInfo.shells.value
+        local playerShell = playerShell + amount
+        playerInfo.shells.value = playerShell
+        --uiManagerScript.SetPlayerShells(playerInfo.shells.value)
     end)
 end

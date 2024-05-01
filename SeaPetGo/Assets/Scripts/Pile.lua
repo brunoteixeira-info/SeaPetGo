@@ -15,6 +15,8 @@ local hp
 local timer = 10
 local spawnerScript = nil
 
+local gameManagerScript : module = require("GameManager")
+
 function SetPile()
     spawnerScript = spawner.gameObject:GetComponent(StageManager)
     shellsInside = math.random(shells - 10, shells + 10)
@@ -25,6 +27,12 @@ end
 
 function UpdateSize(currentHealth)
     self.transform.localScale = Vector3.new(1 + currentHealth/10, 1 + currentHealth/10, 1 + currentHealth/10)
+end
+
+function self:ClientAwake()
+    self.gameObject:GetComponent(TapHandler).Tapped:Connect(function() 
+        gameManagerScript.SetPetTarget(self.gameObject)
+    end)
 end
 
 function self:ClientStart()
