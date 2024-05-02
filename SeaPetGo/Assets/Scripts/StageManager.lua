@@ -41,16 +41,15 @@ end
 
 function UnlockStage()
     print("Unlocking Stage")
+
     if gameManagerScript.VerifyShellsAgainst(shellsRequired) then
         print("Unlocked Stage")
         gameManagerScript.AddShells(-shellsRequired)
-        stageBarrier.SetActive(false)
-        --uiStageUnlock.DenyUnlockStage()
+        stageBarrier:SetActive(false)
+        uiStageUnlock.DenyUnlockStage()
     else
-        print("Not Enough Shells")
-        gameManagerScript.AddShells(-shellsRequired)
-        stageBarrier.SetActive(false)
-        --uiStageUnlock.DenyUnlockStage()
+        print("Not Enough Shells for new Stage")
+        uiStageUnlock.DontUnlockStage()
     end
 end
 

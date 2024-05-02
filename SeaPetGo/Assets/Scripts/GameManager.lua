@@ -4,14 +4,13 @@ verifyShellsAgainstRequest = Event.new("VerifyShellsAgainst")
 players = {}
 playerShells = {}
 
---!SerializeField
---local uiManagerScript : LuaScript = nil
+local uiManagerScript : UIManager
 
 local function TrackPlayers(game, characterCallback)
     scene.PlayerJoined:Connect(function(scene, player)
         players[player] = {
             player = player,
-            shells = IntValue.new("shells" .. tostring(player.id), 20)
+            shells = IntValue.new("shells" .. tostring(player.id), 10)
         }
 
         player.CharacterChanged:Connect(function(player, character) 
@@ -47,6 +46,8 @@ function self:ClientAwake()
     verifyShellsAgainstRequest:FireServer(amountToCompareTo)
    end
 
+   local uiManager = GameObject.Find("UIManager")
+   uiManagerScript = uiManager.gameObject:GetComponent(UIManager)
    TrackPlayers(client, OnCharacterInstantiate)
 end
 
@@ -58,7 +59,7 @@ function self:ServerAwake()
         local playerShell = playerInfo.shells.value
         local playerShell = playerShell + amount
         playerInfo.shells.value = playerShell
-        --uiManagerScript.SetPlayerShells(playerInfo.shells.value)
+        uiManagerScript.SetPlayerShells(playerInfo.shells.value)
     end)
 
     verifyShellsAgainstRequest:Connect(function(player, amountToCompareTo) -- Here the player is just the client that sent the request to the server, so when AddShells() is called it gives Shells to whoever calls it
@@ -66,10 +67,10 @@ function self:ServerAwake()
         local playerShell = playerInfo.shells.value
         
         if playerShell >= amountToCompareTo then 
-            print("MORE OR EQUAL Shells than amount")
+            print(playerShell .. " shells are MORE OR EQUAL than required amount " .. amountToCompareTo)
             return true
         else
-            print("LESS Shells than amount")
+            print(playerShell .. " are LESS than required amount " .. amountToCompareTo)
             return false
         end
     end)

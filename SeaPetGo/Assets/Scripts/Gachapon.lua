@@ -56,7 +56,7 @@ function BuyPet()
         GetPet()
         gameManagerScript.AddShells(-petRollCost)
     else
-        print("Not Enough Shells")
+        print("Not Enough Shells for Pet")
         GetPet()
         --IMPLEMENT UI HERE
     end

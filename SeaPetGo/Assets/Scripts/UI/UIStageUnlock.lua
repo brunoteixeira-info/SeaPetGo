@@ -33,7 +33,7 @@ function TryUnlockStage()
     stageManagerScript.UnlockStage()
 end
 
-function TryUnlockStage()
+function DontUnlockStage()
     textStageUnlock:SetPrelocalizedText("Oops! You don't have enough shells!\n")
 end
 
