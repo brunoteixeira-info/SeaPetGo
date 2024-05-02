@@ -15,7 +15,9 @@ local stageBarrier : GameObject = nil
 --!SerializeField
 local shellsRequired : number = 100
 
-local uiStageBarrier : UiStageBarrier = nil;
+local uiStageBarrier : UIStageBarrier = nil;
+
+local gameManagerScript : module = require("GameManager")
 
 function SpawnPile(oldPilePos)
     local pileRoll = math.random(1,100)
@@ -35,9 +37,14 @@ function SpawnPile(oldPilePos)
     pileScript.SetPile()
 end
 
-function VerifyShellsNeeded(playerShells)
-    if(playerShells >= shellsRequired) then
+function UnlockStage()
+    if gameManagerScript.VerifyShellsAgainst(shellsRequired) then
+        print("Unlocked Stage")
+        gameManagerScript.AddShells(-shellsRequired)
         stageBarrier.SetActive(false)
+    else
+        print("Not Enough Shells")
+        --IMPLEMENT UI HERE
     end
 end
 
