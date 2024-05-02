@@ -1,0 +1,19 @@
+.stage-barrier {
+}
+
+.stage-barrier #textStageBarrier{
+	color: rgba(0,0,0,1);
+    font-size: 250%;
+    letter-spacing: 5%;
+    top: 150px;
+    align-self: center;
+}
+
+.stage-barrier #imageStageBarrier{
+    width: 100px;
+    height: 100px;
+    top: -30px;
+    align-self: center;
+
+    background-image: resource("playerShells");
+}

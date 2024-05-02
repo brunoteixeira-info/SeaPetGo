@@ -15,6 +15,8 @@ local stageBarrier : GameObject = nil
 --!SerializeField
 local shellsRequired : number = 100
 
+local uiStageBarrier : UiStageBarrier = nil;
+
 function SpawnPile(oldPilePos)
     local pileRoll = math.random(1,100)
     if pileRoll <= pileSmallChance then
@@ -37,4 +39,9 @@ function VerifyShellsNeeded(playerShells)
     if(playerShells >= shellsRequired) then
         stageBarrier.SetActive(false)
     end
+end
+
+function self:ClientStart()
+    uiStageBarrier = stageBarrier.gameObject:GetComponentInChildren(UIStageBarrier)
+    uiStageBarrier.SetStageBarrierText(shellsRequired)
 end

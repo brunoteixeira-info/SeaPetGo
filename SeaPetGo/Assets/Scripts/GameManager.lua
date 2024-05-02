@@ -73,12 +73,4 @@ function self:ServerAwake()
             return false
         end
     end)
-
-    setPetTargetRequest:Connect(function(player, amount) -- Here the player is just the client that sent the request to the server, so when AddShells() is called it gives Shells to whoever calls it
-        local playerInfo = players[player]
-        local playerShell = playerInfo.shells.value
-        local playerShell = playerShell + amount
-        playerInfo.shells.value = playerShell
-        --uiManagerScript.SetPlayerShells(playerInfo.shells.value)
-    end)
 end

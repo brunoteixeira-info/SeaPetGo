@@ -29,11 +29,7 @@ function UpdateSize(currentHealth)
     self.transform.localScale = Vector3.new(1 + currentHealth/10, 1 + currentHealth/10, 1 + currentHealth/10)
 end
 
-function self:ClientAwake()
-    self.gameObject:GetComponent(TapHandler).Tapped:Connect(function() 
-        gameManagerScript.SetPetTarget(self.gameObject)
-    end)
-end
+
 
 function self:ClientStart()
     SetPile()
