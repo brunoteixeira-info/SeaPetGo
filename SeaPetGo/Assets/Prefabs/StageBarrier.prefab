@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3120393532209665506}
   - component: {fileID: 7002331082455948097}
   - component: {fileID: 4906092076761352741}
+  - component: {fileID: 3401884628253822856}
   m_Layer: 0
   m_Name: StageBarrier
   m_TagString: Untagged
@@ -106,6 +107,39 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3401884628253822856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5130225964496215316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 879292853, guid: 991a4badf00d28384a32b2c089782f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkId: 0
+  _script: {fileID: -974389366465450183, guid: c5ea324304fea804383d1e34541622dc, type: 3}
+  _properties:
+  - Property: {fileID: 1148135488117269354, guid: c5ea324304fea804383d1e34541622dc,
+      type: 3}
+    Value:
+      rid: 9189313624258380075
+  _uiOutput: 0
+  _uiOutputSettings:
+    rid: -2
+  m_stageManager: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 9189313624258380075
+      type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: 0}
 --- !u!1 &6754017623825243387
 GameObject:
   m_ObjectHideFlags: 0

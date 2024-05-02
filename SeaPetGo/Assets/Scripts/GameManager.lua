@@ -11,7 +11,7 @@ local function TrackPlayers(game, characterCallback)
     scene.PlayerJoined:Connect(function(scene, player)
         players[player] = {
             player = player,
-            shells = IntValue.new("shells" .. tostring(player.id), 0)
+            shells = IntValue.new("shells" .. tostring(player.id), 20)
         }
 
         player.CharacterChanged:Connect(function(player, character) 

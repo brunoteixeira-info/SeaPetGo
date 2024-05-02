@@ -13,9 +13,10 @@ local pileBigChance : number = 100
 --!SerializeField
 local stageBarrier : GameObject = nil
 --!SerializeField
-local shellsRequired : number = 100
+local shellsRequired : number = 0
 
 local uiStageBarrier : UIStageBarrier = nil;
+local uiStageUnlock : UIStageUnlock = nil;
 
 local gameManagerScript : module = require("GameManager")
 
@@ -33,22 +34,27 @@ function SpawnPile(oldPilePos)
     end
     newPile.transform.position = oldPilePos
     local pileScript = newPile:GetComponent("Pile")
-    --pileScript.SpawnerScript = self.gameObject:GetComponent("StageManager")
     pileScript.SetPile()
 end
 
 function UnlockStage()
+    print("Unlocking Stage")
     if gameManagerScript.VerifyShellsAgainst(shellsRequired) then
         print("Unlocked Stage")
         gameManagerScript.AddShells(-shellsRequired)
         stageBarrier.SetActive(false)
+        --uiStageUnlock.DenyUnlockStage()
     else
         print("Not Enough Shells")
-        --IMPLEMENT UI HERE
+        gameManagerScript.AddShells(-shellsRequired)
+        stageBarrier.SetActive(false)
+        --uiStageUnlock.DenyUnlockStage()
     end
 end
 
 function self:ClientStart()
+    uiStageUnlock = stageBarrier.gameObject:GetComponent(UIStageUnlock)
+    uiStageUnlock.SetShellsRequired(shellsRequired)
     uiStageBarrier = stageBarrier.gameObject:GetComponentInChildren(UIStageBarrier)
     uiStageBarrier.SetStageBarrierText(shellsRequired)
 end
