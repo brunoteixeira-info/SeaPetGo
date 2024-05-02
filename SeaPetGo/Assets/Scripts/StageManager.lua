@@ -11,12 +11,12 @@ local pileBig : GameObject = nil
 --!SerializeField
 local pileBigChance : number = 100
 --!SerializeField
-local stageBarrier : GameObject = nil
+local stageBarrier : GameObject
 --!SerializeField
 local shellsRequired : number = 0
 
-local uiStageBarrier : UIStageBarrier = nil;
-local uiStageUnlock : UIStageUnlock = nil;
+local uiStageBarrier : UIStageBarrier
+local uiStageUnlock : UIStageUnlock
 
 local gameManagerScript : module = require("GameManager")
 
@@ -53,8 +53,10 @@ function UnlockStage()
 end
 
 function self:ClientStart()
+    stageBarrier = GameObject.Find("Stage1Barrier")
     uiStageUnlock = stageBarrier.gameObject:GetComponent(UIStageUnlock)
     uiStageUnlock.SetShellsRequired(shellsRequired)
-    uiStageBarrier = stageBarrier.gameObject:GetComponentInChildren(UIStageBarrier)
+    local stageBarrierUI = GameObject.Find("UIStage1Barrier")
+    uiStageBarrier = stageBarrierUI:GetComponentInChildren(UIStageBarrier)
     uiStageBarrier.SetStageBarrierText(shellsRequired)
 end
