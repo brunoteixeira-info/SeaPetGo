@@ -14,6 +14,8 @@ local pileBigChance : number = 100
 local stageBarrier : GameObject
 --!SerializeField
 local shellsRequired : number = 0
+--!SerializeField
+local stage : number = 0
 
 local uiStageBarrier : UIStageBarrier
 local uiStageUnlock : UIStageUnlock
@@ -53,10 +55,13 @@ function UnlockStage()
 end
 
 function self:ClientStart()
-    stageBarrier = GameObject.Find("Stage1Barrier")
+    local stageBarrierName = "Stage" .. stage .. "Barrier"
+    stageBarrier = GameObject.Find(stageBarrierName)
     uiStageUnlock = stageBarrier.gameObject:GetComponent(UIStageUnlock)
     uiStageUnlock.SetShellsRequired(shellsRequired)
-    local stageBarrierUI = GameObject.Find("UIStage1Barrier")
+    uiStageUnlock.SetStage(stage)
+    stageBarrierName = "UI" .. stageBarrierName
+    local stageBarrierUI = GameObject.Find(stageBarrierName)
     uiStageBarrier = stageBarrierUI:GetComponentInChildren(UIStageBarrier)
     uiStageBarrier.SetStageBarrierText(shellsRequired)
 end

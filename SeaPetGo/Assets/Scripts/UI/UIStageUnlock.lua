@@ -12,9 +12,10 @@ local buttonStageUnlockDeny : UIButton = nil
 
 local shellsRequired : number = 0
 
---!SerializeField
 local stageManager : GameObject
-local stageManagerScript : StageManager = nil
+local stageManagerScript : StageManager
+
+local stageCurrent : number
 
 textStageUnlock:SetPrelocalizedText("Do you want to spend " .. shellsRequired .. " shells\nto unlock this mysterious energy barrier?")
 
@@ -26,8 +27,6 @@ function self:ClientStart()
     buttonStageUnlockAccept:RegisterPressCallback(function () TryUnlockStage() end)
     buttonStageUnlockDeny:RegisterPressCallback(function () DenyUnlockStage() end)
     containerStageUnlock:AddToClassList("hide")
-    stageManager = GameObject.Find("Stage1")
-    stageManagerScript = stageManager.gameObject:GetComponent(StageManager)
 end
 
 function TryUnlockStage()
@@ -51,4 +50,12 @@ end
 function SetShellsRequired(shells)
     shellsRequired = shells
     ResetUI()
+end
+
+function SetStage(stage)
+    stageCurrent = stage
+    local stageName = "Stage" .. stageCurrent
+    print(stageName)
+    stageManager = GameObject.Find(stageName)
+    stageManagerScript = stageManager:GetComponent(StageManager)
 end
