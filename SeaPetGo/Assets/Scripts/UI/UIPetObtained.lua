@@ -36,10 +36,12 @@ function self:ClientStart()
 end
 
 function AcceptPet()
+    containerPet:AddToClassList("hide")
     gachapon.AcceptPet()
 end
 
 function DenyPet()
+    containerPet:AddToClassList("hide")
     gachapon.DenyPet()
 end
 

@@ -1,8 +1,12 @@
 addShellsRequest = Event.new("AddShellsRequest")
+addShellsResponse = Event.new("AddShellsResponse")
+
 verifyShellsAgainstRequest = Event.new("VerifyShellsAgainst")
 verifyShellsAgainstResponse = Event.new("VerifyShellsAgainstResponse")
 
 addPearlsRequest = Event.new("AddPearlsRequest")
+addPearlsResponse = Event.new("AddPearlsResponse")
+
 verifyPearlsAgainstRequest = Event.new("VerifyPearlsAgainst")
 
 players = {}
@@ -50,6 +54,12 @@ function self:ClientAwake()
     addShellsRequest:FireServer(amount)
    end
 
+   addShellsResponse:Connect(function(player, shells)
+        if(player == client.localPlayer) then
+            uiManagerScript.SetPlayerShells(shells)
+        end
+    end)
+
     --VerifyShellsAgainst() compares current shells that the Player has against a specific amount, returning true if there's more or equal shells than the amount to whichever client calls the function
    function VerifyShellsAgainst(amountToCompareTo, script)
     verifyShellsAgainstRequest:FireServer(amountToCompareTo, script)
@@ -65,6 +75,12 @@ function self:ClientAwake()
     function AddPearls(amount)
         addPearlsRequest:FireServer(amount)
     end
+
+    addPearlsResponse:Connect(function(player, pearls)
+        if(player == client.localPlayer) then
+            uiManagerScript.SetPlayerPearls(pearls)
+        end
+    end)
     
     --VerifyPearlsAgainst() compares current pearls that the Player has against a specific amount, returning true if there's more or equal pearls than the amount to whichever client calls the function
     function VerifyPearlsAgainst(amountToCompareTo)
@@ -84,7 +100,7 @@ function self:ServerAwake()
         local playerShell = playerInfo.shells.value
         local playerShell = playerShell + amount
         playerInfo.shells.value = playerShell
-        --uiManagerScript.SetPlayerShells(playerInfo.shells.value)
+        addShellsResponse:FireAllClients(player, playerInfo.shells.value)
     end)
 
     verifyShellsAgainstRequest:Connect(function(player, amountToCompareTo, script) -- Here the player is just the client that sent the request to the server, so when VerifyShellsAgainst() is called it gives Shells to whoever calls it
@@ -100,12 +116,12 @@ function self:ServerAwake()
         end
     end)
 
-    addShellsRequest:Connect(function(player, amount) -- Here the player is just the client that sent the request to the server, so when AddPearls() is called it gives Shells to whoever calls it
+    addPearlsRequest:Connect(function(player, amount) -- Here the player is just the client that sent the request to the server, so when AddPearls() is called it gives Shells to whoever calls it
         local playerInfo = players[player]
         local playerPearl = playerInfo.pearls.value
         local playerPearl = playerPearl + amount
         playerInfo.pearls.value = playerPearl
-        --uiManagerScript.SetPlayerPearls(playerInfo.pearls.value)
+        addPearlsResponse:FireAllClients(player, playerInfo.pearls.value)
     end)
 
     verifyPearlsAgainstRequest:Connect(function(player, amountToCompareTo) -- Here the player is just the client that sent the request to the server, so when VerifyPearlsAgainst() is called it gives Shells to whoever calls it

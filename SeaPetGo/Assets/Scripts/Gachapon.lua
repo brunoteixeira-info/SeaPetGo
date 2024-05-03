@@ -31,19 +31,19 @@ function GetPet()
 
     if petRoll <= pet1Chance then
         --Spawn Pet1
-        Object.Instantiate(pet1)      
+        newPet = Object.Instantiate(pet1)      
     elseif petRoll > pet1Chance and petRoll <= pet2Chance then
         --Spawn Pet2
-        Object.Instantiate(pet2)   
+        newPet = Object.Instantiate(pet2)   
     elseif petRoll > pet2Chance and petRoll <= pet3Chance then
         --Spawn Pet3
-        Object.Instantiate(pet3)   
+        newPet = Object.Instantiate(pet3)   
     elseif petRoll > pet3Chance and petRoll <= pet4Chance then
         --Spawn Pet4
-        Object.Instantiate(pet4)   
+        newPet = Object.Instantiate(pet4)   
     else
         --Spawn Pet5
-        Object.Instantiate(pet5)       
+        newPet = Object.Instantiate(pet5)       
     end
 
     --local petStats = newPet.gameObject:GetComponent(PetBehaviour)
