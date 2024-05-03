@@ -235,6 +235,7 @@ GameObject:
   - component: {fileID: 6410304895591537504}
   - component: {fileID: 3448087692175828787}
   - component: {fileID: -3847029356462671454}
+  - component: {fileID: 525631412668866613}
   m_Layer: 0
   m_Name: Sparrow
   m_TagString: Untagged
@@ -351,16 +352,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _networkId: 0
   _script: {fileID: -974389366465450183, guid: 2b54a80bebc94f44fa39f40fea552e53, type: 3}
-  _properties: []
+  _properties:
+  - Property: {fileID: -8236834929619004153, guid: 2b54a80bebc94f44fa39f40fea552e53,
+      type: 3}
+    Value:
+      rid: 9189313647400714832
+  - Property: {fileID: -6515637083688162526, guid: 2b54a80bebc94f44fa39f40fea552e53,
+      type: 3}
+    Value:
+      rid: 9189313647400714833
+  - Property: {fileID: -941190523921835400, guid: 2b54a80bebc94f44fa39f40fea552e53,
+      type: 3}
+    Value:
+      rid: 9189313647400714834
+  - Property: {fileID: -5689799576380857737, guid: 2b54a80bebc94f44fa39f40fea552e53,
+      type: 3}
+    Value:
+      rid: 9189313647400714835
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
+  m_petName: Sparrow
+  m_petRarity: Uncommon
+  m_cPower: 120
+  m_vecLookAt: {x: 0, y: 0, z: 0}
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+    - rid: 9189313647400714832
+      type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: Sparrow
+    - rid: 9189313647400714833
+      type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: Uncommon
+    - rid: 9189313647400714834
+      type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: 120
+    - rid: 9189313647400714835
+      type: {class: Vector3Glue/Vector3LuaPropertyValue, ns: Highrise.Lua.Glue, asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {x: 0, y: 0, z: 0}
 --- !u!114 &-3847029356462671454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366601352211043902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 869450252, guid: 5e99434f214126023bd8db55a8296c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkId: 0
+--- !u!114 &525631412668866613
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

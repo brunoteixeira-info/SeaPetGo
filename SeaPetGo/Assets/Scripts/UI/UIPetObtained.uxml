@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UILuaView class="pet-obtained">
+    <hr:UIImage name="containerPet" picking-mode="Ignore">
+        <hr:UILabel name="textPetPower" picking-mode="Ignore">
+        </hr:UILabel>
+
+        <hr:UILabel name="textPetRarity" picking-mode="Ignore">
+        </hr:UILabel>
+        
+        <hr:UIImage name="imagePet" picking-mode="Ignore">
+        </hr:UIImage>
+
+        <hr:UIImage name="imagePetName" picking-mode="Ignore">
+            <hr:UILabel name="textPetName" picking-mode="Ignore">
+            </hr:UILabel>
+        </hr:UIImage>
+        
+        <hr:UIButton name="buttonPetRelease">
+        </hr:UIButton>
+        
+        <hr:UIButton name="buttonPetAccept">
+        </hr:UIButton>
+    </hr:UIImage>
+  </hr:UILuaView>
+
+</UXML>

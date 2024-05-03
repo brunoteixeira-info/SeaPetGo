@@ -2,3 +2,5 @@
 @import url("/Assets/Scripts/UI/UIManager.uxml");
 @import url("/Assets/Scripts/UI/UIStageBarrier.uxml");
 @import url("/Assets/Scripts/UI/UIStageUnlock.uxml");
+@import url("/Assets/Scripts/UI/UIPetInventory.uxml");
+@import url("/Assets/Scripts/UI/UIPetObtained.uxml");
