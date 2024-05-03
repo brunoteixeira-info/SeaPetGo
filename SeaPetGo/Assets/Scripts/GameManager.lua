@@ -55,10 +55,9 @@ function self:ClientAwake()
     verifyShellsAgainstRequest:FireServer(amountToCompareTo, script)
    end
 
-
     verifyShellsAgainstResponse:Connect(function(player, response, script)
         if(player == client.localPlayer) then
-            script.BuyPetResponse(response)
+            script.ManagerResponse(response)
         end
     end)
 
@@ -97,7 +96,7 @@ function self:ServerAwake()
             verifyShellsAgainstResponse:FireAllClients(player, 1, script)
         else
             print(playerShell .. " are LESS than required amount " .. amountToCompareTo)
-            return false
+            verifyShellsAgainstResponse:FireAllClients(player, 0, script)
         end
     end)
 

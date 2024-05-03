@@ -55,7 +55,7 @@ function BuyPet()
     gameManagerScript.VerifyShellsAgainst(petRollCost, self)
 end
 
-function BuyPetResponse(response)
+function ManagerResponse(response)
     if response == 1 then
         print("Bought a Pet")
         GetPet()
