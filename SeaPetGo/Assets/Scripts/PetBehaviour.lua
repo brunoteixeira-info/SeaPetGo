@@ -23,9 +23,10 @@ end
 
 function self:ClientLateUpdate()
     if(target ~= nil) then
-        --local  : Vector3 = new Vector3(target.transform.position.x, target.transform.position.y, target.transform.position.z)
-        --self.transform.LookAt(vecLookAt)
-        self.transform.position = target.transform.position
+        local vectTarget = Vector3.new(target.transform.position.x - 1, target.transform.position.y, target.transform.position.z - 1)
+        self.transform.position = vectTarget
+        self.transform.rotation = target.transform.rotation
     end
 end
+
 
