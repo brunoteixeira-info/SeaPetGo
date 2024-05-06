@@ -1,20 +1,24 @@
 --!SerializeField
 local petName : string = "Pet"
 --!SerializeField
-local petRarity : string = "Rarity"
---!SerializeField
 local cPower : number = 0
+--!SerializeField
+local petRarity : string = "Rarity"
 
 local target : GameObject = nil
 
 local gameManagerScript : module = require("GameManager")
-
---!SerializeField
-local vecLookAt : Vector3 = Vector3.new(0,0,0)
+local petManager : module = require("PetManager")
 
 function SetTarget(targetToFollow)
     target = targetToFollow
     print(target)
+end
+
+function self:ClientAwake()
+    Name = petName
+    Power = cPower
+    Rarity = petRarity
 end
 
 function self:ClientStart()

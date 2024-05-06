@@ -46,8 +46,8 @@ function GetPet()
         newPet = Object.Instantiate(pet5)       
     end
 
-    --local petStats = newPet.gameObject:GetComponent(PetBehaviour)
-    uiPetObtained.SetPet("Jubei", "LEGEND", 100)
+    local petStats = newPet.gameObject:GetComponent(PetBehaviour)
+    uiPetObtained.SetPet(petStats.Name, petStats.Power, petStats.Rarity)
 end
 
 function BuyPet()
@@ -67,6 +67,9 @@ end
 
 function AcceptPet()
     print("Accept Pet")
+    local petStats = newPet.gameObject:GetComponent(PetBehaviour)
+    print(petStats.Name)
+    gameManagerScript.AddPet(petStats.Name)
 end
 
 function DenyPet()

@@ -1,20 +1,27 @@
+--SHELLS EVENTS
 addShellsRequest = Event.new("AddShellsRequest")
 addShellsResponse = Event.new("AddShellsResponse")
 
 verifyShellsAgainstRequest = Event.new("VerifyShellsAgainstRequest")
 verifyShellsAgainstResponse = Event.new("VerifyShellsAgainstResponse")
 
+--PEARLS EVENTS
 addPearlsRequest = Event.new("AddPearlsRequest")
 addPearlsResponse = Event.new("AddPearlsResponse")
 
 verifyPearlsAgainstRequest = Event.new("VerifyPearlsAgainstRequest")
+verifyShellsAgainstResponse = Event.new("VerifyPearlsAgainstResponse")
+
+--PETS EVENTS
+addPetRequest = Event.new("AddPetRequest")
+addPetResponse = Event.new("AddPetResponse")
 
 players = {}
-playerShells = {}
-playerPearls = {}
 playerPets = {}
+playerPetsActive = {}
 
 local uiManagerScript : UIManager
+local uiPetInventory : UIPetInventory
 
 local function TrackPlayers(game, characterCallback)
     scene.PlayerJoined:Connect(function(scene, player)
@@ -23,6 +30,15 @@ local function TrackPlayers(game, characterCallback)
             shells = IntValue.new("shells" .. tostring(player.id), 0),
             pearls = IntValue.new("pearls" .. tostring(player.id), 0)
         }
+
+        for i=1,2 do
+            playerPets[player] = {}
+             
+            for j=1,20 do
+                playerPets[player][j] = StringValue.new("pet" .. tostring(player.id), "")
+            end
+             
+        end
 
         player.CharacterChanged:Connect(function(player, character) 
             local playerinfo = players[player]
@@ -38,8 +54,7 @@ local function TrackPlayers(game, characterCallback)
 
     game.PlayerDisconnected:Connect(function(player)
         players[player] = nil
-        playerShells[player] = nil
-        playerPearls[player] = nil
+        playerPets[player] = nil
     end)
 end
 
@@ -49,6 +64,7 @@ function self:ClientAwake()
         local character = player.character
     end
 
+    --SHELLS FUNCTIONS
    --AddShells() adds Shells to whichever client calls the function
    function AddShells(amount)
     addShellsRequest:FireServer(amount)
@@ -71,6 +87,7 @@ function self:ClientAwake()
         end
     end)
 
+    --PEARLS FUNCTIONS
     --AddPearls() adds Shells to which ever client calls the function
     function AddPearls(amount)
         addPearlsRequest:FireServer(amount)
@@ -87,14 +104,29 @@ function self:ClientAwake()
         verifyPearlsAgainstRequest:FireServer(amountToCompareTo)
     end
 
+    --PETS FUNCTIONS
+    --AddPet() adds Pet to which ever client calls the function
+    function AddPet(pet)
+        print("Check AddPet #1 - " .. pet)
+        addPetRequest:FireServer(pet)
+    end
+
+    addPetResponse:Connect(function(player, pet)
+        if(player == client.localPlayer) then
+            uiPetInventory.AddNewPet(pet)
+        end
+    end)
+
    local uiManager = GameObject.Find("UIManager")
    uiManagerScript = uiManager.gameObject:GetComponent(UIManager)
+   uiPetInventory = uiManager.gameObject:GetComponent(UIPetInventory)
    TrackPlayers(client, OnCharacterInstantiate)
 end
 
 function self:ServerAwake()
     TrackPlayers(server)
 
+    --SHELLS FUNCTIONS
     addShellsRequest:Connect(function(player, amount) -- Here the player is just the client that sent the request to the server, so when AddShells() is called it gives Shells to whoever calls it
         local playerInfo = players[player]
         local playerShell = playerInfo.shells.value
@@ -116,6 +148,7 @@ function self:ServerAwake()
         end
     end)
 
+    --PEARLS FUNCTIONS
     addPearlsRequest:Connect(function(player, amount) -- Here the player is just the client that sent the request to the server, so when AddPearls() is called it gives Shells to whoever calls it
         local playerInfo = players[player]
         local playerPearl = playerInfo.pearls.value
@@ -134,6 +167,25 @@ function self:ServerAwake()
         else
             print(playerPearl .. " are LESS than required amount " .. amountToCompareTo)
             return false
+        end
+    end)
+
+    --PETS FUNCTIONS
+    addPetRequest:Connect(function(player, pet) -- Here the player is just the client that sent the request to the server, so when AddPet() is called it gives a Pet to whoever calls it
+        local playerInfo = players[player]
+        local playerPets = playerPets[player]
+        print("Check AddPet #2 - " .. pet)
+        for i=1,2 do
+            playerPets[player] = {}
+
+            for j=1,20 do
+                print(playerPets[player][j])
+                if(playerPets[player][j] == "" or playerPets[player][j] == nil) then
+                    playerPets[player][j] = pet
+                    addPetResponse:FireAllClients(player, pet)
+                    break
+                end
+            end             
         end
     end)
 end

@@ -21,6 +21,7 @@ textPetPower:SetPrelocalizedText("000")
 textPetRarity:SetPrelocalizedText("C")
 
 function SetPet(name, power, rarity)
+    --print("Pet: " .. name .. ", Power: " power .. ", Rarity: " .. rarity)
     textPetName:SetPrelocalizedText(name)
     textPetPower:SetPrelocalizedText(textPetPower)
     textPetRarity:SetPrelocalizedText(textPetRarity)

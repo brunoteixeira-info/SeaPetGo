@@ -1,2 +1,117 @@
 .pet-inventory {
 }
+
+.pet-inventory #containerPetSlot{
+    width: 150px;
+    height: 150px;
+    top: 100px;
+    left: -330px;
+    align-self: flex-end;
+
+    background-image: resource("slot");
+}
+
+.pet-inventory #textPetSlots{
+    color: rgba(0,0,0,1);
+    font-size: 200%;
+    letter-spacing: 5%;
+    left: -30px;
+    top: 30px;
+    align-self: flex-end;
+}
+
+.pet-inventory #buttonCloseInventory{
+    width: 90px;
+    height: 90px;
+    left: -35px;
+    top: -70px;
+    align-self: flex-start;
+
+    background-image: resource("wrong");
+}
+
+.pet-inventory #buttonPetEquip{
+    width: 200px;
+    height: 75px;
+    left: 120px;
+    top: 595px;
+    align-self: center;
+
+    background-image: resource("buttonEquip");
+}
+
+.pet-inventory #textButtonPetEquip{
+    color: rgba(0,0,0,1);
+    font-size: 100%;
+    letter-spacing: 5%;
+    left: 0px;
+    top: 0px;
+    align-self: center;
+}
+
+.pet-inventory #buttonPetRelease{
+    width: 200px;
+    height: 75px;
+    left: -120px;
+    top: 520px;
+    align-self: center;
+
+    background-image: resource("buttonRelease");
+}
+
+.pet-inventory #textButtonPetRelease{
+    color: rgba(0,0,0,1);
+    font-size: 100%;
+    letter-spacing: 5%;
+    left: 0px;
+    top: 0px;
+    align-self: center;
+}
+
+.pet-inventory #containerPetInventory{
+    width: 500px;
+    height: 1080px;
+    top: 0px;
+    align-self: flex-end;
+    background-image: resource("panel");
+}
+
+.pet-inventory #imagePetSlot{
+    width: 100px;
+    height: 100px;
+    top: -10px;
+    align-self: center;
+    background-image: resource("playerShells");
+}
+
+.pet-inventory #textPetSlotRarity{
+    color: rgba(0,0,0,1);
+    font-size: 100%;
+    letter-spacing: 5%;
+    left: -50px;
+    top: -20px;
+    align-self: center;
+}
+
+.pet-inventory #textPetSlotPower{
+    color: rgba(0,0,0,1);
+    font-size: 100%;
+    letter-spacing: 5%;
+    left: 0px;
+    top: 40px;
+    align-self: center;
+}
+
+.pet-inventory #buttonPlayerPets{
+    width: 90px;
+    height: 90px;
+    left: -100px;
+    top: -100px;
+    align-self: flex-end;
+
+    background-image: resource("pets");
+}
+
+.hide{
+    display: none;
+}
