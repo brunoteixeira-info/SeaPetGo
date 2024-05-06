@@ -1,13 +1,13 @@
 addShellsRequest = Event.new("AddShellsRequest")
 addShellsResponse = Event.new("AddShellsResponse")
 
-verifyShellsAgainstRequest = Event.new("VerifyShellsAgainst")
+verifyShellsAgainstRequest = Event.new("VerifyShellsAgainstRequest")
 verifyShellsAgainstResponse = Event.new("VerifyShellsAgainstResponse")
 
 addPearlsRequest = Event.new("AddPearlsRequest")
 addPearlsResponse = Event.new("AddPearlsResponse")
 
-verifyPearlsAgainstRequest = Event.new("VerifyPearlsAgainst")
+verifyPearlsAgainstRequest = Event.new("VerifyPearlsAgainstRequest")
 
 players = {}
 playerShells = {}
@@ -20,7 +20,7 @@ local function TrackPlayers(game, characterCallback)
     scene.PlayerJoined:Connect(function(scene, player)
         players[player] = {
             player = player,
-            shells = IntValue.new("shells" .. tostring(player.id), 10),
+            shells = IntValue.new("shells" .. tostring(player.id), 0),
             pearls = IntValue.new("pearls" .. tostring(player.id), 0)
         }
 
