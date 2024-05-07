@@ -54,7 +54,7 @@ function AddNewPet(pet)
     print("Adding new Pet to Inventory")
     print("Check AddPet #3 - " .. pet)
     local slot = containerPetSlot.new()
-    slot.AddToClassList("pet-inventory")
+    --slot.AddToClassList("pet-inventory")
 end
 
 function EquipPet()

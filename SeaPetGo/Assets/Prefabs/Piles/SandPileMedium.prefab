@@ -93,7 +93,9 @@ GameObject:
   m_Component:
   - component: {fileID: 356066105217824274}
   - component: {fileID: 5372150368208590372}
+  - component: {fileID: 793484368117667998}
   - component: {fileID: 2576279775121823293}
+  - component: {fileID: 1382472899094158761}
   m_Layer: 0
   m_Name: SandPileMedium
   m_TagString: Untagged
@@ -138,6 +140,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.8, y: 1, z: 0.8}
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!65 &793484368117667998
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6774863088047930988}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8, y: 1, z: 0.8}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!114 &2576279775121823293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,19 +179,19 @@ MonoBehaviour:
   - Property: {fileID: 1683439976544081063, guid: 041090b23ea15d2479f94c982537c760,
       type: 3}
     Value:
-      rid: 3787035395039167471
+      rid: 9189313731691020849
   - Property: {fileID: 5392628201623073620, guid: 041090b23ea15d2479f94c982537c760,
       type: 3}
     Value:
-      rid: 3787035395039167472
+      rid: 9189313731691020850
   - Property: {fileID: -8673276101899840112, guid: 041090b23ea15d2479f94c982537c760,
       type: 3}
     Value:
-      rid: 3787035395039167473
+      rid: 9189313731691020851
   - Property: {fileID: 515918735956853257, guid: 041090b23ea15d2479f94c982537c760,
       type: 3}
     Value:
-      rid: 3787035395039167474
+      rid: 9189313731691020852
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -181,22 +204,37 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 3787035395039167471
+    - rid: 9189313731691020849
       type: {class: MeshRendererGlue/MeshRendererLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
         _value: {fileID: 125964204990649825}
-    - rid: 3787035395039167472
+    - rid: 9189313731691020850
       type: {class: ColliderGlue/ColliderLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
         _value: {fileID: 5372150368208590372}
-    - rid: 3787035395039167473
+    - rid: 9189313731691020851
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
         _value: {fileID: 0}
-    - rid: 3787035395039167474
+    - rid: 9189313731691020852
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 20
+--- !u!114 &1382472899094158761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6774863088047930988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 881728705, guid: 5e99434f214126023bd8db55a8296c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _checkDistance: 1
+  _distance: 1
+  _moveTo: 1

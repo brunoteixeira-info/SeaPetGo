@@ -360,6 +360,7 @@ GameObject:
   - component: {fileID: 4016371323012322658}
   - component: {fileID: 6686656196714285835}
   - component: {fileID: 8327389312165233504}
+  - component: {fileID: 7901927153266095775}
   m_Layer: 0
   m_Name: Colobus
   m_TagString: Untagged
@@ -457,47 +458,59 @@ MonoBehaviour:
   - Property: {fileID: -8236834929619004153, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 9189313709353206509
-  - Property: {fileID: -6515637083688162526, guid: 2b54a80bebc94f44fa39f40fea552e53,
-      type: 3}
-    Value:
-      rid: 9189313709353206510
+      rid: 9189313731691020866
   - Property: {fileID: -941190523921835400, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 9189313709353206511
-  - Property: {fileID: -5689799576380857737, guid: 2b54a80bebc94f44fa39f40fea552e53,
+      rid: 9189313731691020867
+  - Property: {fileID: -6515637083688162526, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 9189313709353206512
+      rid: 9189313731691020868
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
   m_petName: Colobus
-  m_petRarity: Common
   m_cPower: 100
-  m_vecLookAt: {x: 0, y: 0, z: 0}
+  m_petRarity: Common
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 9189313709353206509
+    - rid: 9189313731691020866
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: Colobus
-    - rid: 9189313709353206510
-      type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
-      data:
-        _value: Common
-    - rid: 9189313709353206511
+    - rid: 9189313731691020867
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 100
-    - rid: 9189313709353206512
-      type: {class: Vector3Glue/Vector3LuaPropertyValue, ns: Highrise.Lua.Glue, asm: com.pz.highrise.lua.glue}
+    - rid: 9189313731691020868
+      type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
-        _value: {x: 0, y: 0, z: 0}
+        _value: Common
+--- !u!65 &7901927153266095775
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2775946702059985045}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!1 &2887493273206371203
 GameObject:
   m_ObjectHideFlags: 0

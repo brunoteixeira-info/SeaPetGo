@@ -26,14 +26,14 @@
         </hr:UIButton>
 
         <hr:UIButton name="containerPetSlot">
-        <hr:UIImage name="imagePetSlot" picking-mode="Ignore">
-            <hr:UILabel name="textPetSlotRarity" picking-mode="Ignore">
-            </hr:UILabel>
+            <hr:UIImage name="imagePetSlot" picking-mode="Ignore">
+                <hr:UILabel name="textPetSlotRarity" picking-mode="Ignore">
+                </hr:UILabel>
             
-            <hr:UILabel name="textPetSlotPower" picking-mode="Ignore">
-            </hr:UILabel>
-        </hr:UIImage>
-      </hr:UIButton>
+                <hr:UILabel name="textPetSlotPower" picking-mode="Ignore">
+                </hr:UILabel>
+            </hr:UIImage>
+        </hr:UIButton>
     </hr:UIImage>
     
     <hr:UIButton name="buttonPlayerPets">

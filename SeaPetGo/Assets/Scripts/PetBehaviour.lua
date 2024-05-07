@@ -12,7 +12,12 @@ local petManager : module = require("PetManager")
 
 function SetTarget(targetToFollow)
     target = targetToFollow
-    print(target)
+    print("Target: " .. target.name)
+end
+
+function FindAndSetTarget(targetName)
+    target = GameObject.Find(targetName)
+    print("Target: " .. target.name)
 end
 
 function self:ClientAwake()
@@ -23,6 +28,7 @@ end
 
 function self:ClientStart()
     SetTarget(client.localPlayer.character.gameObject)
+    self.gameObject.transform:SetParent(client.localPlayer.character.gameObject.transform)
 end
 
 function self:ClientLateUpdate()

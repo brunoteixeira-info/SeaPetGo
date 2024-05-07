@@ -24,19 +24,20 @@ local gameManagerScript : module = require("GameManager")
 
 function SpawnPile(oldPilePos)
     local pileRoll = math.random(1,100)
+    local newPile = nil
     if pileRoll <= pileSmallChance then
         --Spawn Small Pile
-        local newPile = Object.Instantiate(pileSmall)    
+        newPile = Object.Instantiate(pileSmall)    
     elseif pileRoll > pileSmallChance and pileRoll <= pileMediumChance then
         --Spawn Medium Pile
-        local newPile = Object.Instantiate(pileMedium)
+        newPile = Object.Instantiate(pileMedium)
     else
         --Spawn Big Pile
-        local newPile = Object.Instantiate(pileBig)
+        newPile = Object.Instantiate(pileBig)
     end
     newPile.transform.position = oldPilePos
     local pileScript = newPile:GetComponent("Pile")
-    pileScript.SetPile()
+    pileScript.SetSpawnAndPile(self.gameObject)
 end
 
 function UnlockStage()

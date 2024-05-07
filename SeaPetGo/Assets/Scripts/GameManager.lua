@@ -16,6 +16,9 @@ verifyShellsAgainstResponse = Event.new("VerifyPearlsAgainstResponse")
 addPetRequest = Event.new("AddPetRequest")
 addPetResponse = Event.new("AddPetResponse")
 
+setPetTargetRequest = Event.new("SetPetTargetRequest")
+setPetTargetResponse = Event.new("SetPetTargetResponse")
+
 players = {}
 playerPets = {}
 playerPetsActive = {}
@@ -117,6 +120,22 @@ function self:ClientAwake()
         end
     end)
 
+    --AddPet() adds Pet to which ever client calls the function
+    function SetPetTarget(target)
+        print("Check SetPetTarget #1 - " .. target)
+        setPetTargetRequest:FireServer(target)
+    end
+
+    setPetTargetResponse:Connect(function(player, target)
+        print("Check SetPetTarget #3 - " .. target)
+        if(player == client.localPlayer) then
+            if(player.character.gameObject.transform:GetChild(2)) then
+                local playerPet = player.character.gameObject.transform:GetChild(2):GetComponent(PetBehaviour)
+                playerPet.FindAndSetTarget(target)
+            end
+        end
+    end)
+
    local uiManager = GameObject.Find("UIManager")
    uiManagerScript = uiManager.gameObject:GetComponent(UIManager)
    uiPetInventory = uiManager.gameObject:GetComponent(UIPetInventory)
@@ -187,5 +206,10 @@ function self:ServerAwake()
                 end
             end             
         end
+    end)
+
+    setPetTargetRequest:Connect(function(player, target) -- Here the player is just the client that sent the request to the server, so when AddPet() is called it gives a Pet to whoever calls it
+        print("Check SetPetTarget #2 - " .. target)
+        setPetTargetResponse:FireAllClients(player, target)
     end)
 end
