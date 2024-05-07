@@ -7,6 +7,7 @@
     top: 100px;
     left: -330px;
     align-self: flex-end;
+    display: none;
 
     background-image: resource("slot");
 }
@@ -15,16 +16,16 @@
     color: rgba(0,0,0,1);
     font-size: 200%;
     letter-spacing: 5%;
-    left: -30px;
-    top: 30px;
-    align-self: flex-end;
+    left: 15px;
+    top: -120px;
+    align-self: center;
 }
 
 .pet-inventory #buttonCloseInventory{
     width: 90px;
     height: 90px;
     left: -35px;
-    top: -70px;
+    top: -240px;
     align-self: flex-start;
 
     background-image: resource("wrong");
@@ -34,7 +35,7 @@
     width: 200px;
     height: 75px;
     left: 120px;
-    top: 595px;
+    top: 415px;
     align-self: center;
 
     background-image: resource("buttonEquip");
@@ -42,7 +43,7 @@
 
 .pet-inventory #textButtonPetEquip{
     color: rgba(0,0,0,1);
-    font-size: 100%;
+    font-size: 150%;
     letter-spacing: 5%;
     left: 0px;
     top: 0px;
@@ -53,7 +54,7 @@
     width: 200px;
     height: 75px;
     left: -120px;
-    top: 520px;
+    top: 340px;
     align-self: center;
 
     background-image: resource("buttonRelease");
@@ -61,7 +62,7 @@
 
 .pet-inventory #textButtonPetRelease{
     color: rgba(0,0,0,1);
-    font-size: 100%;
+    font-size: 150%;
     letter-spacing: 5%;
     left: 0px;
     top: 0px;
@@ -112,6 +113,61 @@
     background-image: resource("pets");
 }
 
+.pet-inventory #imageTextPetEquipped{
+    width: 440px;
+    height: 170px;
+    left: -20px;
+    top: -75px;
+    align-self: flex-end;
+
+    background-image: resource("panel_top");
+}
+
+.pet-inventory #textPetEquipped{
+    color: rgba(0,0,0,1);
+    font-size: 100%;
+    letter-spacing: 5%;
+    left: 0px;
+    top: 65px;
+    align-self: center;
+}
+
 .hide{
     display: none;
+}
+
+.containerPetSlot{
+    width: 150px;
+    height: 150px;
+    top: -350px;
+    left: -330px;
+    align-self: flex-end;
+
+    background-image: resource("slot");
+}
+
+.imagePetSlot{
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    align-self: center;
+    background-image: resource("playerShells");
+}
+
+.textPetSlotRarity{
+    color: rgba(0,0,0,1);
+    font-size: 100%;
+    letter-spacing: 5%;
+    left: -50px;
+    top: -20px;
+    align-self: center;
+}
+
+.textPetSlotPower{
+    color: rgba(0,0,0,1);
+    font-size: 100%;
+    letter-spacing: 5%;
+    left: 0px;
+    top: 40px;
+    align-self: center;
 }

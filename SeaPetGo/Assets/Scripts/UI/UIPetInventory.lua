@@ -18,6 +18,8 @@ local textButtonPetEquip : UILabel = nil
 --!Bind
 local textButtonPetRelease : UILabel = nil
 --!Bind
+local textPetEquipped : UILabel = nil
+--!Bind
 local buttonPetEquip : UIButton = nil
 --!Bind
 local buttonPetRelease : UIButton = nil
@@ -26,13 +28,16 @@ local buttonCloseInventory : UIButton = nil
 --!Bind
 local buttonPlayerPets : UILabel = nil
 
-textPetSlots:SetPrelocalizedText("Storage: 0/25")
+local petAmount : number = 0
+
+textPetEquipped:SetPrelocalizedText("")
 textPetSlotRarity:SetPrelocalizedText("C")
 textPetSlotPower:SetPrelocalizedText("50")
 textButtonPetEquip:SetPrelocalizedText("Equip")
 textButtonPetRelease:SetPrelocalizedText("Release")
 
 function self:ClientStart()
+    textPetSlots:SetPrelocalizedText("Storage: " .. petAmount .. "/25")
     buttonPlayerPets:RegisterPressCallback(function () OpenInventory() end)
     buttonCloseInventory:RegisterPressCallback(function () CloseInventory() end)
     buttonPetEquip:RegisterPressCallback(function () EquipPet() end)
@@ -53,8 +58,7 @@ end
 function AddNewPet(pet)
     print("Adding new Pet to Inventory")
     print("Check AddPet #3 - " .. pet)
-    local slot = containerPetSlot.new()
-    --slot.AddToClassList("pet-inventory")
+    CreatePetSlot()
 end
 
 function EquipPet()
@@ -63,4 +67,27 @@ end
 
 function ReleasePet()
     print("Releasing Pet from Inventory")
+end
+
+function CreatePetSlot()
+    print("Creating Pet Slot in Inventory")
+
+    local slotPet = UIButton.new()
+    slotPet:AddToClassList("containerPetSlot")
+    containerPetInventory:Add(slotPet)
+    
+    local imageSlotPet = UIImage.new()
+    imageSlotPet:AddToClassList("imagePetSlot")
+    slotPet:Add(imageSlotPet)
+
+    --local textSlotPetRarity = UILabel.new()
+    --textSlotPetRarity:AddToClassList("textPetSlotRarity")
+    --imageSlotPet:Add(textSlotPetRarity)
+
+    --local textPetSlotPower = UILabel.new()
+    --textPetSlotPower:AddToClassList("textPetSlotPower")
+    --imageSlotPet:Add(textPetSlotPower)
+
+    petAmount = petAmount + 1
+    textPetSlots:SetPrelocalizedText("Storage: " .. petAmount .. "/25")
 end
