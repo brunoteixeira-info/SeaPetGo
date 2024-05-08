@@ -25,6 +25,7 @@ playerPetsActive = {}
 
 local uiManagerScript : UIManager
 local uiPetInventory : UIPetInventory
+local petManagerScript : module = require("PetManager")
 
 local function TrackPlayers(game, characterCallback)
     scene.PlayerJoined:Connect(function(scene, player)

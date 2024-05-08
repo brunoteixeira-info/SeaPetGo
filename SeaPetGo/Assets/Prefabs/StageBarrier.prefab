@@ -121,24 +121,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _networkId: 0
   _script: {fileID: -974389366465450183, guid: c5ea324304fea804383d1e34541622dc, type: 3}
-  _properties:
-  - Property: {fileID: 1971031897196483007, guid: c5ea324304fea804383d1e34541622dc,
-      type: 3}
-    Value:
-      rid: 9189313629413179449
+  _properties: []
   _uiOutput: 3
   _uiOutputSettings:
     rid: -2
-  m_stage: 1
+  _copyFromPropertiesVersion: 1
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 9189313629413179449
-      type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
-      data:
-        _value: 1
 --- !u!1 &6754017623825243387
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +183,7 @@ MonoBehaviour:
   _uiOutput: 1
   _uiOutputSettings:
     rid: 9189313617003020621
+  _copyFromPropertiesVersion: 1
   references:
     version: 2
     RefIds:

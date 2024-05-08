@@ -22,6 +22,7 @@ local pet5Chance : number = 100
 local petRollCost : number = 150
 
 local gameManagerScript : module = require("GameManager")
+local petManagerScript : module = require("PetManager")
 local uiPetObtained : UIPetObtained
 local newPet : GameObject
 
@@ -69,7 +70,11 @@ function AcceptPet()
     print("Accept Pet")
     local petStats = newPet.gameObject:GetComponent(PetBehaviour)
     print(petStats.Name)
+    if(client.localPlayer.character.gameObject.transform:GetChild(2)) then
+        Object.Destroy(client.localPlayer.character.gameObject.transform:GetChild(2).gameObject)
+    end
     gameManagerScript.AddPet(petStats.Name)
+
 end
 
 function DenyPet()

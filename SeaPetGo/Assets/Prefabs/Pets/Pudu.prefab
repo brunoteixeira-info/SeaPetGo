@@ -486,47 +486,21 @@ MonoBehaviour:
   - Property: {fileID: -8236834929619004153, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 9189313647400714828
-  - Property: {fileID: -6515637083688162526, guid: 2b54a80bebc94f44fa39f40fea552e53,
-      type: 3}
-    Value:
-      rid: 9189313647400714829
-  - Property: {fileID: -941190523921835400, guid: 2b54a80bebc94f44fa39f40fea552e53,
-      type: 3}
-    Value:
-      rid: 9189313647400714830
-  - Property: {fileID: -5689799576380857737, guid: 2b54a80bebc94f44fa39f40fea552e53,
-      type: 3}
-    Value:
-      rid: 9189313647400714831
+      rid: 9189313766601261069
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
+  _copyFromPropertiesVersion: 1
   m_petName: Pudu
-  m_petRarity: Rare
-  m_cPower: 150
-  m_vecLookAt: {x: 0, y: 0, z: 0}
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 9189313647400714828
+    - rid: 9189313766601261069
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: Pudu
-    - rid: 9189313647400714829
-      type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
-      data:
-        _value: Rare
-    - rid: 9189313647400714830
-      type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
-      data:
-        _value: 150
-    - rid: 9189313647400714831
-      type: {class: Vector3Glue/Vector3LuaPropertyValue, ns: Highrise.Lua.Glue, asm: com.pz.highrise.lua.glue}
-      data:
-        _value: {x: 0, y: 0, z: 0}
 --- !u!114 &7394165449247632383
 MonoBehaviour:
   m_ObjectHideFlags: 0

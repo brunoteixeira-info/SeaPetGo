@@ -9,11 +9,6 @@
 
   <hr:UILuaView class="pet-inventory">
     <hr:UIImage name="containerPetInventory" picking-mode="Ignore">
-        <hr:UIImage name="imageTextPetEquipped" picking-mode="Ignore">
-            <hr:UILabel name="textPetEquipped" picking-mode="Ignore">
-            </hr:UILabel>
-        </hr:UIImage>
-
         <hr:UILabel name="textPetSlots" picking-mode="Ignore">
         </hr:UILabel>
 
@@ -28,8 +23,8 @@
         <hr:UIButton name="buttonPetRelease">
             <hr:UILabel name="textButtonPetRelease" picking-mode="Ignore">
             </hr:UILabel>
-        </hr:UIButton>
-   
+        </hr:UIButton>  
+        
         <hr:UIButton name="containerPetSlot">
             <hr:UIImage name="imagePetSlot" picking-mode="Ignore">
                 <hr:UILabel name="textPetSlotRarity" picking-mode="Ignore">
@@ -39,10 +34,25 @@
                 </hr:UILabel>
             </hr:UIImage>
         </hr:UIButton>
+        
+        <hr:UIImage name="containerPetInfo">
+            <hr:UIImage name="imagePetInfo" picking-mode="Ignore">
+                <hr:UIImage name="imageTextPetEquipped" picking-mode="Ignore">
+                    <hr:UILabel name="textPetEquipped" picking-mode="Ignore">
+                    </hr:UILabel>
+                </hr:UIImage>    
+            
+                <hr:UILabel name="textPetInfoRarity" picking-mode="Ignore">
+                </hr:UILabel>
+            
+                <hr:UILabel name="textPetInfoPower" picking-mode="Ignore">
+                </hr:UILabel>
+            </hr:UIImage>
+        </hr:UIImage>
+
     </hr:UIImage>
     
     <hr:UIButton name="buttonPlayerPets">
     </hr:UIButton>
   </hr:UILuaView>
-
 </UXML>

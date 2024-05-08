@@ -356,47 +356,21 @@ MonoBehaviour:
   - Property: {fileID: -8236834929619004153, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 9189313647400714832
-  - Property: {fileID: -6515637083688162526, guid: 2b54a80bebc94f44fa39f40fea552e53,
-      type: 3}
-    Value:
-      rid: 9189313647400714833
-  - Property: {fileID: -941190523921835400, guid: 2b54a80bebc94f44fa39f40fea552e53,
-      type: 3}
-    Value:
-      rid: 9189313647400714834
-  - Property: {fileID: -5689799576380857737, guid: 2b54a80bebc94f44fa39f40fea552e53,
-      type: 3}
-    Value:
-      rid: 9189313647400714835
+      rid: 9189313766576357927
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
+  _copyFromPropertiesVersion: 1
   m_petName: Sparrow
-  m_petRarity: Uncommon
-  m_cPower: 120
-  m_vecLookAt: {x: 0, y: 0, z: 0}
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 9189313647400714832
+    - rid: 9189313766576357927
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: Sparrow
-    - rid: 9189313647400714833
-      type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
-      data:
-        _value: Uncommon
-    - rid: 9189313647400714834
-      type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
-      data:
-        _value: 120
-    - rid: 9189313647400714835
-      type: {class: Vector3Glue/Vector3LuaPropertyValue, ns: Highrise.Lua.Glue, asm: com.pz.highrise.lua.glue}
-      data:
-        _value: {x: 0, y: 0, z: 0}
 --- !u!114 &-3847029356462671454
 MonoBehaviour:
   m_ObjectHideFlags: 0

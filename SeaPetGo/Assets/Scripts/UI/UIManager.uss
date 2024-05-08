@@ -14,8 +14,9 @@
 .manager #containerPlayerShells{
     width: 420px;
     height: 130px;
-    left: 550px;
-    align-self: start;
+    left: 0px;
+    top: -45px;
+    align-self: center;
 
     background-image: resource("containerPlayerShells");
 }
@@ -46,9 +47,9 @@
 .manager #containerPlayerPearls{
     width: 420px;
     height: 130px;
-    left: 1000px;
-    top: -130px;
-    align-self: start;
+    left: 500px;
+    top: -175px;
+    align-self: center;
 
     background-image: resource("containerPlayerShells");
 }

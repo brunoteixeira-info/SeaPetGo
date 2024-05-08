@@ -457,47 +457,21 @@ MonoBehaviour:
   - Property: {fileID: -8236834929619004153, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 9189313647400714840
-  - Property: {fileID: -6515637083688162526, guid: 2b54a80bebc94f44fa39f40fea552e53,
-      type: 3}
-    Value:
-      rid: 9189313647400714841
-  - Property: {fileID: -941190523921835400, guid: 2b54a80bebc94f44fa39f40fea552e53,
-      type: 3}
-    Value:
-      rid: 9189313647400714842
-  - Property: {fileID: -5689799576380857737, guid: 2b54a80bebc94f44fa39f40fea552e53,
-      type: 3}
-    Value:
-      rid: 9189313647400714843
+      rid: 9189313766576358227
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
+  _copyFromPropertiesVersion: 1
   m_petName: Taipan
-  m_petRarity: Rare
-  m_cPower: 175
-  m_vecLookAt: {x: 0, y: 0, z: 0}
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 9189313647400714840
+    - rid: 9189313766576358227
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: Taipan
-    - rid: 9189313647400714841
-      type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
-      data:
-        _value: Rare
-    - rid: 9189313647400714842
-      type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
-      data:
-        _value: 175
-    - rid: 9189313647400714843
-      type: {class: Vector3Glue/Vector3LuaPropertyValue, ns: Highrise.Lua.Glue, asm: com.pz.highrise.lua.glue}
-      data:
-        _value: {x: 0, y: 0, z: 0}
 --- !u!114 &7847351195234370661
 MonoBehaviour:
   m_ObjectHideFlags: 0

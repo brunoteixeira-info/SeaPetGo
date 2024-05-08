@@ -27,27 +27,46 @@ local buttonPetRelease : UIButton = nil
 local buttonCloseInventory : UIButton = nil
 --!Bind
 local buttonPlayerPets : UILabel = nil
+--!Bind
+local containerPetInfo : UIButton = nil
+--!Bind
+local textPetInfoRarity : UILabel = nil
+--!Bind
+local textPetInfoPower : UILabel = nil
+
+local petManagerScript : module = require("PetManager")
 
 local petAmount : number = 0
+local selectedPetIndex : number = 0
+petsOwned = {}
 
-textPetEquipped:SetPrelocalizedText("")
-textPetSlotRarity:SetPrelocalizedText("C")
-textPetSlotPower:SetPrelocalizedText("50")
+textPetEquipped:SetPrelocalizedText("Pet")
+
+textPetSlotRarity:SetPrelocalizedText("Rarity")
+textPetSlotPower:SetPrelocalizedText("Power")
+
+textPetInfoRarity:SetPrelocalizedText("")
+textPetInfoPower:SetPrelocalizedText("")
+
 textButtonPetEquip:SetPrelocalizedText("Equip")
 textButtonPetRelease:SetPrelocalizedText("Release")
 
 function self:ClientStart()
-    textPetSlots:SetPrelocalizedText("Storage: " .. petAmount .. "/25")
+    textPetSlots:SetPrelocalizedText("Storage: " .. petAmount .. "/9")
     buttonPlayerPets:RegisterPressCallback(function () OpenInventory() end)
     buttonCloseInventory:RegisterPressCallback(function () CloseInventory() end)
     buttonPetEquip:RegisterPressCallback(function () EquipPet() end)
     buttonPetRelease:RegisterPressCallback(function () ReleasePet() end)
     containerPetInventory:AddToClassList("hide")
+    CreatePetSlots()
 end
 
 function CloseInventory()
     containerPetInventory:AddToClassList("hide")
     buttonPlayerPets:RemoveFromClassList("hide")
+    textPetEquipped:SetPrelocalizedText("")
+    textPetInfoPower:SetPrelocalizedText("")
+    textPetInfoRarity:SetPrelocalizedText("")
 end
 
 function OpenInventory()
@@ -58,36 +77,106 @@ end
 function AddNewPet(pet)
     print("Adding new Pet to Inventory")
     print("Check AddPet #3 - " .. pet)
-    CreatePetSlot()
+    FillPetSlot(pet)
 end
 
 function EquipPet()
-    print("Equipping Pet")
+    if(textPetEquipped.text ~= "") then
+        print("Equipping Pet")
+        
+        if(client.localPlayer.character.gameObject.transform:GetChild(2) ~= nil) then
+            Object.Destroy(client.localPlayer.character.gameObject.transform:GetChild(2).gameObject)
+        end
+
+        local petObtained = petManagerScript.GetPet(textPetEquipped.text)
+        newPet = Object.Instantiate(petObtained.go)
+    end
 end
 
 function ReleasePet()
     print("Releasing Pet from Inventory")
-end
-
-function CreatePetSlot()
-    print("Creating Pet Slot in Inventory")
-
-    local slotPet = UIButton.new()
-    slotPet:AddToClassList("containerPetSlot")
-    containerPetInventory:Add(slotPet)
+    petsOwned[selectedPetIndex].petName = "Pet"
+    petsOwned[selectedPetIndex].uiSlot.name = "Slot" .. selectedPetIndex
+    petsOwned[selectedPetIndex].uiSlot:RegisterPressCallback(function () end)        
+    petsOwned[selectedPetIndex].uiSlotPetTextPower:SetPrelocalizedText("")
+    petsOwned[selectedPetIndex].uiSlotPetTextRarity:SetPrelocalizedText("")
     
-    local imageSlotPet = UIImage.new()
-    imageSlotPet:AddToClassList("imagePetSlot")
-    slotPet:Add(imageSlotPet)
-
-    --local textSlotPetRarity = UILabel.new()
-    --textSlotPetRarity:AddToClassList("textPetSlotRarity")
-    --imageSlotPet:Add(textSlotPetRarity)
-
-    --local textPetSlotPower = UILabel.new()
-    --textPetSlotPower:AddToClassList("textPetSlotPower")
-    --imageSlotPet:Add(textPetSlotPower)
-
-    petAmount = petAmount + 1
-    textPetSlots:SetPrelocalizedText("Storage: " .. petAmount .. "/25")
+    petAmount = petAmount - 1
+    textPetSlots:SetPrelocalizedText("Storage: " .. petAmount .. "/9")
 end
+
+function CreatePetSlots()
+    j = 1
+    l = 1
+    for i=1,10 do
+        print("Creating Pet Slot " .. i .. " in Inventory")    
+        local slotPet = UIButton.new()
+        slotPet.name = "Slot" .. i        
+        local containerColumn = "containerPetSlotCol" .. l
+        print(containerColumn)
+        slotPet:AddToClassList(containerColumn)
+        containerPetInventory:Add(slotPet)
+        
+        local imageSlotPet = UIImage.new()
+        imageSlotPet:AddToClassList("imagePetSlot")
+        slotPet:Add(imageSlotPet)
+    
+        local textPetSlotPower = UILabel.new()
+        textPetSlotPower:AddToClassList("textPetSlotPower")
+        imageSlotPet:Add(textPetSlotPower)
+    
+        local textSlotPetRarity = UILabel.new()
+        textSlotPetRarity:AddToClassList("textPetSlotRarity")
+        textPetSlotRarity:SetPrelocalizedText("Rarity")
+        imageSlotPet:Add(textSlotPetRarity)
+    
+        petInfo = { index = i, petName = "Pet", uiSlot = slotPet, uiSlotImagePet = imageSlotPet, uiSlotPetTextPower = textPetSlotPower, uiSlotPetTextRarity = textSlotPetRarity} 
+        petsOwned[i] = petInfo
+
+        j = j + 1
+        
+        if(j > 3) then
+            l = l + 1
+            j = 1
+        end
+    end
+end
+
+function FillPetSlot(pet)
+    print("Filling Pet Slot in Inventory with " .. pet)
+    local petObtained = petManagerScript.GetPet(pet)
+
+    for i=1,10 do
+        if(petsOwned[i].petName == "Pet") then
+            
+            petsOwned[i].petName = pet
+            petsOwned[i].uiSlot.name = pet
+            petsOwned[i].uiSlot:RegisterPressCallback(function () SetPet(petsOwned[i].uiSlot.name, petsOwned[i].index) end)        
+            petsOwned[i].uiSlotPetTextPower:SetPrelocalizedText(petObtained.cPower)
+            petsOwned[i].uiSlotPetTextRarity:SetPrelocalizedText(petObtained.rarity)
+            
+            petAmount = petAmount + 1
+            textPetSlots:SetPrelocalizedText("Storage: " .. petAmount .. "/25")
+
+            break
+        end
+    end
+end
+
+function SetPet(pet, index)
+    local petObtained = petManagerScript.GetPet(pet)
+    textPetEquipped:SetPrelocalizedText(petObtained.name)
+    textPetInfoPower:SetPrelocalizedText(petObtained.cPower)
+    textPetInfoRarity:SetPrelocalizedText(petObtained.rarity)
+    selectedPetIndex = index
+end
+
+function GetPet(petName)
+    print("Getting Pet: " .. petName)
+    for i = 1, #arrayPets do
+      print(arrayPets[i])
+        if(arrayPets[i].name == petName) then
+          return arrayPets[i]
+        end
+    end             
+  end

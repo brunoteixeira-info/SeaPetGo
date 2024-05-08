@@ -1,9 +1,5 @@
 --!SerializeField
 local petName : string = "Pet"
---!SerializeField
-local cPower : number = 0
---!SerializeField
-local petRarity : string = "Rarity"
 
 local target : GameObject = nil
 
@@ -21,9 +17,10 @@ function FindAndSetTarget(targetName)
 end
 
 function self:ClientAwake()
-    Name = petName
-    Power = cPower
-    Rarity = petRarity
+    local petObtained = petManager.GetPet(petName)
+    Name = petObtained.name
+    Power = petObtained.cPower
+    Rarity = petObtained.rarity
 end
 
 function self:ClientStart()

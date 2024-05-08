@@ -4,3 +4,4 @@
 @import url("/Assets/Scripts/UI/UIStageUnlock.uxml");
 @import url("/Assets/Scripts/UI/UIPetInventory.uxml");
 @import url("/Assets/Scripts/UI/UIPetObtained.uxml");
+@import url("/Assets/Scripts/UI/UIPetSlot.uxml");
