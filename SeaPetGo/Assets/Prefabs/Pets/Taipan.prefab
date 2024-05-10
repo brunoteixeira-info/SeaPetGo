@@ -358,8 +358,6 @@ GameObject:
   - component: {fileID: 3067922073814433170}
   - component: {fileID: 663599601221006968}
   - component: {fileID: 8568927142872627188}
-  - component: {fileID: 7847351195234370661}
-  - component: {fileID: -1577284150697731691}
   m_Layer: 0
   m_Name: Taipan
   m_TagString: Untagged
@@ -457,7 +455,7 @@ MonoBehaviour:
   - Property: {fileID: -8236834929619004153, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 9189313766576358227
+      rid: 9189313801353167715
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -468,36 +466,10 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 9189313766576358227
+    - rid: 9189313801353167715
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: Taipan
---- !u!114 &7847351195234370661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2634336357526692565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 869450252, guid: 5e99434f214126023bd8db55a8296c39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkId: 0
---- !u!114 &-1577284150697731691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2634336357526692565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 869450252, guid: 5e99434f214126023bd8db55a8296c39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkId: 0
 --- !u!1 &4184589047855204289
 GameObject:
   m_ObjectHideFlags: 0

@@ -36,11 +36,12 @@
         </hr:UIButton>
         
         <hr:UIImage name="containerPetInfo">
+            <hr:UIImage name="imageTextPetEquipped" picking-mode="Ignore">
+                <hr:UILabel name="textPetEquipped" picking-mode="Ignore">
+                </hr:UILabel>
+            </hr:UIImage>        
+        
             <hr:UIImage name="imagePetInfo" picking-mode="Ignore">
-                <hr:UIImage name="imageTextPetEquipped" picking-mode="Ignore">
-                    <hr:UILabel name="textPetEquipped" picking-mode="Ignore">
-                    </hr:UILabel>
-                </hr:UIImage>    
             
                 <hr:UILabel name="textPetInfoRarity" picking-mode="Ignore">
                 </hr:UILabel>

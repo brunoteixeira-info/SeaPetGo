@@ -169,8 +169,6 @@ GameObject:
   - component: {fileID: 2423947513045598018}
   - component: {fileID: 8135332590292199551}
   - component: {fileID: 7720213318090828562}
-  - component: {fileID: 294780278069132087}
-  - component: {fileID: 6734605627789336002}
   m_Layer: 0
   m_Name: Gecko
   m_TagString: Untagged
@@ -268,7 +266,7 @@ MonoBehaviour:
   - Property: {fileID: -8236834929619004153, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 9189313766576358229
+      rid: 9189313801355526355
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -279,36 +277,10 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 9189313766576358229
+    - rid: 9189313801355526355
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 
---- !u!114 &294780278069132087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2228164492658691536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 869450252, guid: 5e99434f214126023bd8db55a8296c39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkId: 0
---- !u!114 &6734605627789336002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2228164492658691536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 869450252, guid: 5e99434f214126023bd8db55a8296c39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkId: 0
 --- !u!1 &2240811861770230828
 GameObject:
   m_ObjectHideFlags: 0

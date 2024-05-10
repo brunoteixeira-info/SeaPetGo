@@ -20,6 +20,8 @@ local pet5 : GameObject = nil
 local pet5Chance : number = 100
 --!SerializeField
 local petRollCost : number = 150
+--!SerializeField
+local uiGachapon : GameObject = nil
 
 local gameManagerScript : module = require("GameManager")
 local petManagerScript : module = require("PetManager")
@@ -91,4 +93,5 @@ end
 function self:ClientStart()
     local uiObj = GameObject.Find("UIManager")
     uiPetObtained = uiObj:GetComponent(UIPetObtained)
+    uiGachapon:GetComponent(UIGachapon).SetPlayerShellsNeeded(petRollCost)
 end

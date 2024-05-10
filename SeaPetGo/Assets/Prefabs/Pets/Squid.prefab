@@ -303,8 +303,6 @@ GameObject:
   - component: {fileID: 2437899892178049283}
   - component: {fileID: 1005962285190491442}
   - component: {fileID: 5921628904211379482}
-  - component: {fileID: -3482609033434987766}
-  - component: {fileID: 6341968567684250606}
   m_Layer: 0
   m_Name: Squid
   m_TagString: Untagged
@@ -402,7 +400,7 @@ MonoBehaviour:
   - Property: {fileID: -8236834929619004153, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 9189313766576358225
+      rid: 9189313801353167713
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -413,36 +411,10 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 9189313766576358225
+    - rid: 9189313801353167713
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: Squid
---- !u!114 &-3482609033434987766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2007446041537522563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 869450252, guid: 5e99434f214126023bd8db55a8296c39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkId: 0
---- !u!114 &6341968567684250606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2007446041537522563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 869450252, guid: 5e99434f214126023bd8db55a8296c39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkId: 0
 --- !u!1 &2105408890027271658
 GameObject:
   m_ObjectHideFlags: 0

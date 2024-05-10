@@ -234,8 +234,6 @@ GameObject:
   - component: {fileID: 4073947009332971925}
   - component: {fileID: 6410304895591537504}
   - component: {fileID: 3448087692175828787}
-  - component: {fileID: -3847029356462671454}
-  - component: {fileID: 525631412668866613}
   m_Layer: 0
   m_Name: Sparrow
   m_TagString: Untagged
@@ -356,7 +354,7 @@ MonoBehaviour:
   - Property: {fileID: -8236834929619004153, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 9189313766576357927
+      rid: 9189313801325380424
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -367,36 +365,10 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 9189313766576357927
+    - rid: 9189313801325380424
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: Sparrow
---- !u!114 &-3847029356462671454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366601352211043902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 869450252, guid: 5e99434f214126023bd8db55a8296c39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkId: 0
---- !u!114 &525631412668866613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366601352211043902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 869450252, guid: 5e99434f214126023bd8db55a8296c39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkId: 0
 --- !u!1 &1819568620448180660
 GameObject:
   m_ObjectHideFlags: 0

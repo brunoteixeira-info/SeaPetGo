@@ -553,8 +553,6 @@ GameObject:
   - component: {fileID: 4854664572750744606}
   - component: {fileID: 4211523874502535663}
   - component: {fileID: 5509298795521202236}
-  - component: {fileID: 3648144021330378551}
-  - component: {fileID: 8037639315545756503}
   m_Layer: 0
   m_Name: Muskrat
   m_TagString: Untagged
@@ -652,7 +650,7 @@ MonoBehaviour:
   - Property: {fileID: -8236834929619004153, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 9189313766601261067
+      rid: 9189313801355526709
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -663,36 +661,10 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 9189313766601261067
+    - rid: 9189313801355526709
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: Muskrat
---- !u!114 &3648144021330378551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6331825049418754682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 869450252, guid: 5e99434f214126023bd8db55a8296c39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkId: 0
---- !u!114 &8037639315545756503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6331825049418754682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 869450252, guid: 5e99434f214126023bd8db55a8296c39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkId: 0
 --- !u!1 &7848230466346444780
 GameObject:
   m_ObjectHideFlags: 0

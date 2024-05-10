@@ -1,0 +1,16 @@
+.gachapon {
+}
+
+.gachapon #imageShells{
+    width: 256px;
+    height: 256px;
+    align-self: center;
+    background-image: resource("playerShells");
+}
+
+.gachapon #textShellsNeeded{
+    color: white;
+    font-size: 500%;
+    letter-spacing: 5%;
+    align-self: center;
+}

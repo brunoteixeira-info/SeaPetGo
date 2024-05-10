@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UILuaView class="tutorial">
+    <hr:UIImage name="tutorialPanelTop" picking-mode="Ignore">
+        <hr:UILabel name="textPanelTop" picking-mode="Ignore">
+        </hr:UILabel>
+    </hr:UIImage>
+
+    <hr:UIImage name="tutorialPanel1" picking-mode="Ignore">
+        <hr:UILabel name="textPanel1" picking-mode="Ignore">
+        </hr:UILabel>
+    </hr:UIImage>
+
+    <hr:UIImage name="tutorialPanel2" picking-mode="Ignore">
+        <hr:UIImage name="imagePanel2" picking-mode="Ignore">
+        </hr:UIImage>
+        <hr:UILabel name="textPanel2" picking-mode="Ignore">
+        </hr:UILabel>
+    </hr:UIImage>
+
+    <hr:UIImage name="tutorialPanel3" picking-mode="Ignore">
+        <hr:UIImage name="imagePanel3" picking-mode="Ignore">
+        </hr:UIImage>
+        <hr:UILabel name="textPanel3" picking-mode="Ignore">
+        </hr:UILabel>
+    </hr:UIImage>
+
+    <hr:UIImage name="tutorialPanel4" picking-mode="Ignore">
+        <hr:UIImage name="imagePanel4" picking-mode="Ignore">
+        </hr:UIImage>
+        <hr:UILabel name="textPanel4" picking-mode="Ignore">
+        </hr:UILabel>
+    </hr:UIImage>
+
+    <hr:UIImage name="tutorialPanel5" picking-mode="Ignore">
+        <hr:UIImage name="imagePanel5" picking-mode="Ignore">
+        </hr:UIImage>
+        <hr:UILabel name="textPanel5" picking-mode="Ignore">
+        </hr:UILabel>
+    </hr:UIImage>
+
+    <hr:UIImage name="tutorialPanel6" picking-mode="Ignore">
+        <hr:UIImage name="imagePanel6" picking-mode="Ignore">
+        </hr:UIImage>
+        <hr:UILabel name="textPanel6" picking-mode="Ignore">
+        </hr:UILabel>
+    </hr:UIImage>
+
+    <hr:UIButton name="buttonNextPage">
+        <hr:UILabel name="textButtonNextPage" picking-mode="Ignore">
+        </hr:UILabel>
+    </hr:UIButton>
+
+    <hr:UIButton name="buttonPreviousPage">
+        <hr:UILabel name="textButtonPreviousPage" picking-mode="Ignore">
+        </hr:UILabel>
+    </hr:UIButton>
+
+    <hr:UIButton name="buttonTutorial">
+    </hr:UIButton>
+
+  </hr:UILuaView>
+
+</UXML>

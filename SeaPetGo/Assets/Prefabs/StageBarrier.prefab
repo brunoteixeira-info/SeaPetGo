@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7002331082455948097}
   - component: {fileID: 4906092076761352741}
   - component: {fileID: 3401884628253822856}
+  - component: {fileID: 8429645931265362909}
   m_Layer: 0
   m_Name: StageBarrier
   m_TagString: Untagged
@@ -131,6 +132,21 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+--- !u!114 &8429645931265362909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5130225964496215316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 881728705, guid: 5e99434f214126023bd8db55a8296c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _checkDistance: 1
+  _distance: 10
+  _moveTo: 1
 --- !u!1 &6754017623825243387
 GameObject:
   m_ObjectHideFlags: 0

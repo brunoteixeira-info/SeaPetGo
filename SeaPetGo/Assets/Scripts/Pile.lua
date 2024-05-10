@@ -3,9 +3,6 @@
 local pileMesh : MeshRenderer = nil
 --!SerializeField
 local pileCollider : Collider = nil
-
---!SerializeField
-local spawner : GameObject = nil
 --!SerializeField
 local shells : number = 20
 
@@ -22,7 +19,7 @@ local gameManagerScript : module = require("GameManager")
 local lastPetInteracted : PetBehaviour = nil
 
 function SetPile()
-    spawnerScript = spawner.gameObject:GetComponent(StageManager)
+    spawnerScript = self.gameObject:GetComponentInParent(StageManager)
     shellsInside = math.random(shells - 10, shells + 10)
     pearlsInside = shellsInside * 0.1
     hp = shellsInside
@@ -51,9 +48,7 @@ function self:ClientAwake()
 end
 
 function self:ClientStart()
-    if(spawner ~= nil) then
-        SetPile()
-    end
+    SetPile()
 end
 
 function self:OnTriggerEnter(collider)

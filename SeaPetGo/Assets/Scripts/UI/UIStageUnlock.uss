@@ -2,9 +2,9 @@
 }
 
 .stageUnlock #containerStageUnlock{
-    width: 1000px;
-    height: 446px;
-    top: -50px;
+    width: 300px;
+    height: 226px;
+    top: auto;
     align-self: center;
 
     background-image: resource("panel");
@@ -12,17 +12,17 @@
 
 .stageUnlock #textStageUnlock{
     color: rgba(0,0,0,1);
-    font-size: 250%;
+    font-size: 90%;
     letter-spacing: 5%;
-    top: 100px;
-    left: 150px;
+    top: 20px;
+    left: 15px;
 }
 
 .stageUnlock #buttonStageUnlockAccept{
     width: 90px;
     height: 90px;
     left: 100px;
-    top: 150px;
+    top: 91px;
     align-self: center;
 
     background-image: resource("correct");
@@ -32,7 +32,7 @@
     width: 90px;
     height: 90px;
     left: -100px;
-    top: 60px;
+    top: 1px;
     align-self: center;
 
     background-image: resource("wrong");
