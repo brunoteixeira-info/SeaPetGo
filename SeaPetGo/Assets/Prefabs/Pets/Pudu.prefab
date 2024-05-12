@@ -387,6 +387,7 @@ GameObject:
   - component: {fileID: 6118782605067917423}
   - component: {fileID: 1716547477836384824}
   - component: {fileID: 2749956492749635734}
+  - component: {fileID: 6735828073771798712}
   m_Layer: 0
   m_Name: Pudu
   m_TagString: Untagged
@@ -484,7 +485,7 @@ MonoBehaviour:
   - Property: {fileID: -8236834929619004153, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 9189313801355526711
+      rid: 9189313855929450963
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -495,10 +496,31 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 9189313801355526711
+    - rid: 9189313855929450963
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: Pudu
+--- !u!65 &6735828073771798712
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5085887513842435443}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &5570923025711662406
 GameObject:
   m_ObjectHideFlags: 0

@@ -50,6 +50,7 @@ function GetPet()
     end
 
     local petStats = newPet.gameObject:GetComponent(PetBehaviour)
+    uiPetObtained.SetGachapon(self)
     uiPetObtained.SetPet(petStats.Name, petStats.Power, petStats.Rarity)
 end
 
@@ -81,7 +82,7 @@ end
 
 function DenyPet()
     print("Deny Pet")
-    Object.Destroy(newPet)
+    Object.Destroy(newPet.gameObject)
 end
 
 function self:ClientAwake()
@@ -92,6 +93,6 @@ end
 
 function self:ClientStart()
     local uiObj = GameObject.Find("UIManager")
-    uiPetObtained = uiObj:GetComponent(UIPetObtained)
-    uiGachapon:GetComponent(UIGachapon).SetPlayerShellsNeeded(petRollCost)
+    uiPetObtained = uiObj:GetComponent("UIPetObtained")
+    uiGachapon:GetComponent("UIGachapon").SetPlayerShellsNeeded(petRollCost)
 end

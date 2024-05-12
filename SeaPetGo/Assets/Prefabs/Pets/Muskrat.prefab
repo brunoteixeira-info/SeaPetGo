@@ -553,6 +553,7 @@ GameObject:
   - component: {fileID: 4854664572750744606}
   - component: {fileID: 4211523874502535663}
   - component: {fileID: 5509298795521202236}
+  - component: {fileID: -8338638251997540968}
   m_Layer: 0
   m_Name: Muskrat
   m_TagString: Untagged
@@ -650,7 +651,7 @@ MonoBehaviour:
   - Property: {fileID: -8236834929619004153, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 9189313801355526709
+      rid: 9189313855929450961
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -661,10 +662,31 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 9189313801355526709
+    - rid: 9189313855929450961
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: Muskrat
+--- !u!65 &-8338638251997540968
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6331825049418754682}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!1 &7848230466346444780
 GameObject:
   m_ObjectHideFlags: 0

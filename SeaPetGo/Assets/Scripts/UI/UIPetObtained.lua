@@ -29,8 +29,6 @@ function SetPet(name, power, rarity)
 end
 
 function self:ClientStart()
-    local gachaponObj = GameObject.Find("Gachapon")
-    gachapon = gachaponObj.gameObject:GetComponent(Gachapon)
     buttonPetAccept:RegisterPressCallback(function () AcceptPet() end)
     buttonPetRelease:RegisterPressCallback(function () DenyPet() end)
     containerPet:AddToClassList("hide")
@@ -48,4 +46,8 @@ end
 
 function HideUI()
     containerPet:AddToClassList("hide")
+end
+
+function SetGachapon(gachaponObj)
+    gachapon = gachaponObj.gameObject:GetComponent(Gachapon)
 end

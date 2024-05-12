@@ -5,6 +5,8 @@ local pileMesh : MeshRenderer = nil
 local pileCollider : Collider = nil
 --!SerializeField
 local shells : number = 20
+--!SerializeField
+local parentObj : string = ""
 
 local pearlsInside : number = 0
 
@@ -12,14 +14,12 @@ local Timed : boolean = false
 local shellsInside
 local hp
 local timer = 10
-local spawnerScript = nil
 local petPower = 1;
 
 local gameManagerScript : module = require("GameManager")
 local lastPetInteracted : PetBehaviour = nil
 
 function SetPile()
-    spawnerScript = self.gameObject:GetComponentInParent(StageManager)
     shellsInside = math.random(shells - 10, shells + 10)
     pearlsInside = shellsInside * 0.1
     hp = shellsInside
@@ -28,8 +28,9 @@ function SetPile()
     UpdateSize(hp)
 end
 
-function SetSpawnAndPile(spawnerObj)
-    spawnerScript = spawnerObj.gameObject:GetComponent(StageManager)
+function SetSpawnAndPile(spawnerObj, parent)
+    self.gameObject.transform:SetParent(spawnerObj.transform)
+    parentObj = parent
     shellsInside = math.random(shells - 10, shells + 10)
     hp = shellsInside
     timer = hp/1.5
@@ -72,7 +73,7 @@ function self:Update()
             lastPetInteracted.SetTarget(client.localPlayer.character.gameObject)
             gameManagerScript.AddShells(shellsInside)
             gameManagerScript.AddPearls(pearlsInside)
-            spawnerScript.SpawnPile(self.transform.position)
+            GameObject.Find(parentObj):GetComponent(StageManager).SpawnPile(self.transform.position, parentObj)
             Object.Destroy(self.gameObject)
         end
     end

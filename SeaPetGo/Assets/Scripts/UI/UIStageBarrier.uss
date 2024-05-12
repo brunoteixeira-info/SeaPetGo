@@ -15,5 +15,5 @@
     top: -30px;
     align-self: center;
 
-    background-image: resource("playerShells");
+    background-image: url("project://database/Assets/UI/playerShells.png");
 }

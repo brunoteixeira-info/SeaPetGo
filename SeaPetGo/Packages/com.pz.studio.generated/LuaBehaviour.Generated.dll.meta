@@ -14,23 +14,15 @@ PluginImporter:
       type: 3}
     Highrise.Lua.Generated.HighriseCameraController: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
-    Highrise.Lua.Generated.NewLuaScript: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
-      type: 3}
     Highrise.Lua.Generated.PetBehaviour: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.PetManager: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
-      type: 3}
-    Highrise.Lua.Generated.Pets: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.Pile: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.PlayerCharacterController: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.PlayerCharacterSpawner: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
-      type: 3}
-    Highrise.Lua.Generated.PlayerInventory: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
-      type: 3}
-    Highrise.Lua.Generated.PlayerManager: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.RTSCamera: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
@@ -42,17 +34,15 @@ PluginImporter:
       type: 3}
     Highrise.Lua.Generated.UIManager: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
-    Highrise.Lua.Generated.UINewView: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
-      type: 3}
     Highrise.Lua.Generated.UIPetInventory: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.UIPetObtained: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
-    Highrise.Lua.Generated.UIPetSlot: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
-      type: 3}
     Highrise.Lua.Generated.UIStageBarrier: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.UIStageUnlock: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
+      type: 3}
+    Highrise.Lua.Generated.UITutorial: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
   executionOrder: {}
   defineConstraints: []

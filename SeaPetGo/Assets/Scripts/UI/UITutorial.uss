@@ -19,18 +19,16 @@
     height: 150px;
     top: -90px;
     align-self: center;
-   
-    background-image: resource("panel_top");
+    background-image: url("project://database/Assets/UI/panel_top.png");
 }
 
 .tutorial #buttonTutorial{
     width: 40px;
     height: 40px;
     top: 10px;
-    left: 100px;
+    left: 0px;
     align-self: flex-end;
-
-    background-image: resource("buttonTutorial");
+    background-image: url("project://database/Assets/UI/buttonTutorial.png");
 }
 
 .tutorial #buttonNextPage{
@@ -39,8 +37,7 @@
     left: 100px;
     top: -50px;
     align-self: center;
-
-    background-image: resource("buttonEquip");
+    background-image: url("project://database/Assets/UI/buttonEquip.png");
 }
 
 .tutorial #textButtonNextPage{
@@ -58,8 +55,7 @@
     left: -100px;
     top: -130px;
     align-self: center;
-
-    background-image: resource("buttonRelease");
+    background-image: url("project://database/Assets/UI/buttonRelease.png");
 }
 
 .tutorial #textButtonPreviousPage{
@@ -76,8 +72,7 @@
     height: 300px;
     top: 0px;
     align-self: center;
-
-    background-image: resource("panel");
+    background-image: url("project://database/Assets/UI/panel.png");
 }
 
 .tutorial #textPanel1, #textPanel2, #textPanel3, #textPanel4, #textPanel5, #textPanel6{

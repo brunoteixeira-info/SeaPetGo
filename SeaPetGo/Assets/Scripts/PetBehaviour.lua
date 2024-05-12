@@ -6,6 +6,10 @@ local target : GameObject = nil
 local gameManagerScript : module = require("GameManager")
 local petManager : module = require("PetManager")
 
+Name = "Pet"
+Power = 0
+Rarity = "Common"
+
 function SetTarget(targetToFollow)
     target = targetToFollow
     print("Target: " .. target.name)

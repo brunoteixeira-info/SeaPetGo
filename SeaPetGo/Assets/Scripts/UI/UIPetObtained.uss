@@ -8,8 +8,7 @@
     height: 500px;
     top: auto;
     align-self: center;
-
-    background-image: resource("background");
+    background-image: url("project://database/Assets/UI/background.jpg");
 }
 
 .pet-obtained #textPetPower{
@@ -35,8 +34,7 @@
     height: 150px;
     top: 0px;
     align-self: center;
-
-    background-image: resource("playerShells");
+    background-image: url("project://database/Assets/UI/playerShells.png");
 }
 
 .pet-obtained #imagePetName{
@@ -44,8 +42,7 @@
     height: 200px;
     top: 50px;
     align-self: center;
-
-    background-image: resource("nameTag");
+    background-image: url("project://database/Assets/UI/nameTag.png");
 }
 
 .pet-obtained #textPetName{
@@ -62,8 +59,7 @@
     left: -80px;
     top: 90px;
     align-self: center;
-
-    background-image: resource("wrong");
+    background-image: url("project://database/Assets/UI/wrong.png");
 }
 
 .pet-obtained #buttonPetAccept{
@@ -72,8 +68,7 @@
     left: 80px;
     top: 0px;
     align-self: center;
-
-    background-image: resource("correct");
+    background-image: url("project://database/Assets/UI/correct.png");
 }
 
 .hide{

@@ -7,7 +7,7 @@
     top: auto;
     align-self: center;
 
-    background-image: resource("panel");
+    background-image: url("project://database/Assets/UI/panel.png");
 }
 
 .stageUnlock #textStageUnlock{
@@ -25,7 +25,7 @@
     top: 91px;
     align-self: center;
 
-    background-image: resource("correct");
+    background-image: url("project://database/Assets/UI/correct.png");
 }
 
 .stageUnlock #buttonStageUnlockDeny{
@@ -35,7 +35,7 @@
     top: 1px;
     align-self: center;
 
-    background-image: resource("wrong");
+    background-image: url("project://database/Assets/UI/wrong.png");
 }
 
 .hide{

@@ -5,8 +5,8 @@ local textPlayerShells : UILabel = nil
 --!Bind
 local textPlayerPearls : UILabel = nil
 
-textPlayerShells:SetPrelocalizedText("000000")
-textPlayerPearls:SetPrelocalizedText("000000")
+textPlayerShells:SetPrelocalizedText("100")
+textPlayerPearls:SetPrelocalizedText("0")
 
 function SetPlayerShells(shells)
     textPlayerShells:SetPrelocalizedText(shells)

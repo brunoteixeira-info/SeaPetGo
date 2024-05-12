@@ -195,7 +195,7 @@ function self:ServerAwake()
         local playerInfo = players[player]
         local playerPets = playerPets[player]
         print("Check AddPet #2 - " .. pet)
-        for i=1,2 do
+        for i=1,1 do
             playerPets[player] = {}
 
             for j=1,20 do

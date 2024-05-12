@@ -179,15 +179,19 @@ MonoBehaviour:
   - Property: {fileID: 1683439976544081063, guid: 041090b23ea15d2479f94c982537c760,
       type: 3}
     Value:
-      rid: 9189313801325380434
+      rid: 9189313855928140071
   - Property: {fileID: 5392628201623073620, guid: 041090b23ea15d2479f94c982537c760,
       type: 3}
     Value:
-      rid: 9189313801325380435
+      rid: 9189313855928140072
   - Property: {fileID: 515918735956853257, guid: 041090b23ea15d2479f94c982537c760,
       type: 3}
     Value:
-      rid: 9189313801325380436
+      rid: 9189313855928140073
+  - Property: {fileID: 6803419050911605697, guid: 041090b23ea15d2479f94c982537c760,
+      type: 3}
+    Value:
+      rid: 9189313855928140074
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -195,25 +199,30 @@ MonoBehaviour:
   m_pileMesh: {fileID: 735833731370083345}
   m_pileCollider: {fileID: 2404056560468474025}
   m_shells: 20
+  m_parentObj: 
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 9189313801325380434
+    - rid: 9189313855928140071
       type: {class: MeshRendererGlue/MeshRendererLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
         _value: {fileID: 735833731370083345}
-    - rid: 9189313801325380435
+    - rid: 9189313855928140072
       type: {class: ColliderGlue/ColliderLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
         _value: {fileID: 2404056560468474025}
-    - rid: 9189313801325380436
+    - rid: 9189313855928140073
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 20
+    - rid: 9189313855928140074
+      type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: 
 --- !u!114 &-3345164535401370049
 MonoBehaviour:
   m_ObjectHideFlags: 0

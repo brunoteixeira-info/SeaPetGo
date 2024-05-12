@@ -16,11 +16,11 @@
     margin-left: auto;
     width: 84px;
     height: 26px;
-    left: -20px;
-    top: -40px;
+    left: 70px;
+    top: -34px;
     align-self: center;
 
-    background-image: resource("containerPlayer");
+    background-image: url("project://database/Assets/UI/containerPlayer.png");
 }
 
 .manager #imagePlayerShells{
@@ -30,7 +30,7 @@
     top: -8px;
     align-self: start;
 
-    background-image: resource("playerShells");
+    background-image: url("project://database/Assets/UI/playerShells.png");
 }
 
 .manager {
@@ -50,11 +50,11 @@
     margin-top: auto;
     width: 84px;
     height: 26px;
-    left: 300px;
-    top: -65px;
+    left: 280px;
+    top: -60px;
     align-self: center;
 
-    background-image: resource("containerPlayer");
+    background-image: url("project://database/Assets/UI/containerPlayer.png");
 }
 
 .manager #imagePlayerPearls{
@@ -64,5 +64,5 @@
     top: -8px;
     align-self: start;
 
-    background-image: resource("playerPearls");
+    background-image: url("project://database/Assets/UI/playerPearls.png");
 }

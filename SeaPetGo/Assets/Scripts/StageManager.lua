@@ -22,7 +22,7 @@ local uiStageUnlock : UIStageUnlock
 
 local gameManagerScript : module = require("GameManager")
 
-function SpawnPile(oldPilePos)
+function SpawnPile(oldPilePos, parent)
     local pileRoll = math.random(1,100)
     local newPile = nil
     if pileRoll <= pileSmallChance then
@@ -37,7 +37,7 @@ function SpawnPile(oldPilePos)
     end
     newPile.transform.position = oldPilePos
     local pileScript = newPile:GetComponent("Pile")
-    pileScript.SetSpawnAndPile(self.gameObject)
+    pileScript.SetSpawnAndPile(self.gameObject, parent)
 end
 
 function UnlockStage()
@@ -58,13 +58,17 @@ function ManagerResponse(response)
 end
 
 function self:ClientStart()
-    local stageBarrierName = "Stage" .. stage .. "Barrier"
+    local stageBarrierName = self.gameObject.name .. "Barrier"
     stageBarrier = GameObject.Find(stageBarrierName)
-    uiStageUnlock = stageBarrier.gameObject:GetComponent(UIStageUnlock)
-    uiStageUnlock.SetShellsRequired(shellsRequired)
-    uiStageUnlock.SetStage(stage)
-    stageBarrierName = "UI" .. stageBarrierName
-    local stageBarrierUI = GameObject.Find(stageBarrierName)
-    uiStageBarrier = stageBarrierUI:GetComponentInChildren(UIStageBarrier)
-    uiStageBarrier.SetStageBarrierText(shellsRequired)
+    if(stageBarrier ~= nil) then
+        uiStageUnlock = stageBarrier.gameObject:GetComponent(UIStageUnlock)
+        uiStageUnlock.SetShellsRequired(shellsRequired)
+        uiStageUnlock.SetStage(stage)
+        stageBarrierName = "UI" .. stageBarrierName
+        local stageBarrierUI = GameObject.Find(stageBarrierName)
+        if(stageBarrierUI ~= nil) then
+            uiStageBarrier = stageBarrierUI:GetComponentInChildren(UIStageBarrier)
+            uiStageBarrier.SetStageBarrierText(shellsRequired)
+        end
+    end
 end

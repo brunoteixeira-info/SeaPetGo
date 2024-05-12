@@ -358,6 +358,7 @@ GameObject:
   - component: {fileID: 3067922073814433170}
   - component: {fileID: 663599601221006968}
   - component: {fileID: 8568927142872627188}
+  - component: {fileID: 1669209262397250763}
   m_Layer: 0
   m_Name: Taipan
   m_TagString: Untagged
@@ -455,7 +456,7 @@ MonoBehaviour:
   - Property: {fileID: -8236834929619004153, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 9189313801353167715
+      rid: 9189313855928926790
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -466,10 +467,31 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 9189313801353167715
+    - rid: 9189313855928926790
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: Taipan
+--- !u!65 &1669209262397250763
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2634336357526692565}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1.1}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &4184589047855204289
 GameObject:
   m_ObjectHideFlags: 0
