@@ -26,6 +26,7 @@ local uiGachapon : GameObject = nil
 local gameManagerScript : module = require("GameManager")
 local petManagerScript : module = require("PetManager")
 local uiPetObtained : UIPetObtained
+local uiPetUnlock : UIPetUnlock
 local newPet : GameObject
 
 function GetPet()
@@ -64,8 +65,10 @@ function ManagerResponse(response)
         print("Bought a Pet")
         GetPet()
         gameManagerScript.AddShells(-petRollCost)
+        uiPetUnlock.DenyUnlockStage()
     else
         print("Not Enough Shells for Pet")
+        uiPetUnlock.DontUnlockStage()
     end
 end
 
@@ -85,14 +88,10 @@ function DenyPet()
     Object.Destroy(newPet.gameObject)
 end
 
-function self:ClientAwake()
-    self.gameObject:GetComponent(TapHandler).Tapped:Connect(function() 
-        BuyPet()
-    end)
-end
-
 function self:ClientStart()
     local uiObj = GameObject.Find("UIManager")
     uiPetObtained = uiObj:GetComponent("UIPetObtained")
     uiGachapon:GetComponent("UIGachapon").SetPlayerShellsNeeded(petRollCost)
+    uiPetUnlock = self.gameObject:GetComponent("UIPetUnlock")
+    uiPetUnlock.SetGachapon(petRollCost)
 end

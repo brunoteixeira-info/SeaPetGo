@@ -4,6 +4,8 @@ local textPanelTop : UILabel = nil
 --!Bind
 local buttonTutorial : UIButton = nil
 --!Bind
+local buttonClose : UIButton = nil
+--!Bind
 local buttonPreviousPage : UIButton = nil
 --!Bind
 local textButtonPreviousPage : UILabel = nil
@@ -71,14 +73,11 @@ textPanel5:SetPrelocalizedText("After obtaining a Pet,\nequip them by opening th
 textPanel6:SetPrelocalizedText("  With that said, you can open up the\n  next step of your journey with shells.\n  Find the big yellow barrier and\n  spend some so you can keep going!\n  With each stage there's\n  new Pets available! Good luck!")
 
 function self:ClientStart()
-    for i = 1, #pages do
+    for i = 2, #pages do
         pages[i].panel:AddToClassList("hide")
     end
 
-    buttonNextPage:AddToClassList("hide")
-    buttonPreviousPage:AddToClassList("hide")
-    tutorialPanelTop:AddToClassList("hide")
-
+    buttonClose:RegisterPressCallback(function () CloseTutorial() end)   
     buttonTutorial:RegisterPressCallback(function () SetPage(1) end)   
     buttonNextPage:RegisterPressCallback(function () SetPage(currentPage + 1) end)   
     buttonPreviousPage:RegisterPressCallback(function () SetPage(currentPage - 1) end)   
@@ -86,22 +85,32 @@ end
 
 function SetPage(page)
     print(page)
-    if(page <= 0 or page > #pages) then
-        for i = 1, #pages do
-            pages[i].panel:AddToClassList("hide")
-            buttonNextPage:AddToClassList("hide")
-            buttonPreviousPage:AddToClassList("hide")
-            tutorialPanelTop:AddToClassList("hide")
-        end
-    else
-        buttonNextPage:RemoveFromClassList("hide")
-        buttonPreviousPage:RemoveFromClassList("hide")
-        tutorialPanelTop:RemoveFromClassList("hide")
 
-        pages[currentPage].panel:AddToClassList("hide")
-        currentPage = page
-        textPanelTop:SetPrelocalizedText(pages[currentPage].name)
-        pages[currentPage].panel:RemoveFromClassList("hide")    
+    if(page <= 0) then
+        page = #pages 
     end
+
+    if(page > #pages) then
+        page = 1
+    end
+
+    buttonNextPage:RemoveFromClassList("hide")
+    buttonPreviousPage:RemoveFromClassList("hide")
+    tutorialPanelTop:RemoveFromClassList("hide")
+    buttonTutorial:AddToClassList("hide")
+
+    pages[currentPage].panel:AddToClassList("hide")
+    currentPage = page
+    textPanelTop:SetPrelocalizedText(pages[currentPage].name)
+    pages[currentPage].panel:RemoveFromClassList("hide")    
 end
 
+function CloseTutorial()
+    buttonNextPage:AddToClassList("hide")
+    buttonPreviousPage:AddToClassList("hide")
+    tutorialPanelTop:AddToClassList("hide")
+    for i = 1, #pages do
+        pages[i].panel:AddToClassList("hide")
+    end
+    buttonTutorial:RemoveFromClassList("hide")
+end

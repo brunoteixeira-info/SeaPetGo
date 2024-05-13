@@ -63,6 +63,9 @@
         </hr:UILabel>
     </hr:UIButton>
 
+    <hr:UIButton name="buttonClose">
+    </hr:UIButton>
+
     <hr:UIButton name="buttonTutorial">
     </hr:UIButton>
 

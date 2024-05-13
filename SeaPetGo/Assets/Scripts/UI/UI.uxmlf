@@ -7,3 +7,4 @@
 @import url("/Assets/Scripts/UI/UIPetSlot.uxml");
 @import url("/Assets/Scripts/UI/UIGachapon.uxml");
 @import url("/Assets/Scripts/UI/UITutorial.uxml");
+@import url("/Assets/Scripts/UI/UIPetUnlock.uxml");

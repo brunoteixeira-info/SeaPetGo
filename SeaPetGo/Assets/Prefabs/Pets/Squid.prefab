@@ -401,7 +401,7 @@ MonoBehaviour:
   - Property: {fileID: -8236834929619004153, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 9189313855928926788
+      rid: 9189313874990990114
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -412,7 +412,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 9189313855928926788
+    - rid: 9189313874990990114
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: Squid
