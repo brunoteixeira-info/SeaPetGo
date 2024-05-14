@@ -52,7 +52,7 @@ function GetPet()
 
     local petStats = newPet.gameObject:GetComponent(PetBehaviour)
     uiPetObtained.SetGachapon(self)
-    uiPetObtained.SetPet(petStats.Name, petStats.Power, petStats.Rarity)
+    uiPetObtained.SetPet(petManagerScript.GetPet(petStats.Name))
 end
 
 function BuyPet()

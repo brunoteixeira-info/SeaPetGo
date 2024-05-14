@@ -1,5 +1,8 @@
 --!SerializeField
 local petName : string = "Pet"
+--!SerializeField
+local uiPet : GameObject = nil
+local uiPetScript : UIPetCollected = nil
 
 local target : GameObject = nil
 
@@ -20,6 +23,10 @@ function FindAndSetTarget(targetName)
     print("Target: " .. target.name)
 end
 
+function SetCollected(shells, pearls)
+    uiPetScript.SetCollected(shells, pearls)
+end
+
 function self:ClientAwake()
     local petObtained = petManager.GetPet(petName)
     Name = petObtained.name
@@ -30,6 +37,7 @@ end
 function self:ClientStart()
     SetTarget(client.localPlayer.character.gameObject)
     self.gameObject.transform:SetParent(client.localPlayer.character.gameObject.transform)
+    uiPetScript = uiPet.gameObject:GetComponent("UIPetCollected")
 end
 
 function self:ClientLateUpdate()

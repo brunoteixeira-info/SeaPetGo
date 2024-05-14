@@ -71,6 +71,7 @@ function self:Update()
         else
             --Timer Ended
             lastPetInteracted.SetTarget(client.localPlayer.character.gameObject)
+            lastPetInteracted.SetCollected(shellsInside, pearlsInside)
             gameManagerScript.AddShells(shellsInside)
             gameManagerScript.AddPearls(pearlsInside)
             GameObject.Find(parentObj):GetComponent(StageManager).SpawnPile(self.transform.position, parentObj)

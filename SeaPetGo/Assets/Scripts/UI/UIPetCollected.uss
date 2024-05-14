@@ -1,0 +1,36 @@
+.pet-collected {
+}
+
+.pet-collected #imageShellsCollected{
+    width: 150px;
+    height: 150px;
+    top: 0px;
+    align-self: center;
+
+    background-image: url("project://database/Assets/UI/playerShells.png");
+}
+
+.pet-collected #textShellsCollected{
+    color: rgba(0,0,0,1);
+    font-size: 300%;
+    letter-spacing: 5%;
+    top: 30px;
+    left: 30px;
+}
+
+.pet-collected #imagePearlsCollected{
+    width: 150px;
+    height: 150px;
+    top: 0px;
+    align-self: center;
+
+    background-image: url("project://database/Assets/UI/playerPearls.png");
+}
+
+.pet-collected #textPearlsCollected{
+    color: rgba(0,0,0,1);
+    font-size: 300%;
+    letter-spacing: 5%;
+    top: 30px;
+    left: 30px;
+}

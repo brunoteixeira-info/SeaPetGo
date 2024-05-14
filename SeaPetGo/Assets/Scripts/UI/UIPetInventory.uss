@@ -148,7 +148,6 @@
     top: -70px;
     left: -25px;
     align-self: flex-end;
-    background-image: url("project://database/Assets/UI/playerShells.png");
 }
 
 .pet-inventory #textPetInfoRarity{
@@ -206,6 +205,15 @@
     top: -15px;
     align-self: center;
     background-image: url("project://database/Assets/UI/playerShells.png");
+}
+
+.textPetSlotName{
+    color: rgba(0,0,0,1);
+    font-size: 50%;
+    letter-spacing: 5%;
+    left: -5px;
+    top: 35px;
+    align-self: center;
 }
 
 .textPetSlotRarity{

@@ -8,3 +8,4 @@
 @import url("/Assets/Scripts/UI/UIGachapon.uxml");
 @import url("/Assets/Scripts/UI/UITutorial.uxml");
 @import url("/Assets/Scripts/UI/UIPetUnlock.uxml");
+@import url("/Assets/Scripts/UI/UIPetCollected.uxml");

@@ -10,6 +10,8 @@ local containerPetSlot : UIButton = nil
 --!Bind
 local imagePetSlot : UIImage = nil
 --!Bind
+local textPetSlotName : UILabel = nil
+--!Bind
 local textPetSlotRarity : UILabel = nil
 --!Bind
 local textPetSlotPower : UILabel = nil
@@ -30,6 +32,8 @@ local buttonPlayerPets : UILabel = nil
 --!Bind
 local containerPetInfo : UIButton = nil
 --!Bind
+local imagePetInfo : UIImage = nil
+--!Bind
 local textPetInfoRarity : UILabel = nil
 --!Bind
 local textPetInfoPower : UILabel = nil
@@ -42,6 +46,7 @@ petsOwned = {}
 
 textPetEquipped:SetPrelocalizedText("Pet")
 
+textPetSlotName:SetPrelocalizedText("Name")
 textPetSlotRarity:SetPrelocalizedText("Rarity")
 textPetSlotPower:SetPrelocalizedText("Power")
 
@@ -97,7 +102,8 @@ function ReleasePet()
     print("Releasing Pet from Inventory")
     petsOwned[selectedPetIndex].petName = "Pet"
     petsOwned[selectedPetIndex].uiSlot.name = "Slot" .. selectedPetIndex
-    petsOwned[selectedPetIndex].uiSlot:RegisterPressCallback(function () end)        
+    petsOwned[selectedPetIndex].uiSlot:RegisterPressCallback(function () end)
+    petsOwned[selectedPetIndex].uiSlotPetTextName:SetPrelocalizedText("")        
     petsOwned[selectedPetIndex].uiSlotPetTextPower:SetPrelocalizedText("")
     petsOwned[selectedPetIndex].uiSlotPetTextRarity:SetPrelocalizedText("")
     
@@ -120,6 +126,10 @@ function CreatePetSlots()
         local imageSlotPet = UIImage.new()
         imageSlotPet:AddToClassList("imagePetSlot")
         slotPet:Add(imageSlotPet)
+
+        local textPetSlotName = UILabel.new()
+        textPetSlotName:AddToClassList("textPetSlotName")
+        imageSlotPet:Add(textPetSlotName)
     
         local textPetSlotPower = UILabel.new()
         textPetSlotPower:AddToClassList("textPetSlotPower")
@@ -130,7 +140,7 @@ function CreatePetSlots()
         textPetSlotRarity:SetPrelocalizedText("Rarity")
         imageSlotPet:Add(textSlotPetRarity)
     
-        petInfo = { index = i, petName = "Pet", uiSlot = slotPet, uiSlotImagePet = imageSlotPet, uiSlotPetTextPower = textPetSlotPower, uiSlotPetTextRarity = textSlotPetRarity} 
+        petInfo = { index = i, petName = "Pet", uiSlot = slotPet, uiSlotImagePet = imageSlotPet, uiSlotPetTextName = textPetSlotName, uiSlotPetTextPower = textPetSlotPower, uiSlotPetTextRarity = textSlotPetRarity} 
         petsOwned[i] = petInfo
 
         j = j + 1
@@ -151,7 +161,9 @@ function FillPetSlot(pet)
             
             petsOwned[i].petName = pet
             petsOwned[i].uiSlot.name = pet
-            petsOwned[i].uiSlot:RegisterPressCallback(function () SetPet(petsOwned[i].uiSlot.name, petsOwned[i].index) end)        
+            petsOwned[i].uiSlot:RegisterPressCallback(function () SetPet(petsOwned[i].uiSlot.name, petsOwned[i].index) end)    
+            petsOwned[i].uiSlotImagePet.image = petObtained.sprite
+            petsOwned[i].uiSlotPetTextName:SetPrelocalizedText(pet) 
             petsOwned[i].uiSlotPetTextPower:SetPrelocalizedText(petObtained.cPower)
             petsOwned[i].uiSlotPetTextRarity:SetPrelocalizedText(petObtained.rarity)
             
@@ -165,6 +177,7 @@ end
 
 function SetPet(pet, index)
     local petObtained = petManagerScript.GetPet(pet)
+    imagePetInfo.image = petObtained.sprite
     textPetEquipped:SetPrelocalizedText(petObtained.name)
     textPetInfoPower:SetPrelocalizedText(petObtained.cPower)
     textPetInfoRarity:SetPrelocalizedText(petObtained.rarity)

@@ -13,20 +13,18 @@
 
 .pet-obtained #textPetPower{
     color: rgba(0,0,0,1);
-    font-size: 500%;
+    font-size: 100%;
     letter-spacing: 5%;
-    left: auto;
-    top: auto;
-    align-self: center;
+    top: 25px;
+    left: 170px;
 }
 
 .pet-obtained #textPetRarity{
     color: rgba(0,0,0,1);
-    font-size: 500%;
+    font-size: 100%;
     letter-spacing: 5%;
-    left: auto;
-    top: auto;
-    align-self: center;
+    top: 5px;
+    left: 30px;
 }
 
 .pet-obtained #imagePet{
@@ -34,7 +32,6 @@
     height: 150px;
     top: 0px;
     align-self: center;
-    background-image: url("project://database/Assets/UI/playerShells.png");
 }
 
 .pet-obtained #imagePetName{

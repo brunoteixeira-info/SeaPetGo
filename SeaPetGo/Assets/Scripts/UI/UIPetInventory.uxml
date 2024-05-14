@@ -27,6 +27,9 @@
         
         <hr:UIButton name="containerPetSlot">
             <hr:UIImage name="imagePetSlot" picking-mode="Ignore">
+                <hr:UILabel name="textPetSlotName" picking-mode="Ignore">
+                </hr:UILabel>
+
                 <hr:UILabel name="textPetSlotRarity" picking-mode="Ignore">
                 </hr:UILabel>
             

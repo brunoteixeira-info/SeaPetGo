@@ -4,6 +4,8 @@ local contPetObtained : UIImage = nil
 --!Bind
 local containerPet : UIImage = nil
 --!Bind
+local imagePet : UIImage = nil
+--!Bind
 local textPetPower : UILabel = nil
 --!Bind
 local textPetRarity : UILabel = nil
@@ -20,11 +22,12 @@ textPetName:SetPrelocalizedText("Colobus")
 textPetPower:SetPrelocalizedText("000")
 textPetRarity:SetPrelocalizedText("C")
 
-function SetPet(name, power, rarity)
+function SetPet(pet)
     --print("Pet: " .. name .. ", Power: " power .. ", Rarity: " .. rarity)
-    textPetName:SetPrelocalizedText(name)
-    textPetPower:SetPrelocalizedText(textPetPower)
-    textPetRarity:SetPrelocalizedText(textPetRarity)
+    textPetName:SetPrelocalizedText(pet.name)
+    textPetPower:SetPrelocalizedText(pet.cPower)
+    textPetRarity:SetPrelocalizedText(pet.rarity)
+    imagePet.image = pet.sprite
     containerPet:RemoveFromClassList("hide")
 end
 
