@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.pz.studio": {
-      "version": "0.7.4",
+      "version": "0.7.5",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -156,6 +156,13 @@
         "com.unity.modules.unityanalytics": "1.0.0",
         "com.unity.nuget.mono-cecil": "1.11.4"
       },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.device-simulator.devices": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.ext.nunit": {

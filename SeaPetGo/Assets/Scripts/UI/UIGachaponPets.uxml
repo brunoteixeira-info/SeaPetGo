@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UILuaView class="gachapon-pets">
+    <hr:UIImage name="containerPetSlot">
+        <hr:UIImage name="imagePetSlot" picking-mode="Ignore">
+        </hr:UIImage>
+        
+        <hr:UILabel name="textPetSlotProbability" picking-mode="Ignore">
+        </hr:UILabel>
+    </hr:UIImage>
+
+    <hr:UIImage name="containerPetSlot2">
+        <hr:UIImage name="imagePetSlot2" picking-mode="Ignore">
+        </hr:UIImage>
+        
+        <hr:UILabel name="textPetSlotProbability2" picking-mode="Ignore">
+        </hr:UILabel>
+    </hr:UIImage>
+
+    <hr:UIImage name="containerPetSlot3">
+        <hr:UIImage name="imagePetSlot3" picking-mode="Ignore">
+        </hr:UIImage>
+        
+        <hr:UILabel name="textPetSlotProbability3" picking-mode="Ignore">
+        </hr:UILabel>
+    </hr:UIImage>
+
+    <hr:UIImage name="containerPetSlot4">
+        <hr:UIImage name="imagePetSlot4" picking-mode="Ignore">
+        </hr:UIImage>
+        
+        <hr:UILabel name="textPetSlotProbability4" picking-mode="Ignore">
+        </hr:UILabel>
+    </hr:UIImage>
+
+    <hr:UIImage name="containerPetSlot5">
+        <hr:UIImage name="imagePetSlot5" picking-mode="Ignore">
+        </hr:UIImage>
+        
+        <hr:UILabel name="textPetSlotProbability5" picking-mode="Ignore">
+        </hr:UILabel>
+    </hr:UIImage>
+  </hr:UILuaView>
+
+</UXML>

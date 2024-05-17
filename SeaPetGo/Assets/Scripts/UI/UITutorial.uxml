@@ -16,41 +16,43 @@
     <hr:UIImage name="tutorialPanel1" picking-mode="Ignore">
         <hr:UILabel name="textPanel1" picking-mode="Ignore">
         </hr:UILabel>
+        <hr:UIImage name="imagePanel1" picking-mode="Ignore">
+        </hr:UIImage>
     </hr:UIImage>
 
     <hr:UIImage name="tutorialPanel2" picking-mode="Ignore">
-        <hr:UIImage name="imagePanel2" picking-mode="Ignore">
-        </hr:UIImage>
         <hr:UILabel name="textPanel2" picking-mode="Ignore">
         </hr:UILabel>
+        <hr:UIImage name="imagePanel2" picking-mode="Ignore">
+        </hr:UIImage>
     </hr:UIImage>
 
     <hr:UIImage name="tutorialPanel3" picking-mode="Ignore">
-        <hr:UIImage name="imagePanel3" picking-mode="Ignore">
-        </hr:UIImage>
         <hr:UILabel name="textPanel3" picking-mode="Ignore">
         </hr:UILabel>
+        <hr:UIImage name="imagePanel3" picking-mode="Ignore">
+        </hr:UIImage>
     </hr:UIImage>
 
     <hr:UIImage name="tutorialPanel4" picking-mode="Ignore">
-        <hr:UIImage name="imagePanel4" picking-mode="Ignore">
-        </hr:UIImage>
         <hr:UILabel name="textPanel4" picking-mode="Ignore">
         </hr:UILabel>
+        <hr:UIImage name="imagePanel4" picking-mode="Ignore">
+        </hr:UIImage>
     </hr:UIImage>
 
     <hr:UIImage name="tutorialPanel5" picking-mode="Ignore">
-        <hr:UIImage name="imagePanel5" picking-mode="Ignore">
-        </hr:UIImage>
         <hr:UILabel name="textPanel5" picking-mode="Ignore">
         </hr:UILabel>
+        <hr:UIImage name="imagePanel5" picking-mode="Ignore">
+        </hr:UIImage>
     </hr:UIImage>
 
     <hr:UIImage name="tutorialPanel6" picking-mode="Ignore">
-        <hr:UIImage name="imagePanel6" picking-mode="Ignore">
-        </hr:UIImage>
         <hr:UILabel name="textPanel6" picking-mode="Ignore">
         </hr:UILabel>
+        <hr:UIImage name="imagePanel6" picking-mode="Ignore">
+        </hr:UIImage>
     </hr:UIImage>
 
     <hr:UIButton name="buttonNextPage">

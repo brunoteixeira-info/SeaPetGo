@@ -25,7 +25,7 @@
 .tutorial #buttonClose{
     width: 40px;
     height: 40px;
-    top: -350px;
+    top: -500px;
     left: 100px;
     align-self: center;
     background-image: url("project://database/Assets/UI/wrong.png");
@@ -90,5 +90,50 @@
     letter-spacing: 5%;
     top: 20px;
     align-self: center;
+}
+
+.tutorial #imagePanel2{
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    align-self: center;
+
+    background-image: url("project://database/Assets/UI/Pets/Colobus.png");
+}
+
+.tutorial #imagePanel3{
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    align-self: center;
+
+    background-image: url("project://database/Assets/UI/sandpile.jpg");
+}
+
+.tutorial #imagePanel4{
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    align-self: center;
+
+    background-image: url("project://database/Assets/UI/gachapon.jpg");
+}
+
+.tutorial #imagePanel5{
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    align-self: center;
+
+    background-image: url("project://database/Assets/UI/inventory.png");
+}
+
+.tutorial #imagePanel6{
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    align-self: center;
+
+    background-image: url("project://database/Assets/UI/stagebarrier.jpg");
 }
 

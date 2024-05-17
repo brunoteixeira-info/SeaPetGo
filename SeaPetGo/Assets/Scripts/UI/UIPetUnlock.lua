@@ -28,10 +28,12 @@ end
 
 function TryUnlockPet()
     gachaponScript.BuyPet()
+    containerPetUnlock:AddToClassList("hide")
 end
 
 function DontUnlockPet()
     textPetUnlock:SetPrelocalizedText("Oops! You don't have enough shells!\n")
+    containerPetUnlock:RemoveFromClassList("hide")
 end
 
 function DenyUnlockPet()
@@ -41,7 +43,7 @@ function DenyUnlockPet()
 end
 
 function ResetUI()
-    textPetUnlock:SetPrelocalizedText("Do you want to spend " .. shellsRequired .. " shells\nto unlock this mysterious energy barrier?")
+    textPetUnlock:SetPrelocalizedText("Do you want to spend " .. shellsRequired .. " shells\nto get a Pet?")
 end
 
 function SetGachapon(shellsNeeded)

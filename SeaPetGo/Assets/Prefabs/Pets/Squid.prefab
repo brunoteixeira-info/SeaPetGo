@@ -52,7 +52,7 @@ MonoBehaviour:
   - Property: {fileID: 4729982146686634884, guid: cb35bc08fd48bba43a54f3602c4ee4b8,
       type: 3}
     Value:
-      rid: 9189313902058406549
+      rid: 9189313941658665145
   _uiOutput: 1
   _uiOutputSettings:
     rid: 9189313889182155424
@@ -68,7 +68,7 @@ MonoBehaviour:
         Size: {x: 512, y: 512}
         ClearColor: 0
         ClearColorValue: {r: 1, g: 1, b: 1, a: 1}
-    - rid: 9189313902058406549
+    - rid: 9189313941658665145
       type: {class: MeshRendererGlue/MeshRendererLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
@@ -525,11 +525,11 @@ MonoBehaviour:
   - Property: {fileID: -8236834929619004153, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 9189313902058406547
+      rid: 9189313941658665143
   - Property: {fileID: -4276076163394356003, guid: 2b54a80bebc94f44fa39f40fea552e53,
       type: 3}
     Value:
-      rid: 9189313902058406548
+      rid: 9189313941658665144
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -541,11 +541,11 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 9189313902058406547
+    - rid: 9189313941658665143
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: Squid
-    - rid: 9189313902058406548
+    - rid: 9189313941658665144
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:

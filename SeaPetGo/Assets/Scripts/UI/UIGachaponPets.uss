@@ -1,0 +1,136 @@
+.gachapon-pets {
+}
+
+.gachapon-pets #containerPetSlot{
+    width: 120px;
+    height: 120px;
+    top: 140px;
+    left: -70px;
+    align-self: center;
+
+    background-image: url("project://database/Assets/UI/slot.png");
+}
+
+.gachapon-pets #imagePetSlot{
+    width: 70px;
+    height: 70px;
+    top: 0px;
+    left: 0px;
+    align-self: center;
+}
+
+.gachapon-pets #textPetSlotProbability{
+    color: rgba(0,0,0,1);
+    font-size: 150%;
+    left: 0px;
+    top: 15px;
+    align-self: center;
+}
+
+.gachapon-pets #containerPetSlot2{
+    width: 120px;
+    height: 120px;
+    top: 50px;
+    left: 70px;
+    align-self: center;
+
+    background-image: url("project://database/Assets/UI/slot.png");
+}
+
+.gachapon-pets #imagePetSlot2{
+    width: 70px;
+    height: 70px;
+    top: 0px;
+    left: 0px;
+    align-self: center;
+}
+
+.gachapon-pets #textPetSlotProbability2{
+    color: rgba(0,0,0,1);
+    font-size: 150%;
+    left: 0px;
+    top: 0px;
+    align-self: center;
+}
+
+.gachapon-pets #containerPetSlot3{
+    width: 120px;
+    height: 120px;
+    top: 60px;
+    left: -70px;
+    align-self: center;
+
+    background-image: url("project://database/Assets/UI/slot.png");
+}
+
+.gachapon-pets #imagePetSlot3{
+    width: 70px;
+    height: 70px;
+    top: 0px;
+    left: 0px;
+    align-self: center;
+}
+
+.gachapon-pets #textPetSlotProbability3{
+    color: rgba(0,0,0,1);
+    font-size: 150%;
+    left: 0px;
+    top: 0px;
+    align-self: center;
+}
+
+.gachapon-pets #containerPetSlot4{
+    width: 120px;
+    height: 120px;
+    top: -30px;
+    left: 70px;
+    align-self: center;
+
+    background-image: url("project://database/Assets/UI/slot.png");
+}
+
+.gachapon-pets #imagePetSlot4{
+    width: 70px;
+    height: 70px;
+    top: 0px;
+    left: 0px;
+    align-self: center;
+}
+
+.gachapon-pets #textPetSlotProbability4{
+    color: rgba(0,0,0,1);
+    font-size: 150%;
+    left: 0px;
+    top: 0px;
+    align-self: center;
+}
+
+.gachapon-pets #containerPetSlot5{
+    width: 120px;
+    height: 120px;
+    top: -20px;
+    left: 0px;
+    align-self: center;
+
+    background-image: url("project://database/Assets/UI/slot.png");
+}
+
+.gachapon-pets #imagePetSlot5{
+    width: 70px;
+    height: 70px;
+    top: 0px;
+    left: 0px;
+    align-self: center;
+}
+
+.gachapon-pets #textPetSlotProbability5{
+    color: rgba(0,0,0,1);
+    font-size: 150%;
+    left: 0px;
+    top: 0px;
+    align-self: center;
+}
+
+.hide{
+    display: none;
+}

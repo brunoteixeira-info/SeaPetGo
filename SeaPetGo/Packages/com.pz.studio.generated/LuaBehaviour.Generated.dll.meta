@@ -14,6 +14,8 @@ PluginImporter:
       type: 3}
     Highrise.Lua.Generated.HighriseCameraController: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
+    Highrise.Lua.Generated.PearlBehaviour: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
+      type: 3}
     Highrise.Lua.Generated.PetBehaviour: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.PetManager: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
@@ -28,9 +30,13 @@ PluginImporter:
       type: 3}
     Highrise.Lua.Generated.SceneLoader: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
+    Highrise.Lua.Generated.ShellBehaviour: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
+      type: 3}
     Highrise.Lua.Generated.StageManager: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.UIGachapon: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
+      type: 3}
+    Highrise.Lua.Generated.UIGachaponPets: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.UIManager: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
@@ -41,6 +47,8 @@ PluginImporter:
     Highrise.Lua.Generated.UIPetObtained: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.UIPetUnlock: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
+      type: 3}
+    Highrise.Lua.Generated.UIPile: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.UIStageBarrier: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}

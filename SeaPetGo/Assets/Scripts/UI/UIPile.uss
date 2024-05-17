@@ -1,0 +1,18 @@
+.pile {
+}
+
+.pile #progressBar{
+    width: 200px;
+    height: 250px;
+    top: 50px;
+    align-self: center;
+}
+
+.pile #textProgressBar{
+    color: white;
+    font-size: 200%;
+    letter-spacing: 5%;
+    top: -30px;
+    left: -100px;
+    background-image: url("project://database/Assets/UI/slotEmpty.png");
+}

@@ -65,12 +65,12 @@ pages = { Page1, Page2, Page3, Page4, Page5, Page6}
 textPanelTop:SetPrelocalizedText("Tutorial")
 textButtonPreviousPage:SetPrelocalizedText("Previous")
 textButtonNextPage:SetPrelocalizedText("Next")
-textPanel1:SetPrelocalizedText("Welcome to SeaPetGo!\nYour objective is to be\nthe best shell catcher in the world!\nWith the help of cute little buddies,\nare you ready for this adventure?!")
-textPanel2:SetPrelocalizedText("Pets, your partners are very important.\nWith them you can start your journey\nand collect shells.")
-textPanel3:SetPrelocalizedText("You collect shells\nby clicking on a sandpile\nwhen you have a pet following you.")
-textPanel4:SetPrelocalizedText("But how do you obtain pets? Simple!\nJust find the red bottle and click on it\nwhen you have enough shells!\nAs a courtesy, you have 100 shells\nyou can spend right away!")
-textPanel5:SetPrelocalizedText("After obtaining a Pet,\nequip them by opening the inventory,\nselect it and click the 'Equip Button'")
-textPanel6:SetPrelocalizedText("  With that said, you can open up the\n  next step of your journey with shells.\n  Find the big yellow barrier and\n  spend some so you can keep going!\n  With each stage there's\n  new Pets available! Good luck!")
+textPanel1:SetPrelocalizedText("Welcome to SeaPetGo!\nYour objective is to be\nthe best shell catcher in the world!\nWith the help of cute little buddies,\n<b>are you ready for this adventure?!</b>")
+textPanel2:SetPrelocalizedText("<b>Pets</b>, your partners, are very important.\nWith them you can start your journey\nand collect shells.")
+textPanel3:SetPrelocalizedText("You collect shells\nby <b>clicking on a sandpile</b>\nwhen you have a pet following you.")
+textPanel4:SetPrelocalizedText("But how do you obtain pets? Simple!\nJust <b>find the red bottle and click on it</b>\nwhen you have enough shells!\nAs a courtesy, you have 100 shells\nyou can spend right away!")
+textPanel5:SetPrelocalizedText("After obtaining a Pet, <b>equip them by\nopening the inventory (Heart Icon)</b>,\nselect it and click the 'Equip Button'")
+textPanel6:SetPrelocalizedText("  With that said, you can open up the\n  next step of your journey with shells.\n  <b>Find the big yellow barrier</b> and\n  spend some so you can keep going!\n  With each stage there's\n  new Pets available! Good luck!")
 
 function self:ClientStart()
     for i = 2, #pages do
