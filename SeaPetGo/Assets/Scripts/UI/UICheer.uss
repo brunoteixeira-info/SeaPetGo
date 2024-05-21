@@ -1,0 +1,37 @@
+.cheer {
+}
+
+.cheer #buttonPlayerCheer{
+    width: 60px;
+    height: 60px;
+    align-self: center;
+    top: 600px;
+}
+
+.cheer #imagePlayerCheer{
+    width: 60px;
+    height: 60px;
+    align-self: center;
+}
+
+.cheer #textPlayerCheer{
+    color: rgba(0,0,0,1);
+    font-size: 100%;
+    letter-spacing: 5%;
+    left: 0px;
+    top: 620px;
+    align-self: center;
+}
+
+
+.available{
+    background-color: green;
+}
+
+.unavailable{
+    background-color: red;
+}
+
+.hide{
+    display: none;
+}

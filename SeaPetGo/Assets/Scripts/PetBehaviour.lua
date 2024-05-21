@@ -12,6 +12,8 @@ local petManager : module = require("PetManager")
 Name = "Pet"
 Power = 0
 Rarity = "Common"
+Curious = false
+Enthusiastic = false
 
 function SetTarget(targetToFollow)
     target = targetToFollow

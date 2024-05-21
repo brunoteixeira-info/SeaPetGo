@@ -281,7 +281,7 @@ SkinnedMeshRenderer:
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
+  m_ScaleInLightmap: 1.9
   m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
@@ -467,7 +467,7 @@ MonoBehaviour:
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
-  _copyFromPropertiesVersion: 1
+  _upconverted: 0
   m_petName: Colobus
   m_uiPet: {fileID: 5139341156459774273}
   references:
@@ -564,7 +564,7 @@ SkinnedMeshRenderer:
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
+  m_ScaleInLightmap: 2.8
   m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
@@ -725,7 +725,7 @@ MonoBehaviour:
   _uiOutput: 1
   _uiOutputSettings:
     rid: 9189313889182155424
-  _copyFromPropertiesVersion: 1
+  _upconverted: 0
   m_uiMesh: {fileID: 394422992665706765}
   references:
     version: 2
@@ -975,7 +975,7 @@ SkinnedMeshRenderer:
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
+  m_ScaleInLightmap: 2.8
   m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0

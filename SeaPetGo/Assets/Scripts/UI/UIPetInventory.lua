@@ -39,6 +39,7 @@ local textPetInfoRarity : UILabel = nil
 local textPetInfoPower : UILabel = nil
 
 local petManagerScript : module = require("PetManager")
+local uiCheer : UICheer = nil
 
 local petAmount : number = 0
 local selectedPetIndex : number = 0
@@ -57,6 +58,7 @@ textButtonPetEquip:SetPrelocalizedText("Equip")
 textButtonPetRelease:SetPrelocalizedText("Release")
 
 function self:ClientStart()
+    uiCheer = GameObject.Find("UIManager"):GetComponent(UICheer)
     textPetSlots:SetPrelocalizedText("Storage: " .. petAmount .. "/9")
     buttonPlayerPets:RegisterPressCallback(function () OpenInventory() end)
     buttonCloseInventory:RegisterPressCallback(function () CloseInventory() end)
@@ -95,6 +97,7 @@ function EquipPet()
 
         local petObtained = petManagerScript.GetPet(textPetEquipped.text)
         newPet = Object.Instantiate(petObtained.go)
+        uiCheer.ShowButton()
     end
 end
 

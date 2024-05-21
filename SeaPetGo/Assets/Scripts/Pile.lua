@@ -26,6 +26,7 @@ local petPower = 1;
 local newTimer
 
 local gameManagerScript : module = require("GameManager")
+local achievementsManagerScript : module = require("AchievementsManager")
 local lastPetInteracted : PetBehaviour = nil
 
 function SetPile()
@@ -100,8 +101,21 @@ function StartPileDestruction()
             return 
         else
             petPower = lastPetInteracted.Power
+            if(lastPetInteracted.Curious) then
+                shellsInside = shellsInside + (lastPetInteracted.Power * 0.1)
+                pearlsInside = shellsInside * 0.1
+                hp = shellsInside
+                print(hp)
+            end
+            
+            local timeTick = 0.5
+
+            if(lastPetInteracted.Enthusiastic) then
+                timeTick = timeTick - (lastPetInteracted.Power * 0.001)
+            end
+
             Timed = true
-            newTimer = Timer.Every(0.5, function() UpdatePileDestruction() end)
+            newTimer = Timer.Every(timeTick, function() UpdatePileDestruction() end)
             print(self.gameObject.name .. " being targeted")
         end
     end
@@ -122,6 +136,7 @@ function UpdatePileDestruction()
             GameObject.Find(parentObj):GetComponent(StageManager).SpawnPile(self.transform.position, parentObj)
             local particles = Object.Instantiate(objParticles)
             particles.gameObject.transform.position = self.gameObject.transform.position
+            achievementsManagerScript.UpdateDigQuestProgress()
             newTimer:Stop()
             Object.Destroy(self.gameObject)
         end

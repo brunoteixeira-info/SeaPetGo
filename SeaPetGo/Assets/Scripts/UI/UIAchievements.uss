@@ -1,0 +1,140 @@
+.achievements {
+}
+
+.achievements #containerAchievements{
+	width: 300px;
+    height: 900px;
+    top: -50px;
+    align-self: center;
+    background-image: url("project://database/Assets/UI/panel.png");
+}
+
+.achievements #containerAchievStage, #containerAchievDig, #containerAchievShells, #containerAchievPearls, #containerAchievPets{
+    width: 270px;
+    height: 100px;
+    top: 20px;
+    align-self: center;
+    background-image: url("project://database/Assets/UI/panel.png");
+}
+
+.achievements #progressBarStage, #progressBarDig, #progressBarShells, #progressBarPearls, #progressBarPets{
+    width: 200px;
+    height: 150px;
+    top: 30px;
+    align-self: center;
+}
+
+.achievements #textProgressBarStage, #textProgressBarDig, #textProgressBarShells, #textProgressBarPearls, #textProgressBarPets{
+    color: black;
+    font-size: 100%;
+    letter-spacing: 5%;
+    top: 0px;
+    left: 0px;
+    background-image: url("project://database/Assets/UI/slotEmpty.png");
+}
+
+.achievements #textAchievNameStage, #textAchievNameDig, #textAchievNameShells, #textAchievNamePearls, #textAchievNamePets{
+    color: black;
+    font-size: 125%;
+    letter-spacing: 5%;
+    top: -25px;
+    left: 35px;
+}
+
+.achievements #imageRewardStage, #imageRewardDig, #imageRewardShells, #imageRewardPearls, #imageRewardPets{
+    width: 90px;
+    height: 90px;
+    left: 0px;
+    top: -20px;
+    align-self: center;
+}
+
+.achievements #textRewardStage, #textRewardDig, #textRewardShells, #textRewardPearls, #textRewardPets{
+    color: black;
+    font-size: 100%;
+    letter-spacing: 5%;
+    top: 0px;
+    left: 80px;
+}
+
+.achievements #buttonCloseAchievements{
+    width: 40px;
+    height: 40px;
+    left: 140px;
+    top: -515px;
+    align-self: center;
+
+    background-image: url("project://database/Assets/UI/wrong.png");
+}
+
+.achievements #buttonAchievements{
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    top: 50px;
+    align-self: flex-end;
+
+    background-image: url("project://database/Assets/UI/icon_achievements.png");
+}
+
+.hide{
+    display: none;
+}
+
+.containerAchievements{
+	width: 300px;
+    height: 900px;
+    top: -50px;
+    align-self: center;
+    background-image: url("project://database/Assets/UI/panel.png");
+}
+
+.containerAchiev{
+    width: 270px;
+    height: 100px;
+    top: 20px;
+    align-self: center;
+    background-image: url("project://database/Assets/UI/panel.png");
+}
+
+.progressBar{
+    width: 200px;
+    height: 150px;
+    top: 30px;
+    align-self: center;
+}
+
+.textProgressBar{
+    color: black;
+    font-size: 100%;
+    letter-spacing: 5%;
+    top: 0px;
+    left: 0px;
+    background-image: url("project://database/Assets/UI/slotEmpty.png");
+}
+
+.textAchievName{
+    color: black;
+    font-size: 125%;
+    letter-spacing: 5%;
+    top: -25px;
+    left: 35px;
+}
+
+.imageReward{
+    width: 90px;
+    height: 90px;
+    left: 0px;
+    top: -20px;
+    align-self: center;
+
+    background-image: url("project://database/Assets/UI/question.png");
+}
+
+.textReward{
+    color: black;
+    font-size: 100%;
+    letter-spacing: 5%;
+    top: 0px;
+    left: 80px;
+}

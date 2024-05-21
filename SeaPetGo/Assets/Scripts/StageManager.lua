@@ -21,6 +21,7 @@ local uiStageBarrier : UIStageBarrier
 local uiStageUnlock : UIStageUnlock
 
 local gameManagerScript : module = require("GameManager")
+local achievementsManagerScript : module = require("AchievementsManager")
 
 function SpawnPile(oldPilePos, parent)
     local pileRoll = math.random(1,100)
@@ -50,6 +51,7 @@ function ManagerResponse(response)
         print("Unlocked Stage")
         gameManagerScript.AddShells(-shellsRequired)
         stageBarrier:SetActive(false)
+        achievementsManagerScript.UpdateAchievementsStageProgress()
         uiStageUnlock.DenyUnlockStage()
     else
         print("Not Enough Shells for new Stage")

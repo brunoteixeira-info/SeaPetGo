@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UILuaView class="achievements">
+      <hr:UIImage name="containerAchievements" picking-mode="Ignore">
+  <!--STAGE-->
+        <hr:UIImage name="containerAchievStage" picking-mode="Ignore">
+            <hr:UIProgressBar name="progressBarStage" picking-mode="Ignore">
+                <hr:UILabel name="textProgressBarStage" picking-mode="Ignore">
+                </hr:UILabel>
+            </hr:UIProgressBar>
+
+            <hr:UILabel name="textAchievNameStage" picking-mode="Ignore">
+            </hr:UILabel>
+
+            <hr:UILabel name="textRewardStage" picking-mode="Ignore">
+            </hr:UILabel>
+            
+            <hr:UIImage name="imageRewardStage" picking-mode="Ignore">
+            </hr:UIImage>
+        </hr:UIImage>
+
+  <!--DIG-->
+        <hr:UIImage name="containerAchievDig" picking-mode="Ignore">
+            <hr:UIProgressBar name="progressBarDig" picking-mode="Ignore">
+                <hr:UILabel name="textProgressBarDig" picking-mode="Ignore">
+                </hr:UILabel>
+            </hr:UIProgressBar>
+
+            <hr:UILabel name="textAchievNameDig" picking-mode="Ignore">
+            </hr:UILabel>
+
+            <hr:UILabel name="textRewardDig" picking-mode="Ignore">
+            </hr:UILabel>
+            
+            <hr:UIImage name="imageRewardDig" picking-mode="Ignore">
+            </hr:UIImage>
+        </hr:UIImage>
+
+  <!--SHELLS-->
+        <hr:UIImage name="containerAchievShells" picking-mode="Ignore">
+            <hr:UIProgressBar name="progressBarShells" picking-mode="Ignore">
+                <hr:UILabel name="textProgressBarShells" picking-mode="Ignore">
+                </hr:UILabel>
+            </hr:UIProgressBar>
+
+            <hr:UILabel name="textAchievNameShells" picking-mode="Ignore">
+            </hr:UILabel>
+
+            <hr:UILabel name="textRewardShells" picking-mode="Ignore">
+            </hr:UILabel>
+            
+            <hr:UIImage name="imageRewardShells" picking-mode="Ignore">
+            </hr:UIImage>
+        </hr:UIImage>
+
+  <!--PEARLS-->
+        <hr:UIImage name="containerAchievPearls" picking-mode="Ignore">
+            <hr:UIProgressBar name="progressBarPearls" picking-mode="Ignore">
+                <hr:UILabel name="textProgressBarPearls" picking-mode="Ignore">
+                </hr:UILabel>
+            </hr:UIProgressBar>
+
+            <hr:UILabel name="textAchievNamePearls" picking-mode="Ignore">
+            </hr:UILabel>
+
+            <hr:UILabel name="textRewardPearls" picking-mode="Ignore">
+            </hr:UILabel>
+            
+            <hr:UIImage name="imageRewardPearls" picking-mode="Ignore">
+            </hr:UIImage>
+        </hr:UIImage>
+
+  <!--PETS-->
+        <hr:UIImage name="containerAchievPets" picking-mode="Ignore">
+            <hr:UIProgressBar name="progressBarPets" picking-mode="Ignore">
+                <hr:UILabel name="textProgressBarPets" picking-mode="Ignore">
+                </hr:UILabel>
+            </hr:UIProgressBar>
+
+            <hr:UILabel name="textAchievNamePets" picking-mode="Ignore">
+            </hr:UILabel>
+
+            <hr:UILabel name="textRewardPets" picking-mode="Ignore">
+            </hr:UILabel>
+            
+            <hr:UIImage name="imageRewardPets" picking-mode="Ignore">
+            </hr:UIImage>
+        </hr:UIImage>
+
+        <hr:UIButton name="buttonCloseAchievements">
+        </hr:UIButton>
+      </hr:UIImage>      
+      <hr:UIButton name="buttonAchievements">
+      </hr:UIButton>
+  </hr:UILuaView>
+
+</UXML>

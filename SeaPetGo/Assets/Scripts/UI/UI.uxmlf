@@ -11,3 +11,5 @@
 @import url("/Assets/Scripts/UI/UIPetCollected.uxml");
 @import url("/Assets/Scripts/UI/UIPile.uxml");
 @import url("/Assets/Scripts/UI/UIGachaponPets.uxml");
+@import url("/Assets/Scripts/UI/UICheer.uxml");
+@import guid("a6e6ab8dff8954347b5c31b07983d688");

@@ -1,5 +1,6 @@
 --!Type(ClientAndServer)
 local gameManagerScript : module = require("GameManager")
+local achievementsManagerScript : module = require("AchievementsManager")
 Shells = 0
 
 function self:OnTriggerEnter(other : Collider)
@@ -13,6 +14,7 @@ function self:OnTriggerEnter(other : Collider)
     if client.localPlayer == player then
         print("Collected Shell")
         gameManagerScript.AddShells(Shells)
+        achievementsManagerScript.UpdateShellsQuestProgress(Shells)
         Object.Destroy(self.gameObject)
     end
 end

@@ -25,6 +25,7 @@ local uiGachapon : GameObject = nil
 
 local gameManagerScript : module = require("GameManager")
 local petManagerScript : module = require("PetManager")
+local achievementsManagerScript : module = require("AchievementsManager")
 local uiPetObtained : UIPetObtained
 local uiPetUnlock : UIPetUnlock
 local newPet : GameObject
@@ -65,6 +66,7 @@ function ManagerResponse(response)
         print("Bought a Pet")
         GetPet()
         gameManagerScript.AddShells(-petRollCost)
+        achievementsManagerScript.UpdatePetsQuestProgress()
         uiPetUnlock.DenyUnlockStage()
     else
         print("Not Enough Shells for Pet")
