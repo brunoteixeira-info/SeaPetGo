@@ -23,7 +23,7 @@ local uiStageUnlock : UIStageUnlock
 local gameManagerScript : module = require("GameManager")
 local achievementsManagerScript : module = require("AchievementsManager")
 
-function SpawnPile(oldPilePos, parent)
+function SpawnPile(oldPilePos)
     local pileRoll = math.random(1,100)
     local newPile = nil
     if pileRoll <= pileSmallChance then
@@ -37,8 +37,8 @@ function SpawnPile(oldPilePos, parent)
         newPile = Object.Instantiate(pileBig)
     end
     newPile.transform.position = oldPilePos
-    local pileScript = newPile:GetComponent("Pile")
-    pileScript.SetSpawnAndPile(self.gameObject, parent)
+    local pileScript = newPile:GetComponent(Pile)
+    pileScript.SetSpawnAndPile(self.gameObject, self)
 end
 
 function UnlockStage()

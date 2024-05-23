@@ -17,16 +17,28 @@ local stageManagerScript : StageManager
 
 local stageCurrent : number
 
+--!SerializeField
+local sfx_popup : AudioShader = nil
+--!SerializeField
+local sfx_uiClose : AudioShader = nil
+--!SerializeField
+local sfx_uiNotEnough : AudioShader = nil
+
 textStageUnlock:SetPrelocalizedText("Do you want to spend " .. shellsRequired .. " shells\nto unlock this mysterious energy barrier?")
 
 function self:ClientStart()
     self.gameObject:GetComponent(TapHandler).Tapped:Connect(function() 
-        containerStageUnlock:RemoveFromClassList("hide")()
+        OpenUI()()
     end)
 
     buttonStageUnlockAccept:RegisterPressCallback(function () TryUnlockStage() end)
     buttonStageUnlockDeny:RegisterPressCallback(function () DenyUnlockStage() end)
     containerStageUnlock:AddToClassList("hide")
+end
+
+function OpenUI()
+    containerStageUnlock:RemoveFromClassList("hide")
+    Audio:PlayShader(sfx_popup)
 end
 
 function TryUnlockStage()
@@ -35,12 +47,14 @@ end
 
 function DontUnlockStage()
     textStageUnlock:SetPrelocalizedText("Oops! You don't have enough shells!\n")
+    Audio:PlayShader(sfx_uiNotEnough)
 end
 
 function DenyUnlockStage()
     print("Deny Unlock Stage")
     containerStageUnlock:AddToClassList("hide")
     ResetUI()
+    Audio:PlayShader(sfx_uiClose)
 end
 
 function ResetUI()

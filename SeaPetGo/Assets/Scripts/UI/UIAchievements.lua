@@ -82,10 +82,25 @@ local spriteShells : Texture = nil
 --!SerializeField
 local spritePearls : Texture = nil
 
+--!SerializeField
+local sfx_uiOpen : AudioShader = nil
+--!SerializeField
+local sfx_uiClose : AudioShader = nil
+
 function self:ClientStart() 
     containerAchievements:AddToClassList("hide")
-    buttonAchievements:RegisterPressCallback(function () containerAchievements:RemoveFromClassList("hide") end)
-    buttonCloseAchievements:RegisterPressCallback(function () containerAchievements:AddToClassList("hide") end)
+    buttonAchievements:RegisterPressCallback(function () OpenAchievements() end)
+    buttonCloseAchievements:RegisterPressCallback(function () CloseAchievements() end)
+end
+
+function OpenAchievements()
+    containerAchievements:RemoveFromClassList("hide")
+    Audio:PlayShader(sfx_uiOpen)
+end
+
+function CloseAchievements()
+    containerAchievements:AddToClassList("hide")
+    Audio:PlayShader(sfx_uiClose)
 end
 
 function SetAchievementsStage(achievement)

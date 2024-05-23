@@ -6,8 +6,6 @@ local pileCollider : Collider = nil
 --!SerializeField
 local shells : number = 20
 --!SerializeField
-local parentObj : string = ""
---!SerializeField
 local objShells : GameObject = nil
 --!SerializeField
 local objPearls : GameObject = nil
@@ -16,6 +14,11 @@ local objParticles : GameObject = nil
 --!SerializeField
 local objUIPile : GameObject = nil
 local uiPileScript : UIPile = nil
+
+--!SerializeField
+local sfx_dig : AudioShader = nil
+--!SerializeField
+local sfx_pileExplosion : AudioShader = nil
 
 local pearlsInside : number = 0
 
@@ -29,26 +32,47 @@ local gameManagerScript : module = require("GameManager")
 local achievementsManagerScript : module = require("AchievementsManager")
 local lastPetInteracted : PetBehaviour = nil
 
+local stageManagerObj : GameObject = nil
+local stageManager : StageManager = nil
+
+--!SerializeField
+local objParent : string = "Spawn"
+
 function SetPile()
-    objUIPile = self.gameObject.transform:GetChild(4)
-    uiPileScript = objUIPile.gameObject:GetComponent("UIPile")
-    shellsInside = math.random(shells - 10, shells + 10)
-    pearlsInside = shellsInside * 0.1
-    hp = shellsInside
-    print(hp)
-    UpdateSize(hp)
-    uiPileScript.SetPile(hp, shellsInside)
+    if(stageManagerObj ~= nil) then
+        stageManager = stageManagerObj:GetComponent(StageManager)
+        uiPileScript = objUIPile:GetComponent(UIPile)
+        shellsInside = math.random(shells - 10, shells + 10)
+        pearlsInside = shellsInside * 0.1
+        hp = shellsInside
+        print(hp)
+        UpdateSize(hp)
+        uiPileScript.SetHP(hp, shellsInside)
+    else
+        stageManagerObj = GameObject.Find(objParent)
+        stageManager = stageManagerObj:GetComponent(StageManager)
+        uiPileScript = objUIPile:GetComponent(UIPile)
+        shellsInside = math.random(shells - 10, shells + 10)
+        pearlsInside = shellsInside * 0.1
+        hp = shellsInside
+        print(hp)
+        UpdateSize(hp)
+        uiPileScript.SetHP(hp, shellsInside)
+    end
 end
 
-function SetSpawnAndPile(spawnerObj, parent)
+function SetSpawnAndPile(spawnerObj, manager)
     self.gameObject.transform:SetParent(spawnerObj.transform)
-    parentObj = parent
+    stageManagerObj = spawnerObj
+    stageManager = manager
+    uiPileScript = objUIPile:GetComponent(UIPile)
     shellsInside = math.random(shells - 10, shells + 10)
+    pearlsInside = shellsInside * 0.1
     hp = shellsInside
     timer = hp/1.5
     print(hp)
     UpdateSize(hp)
-    --uiPileScript.SetPile(hp, shellsInside)
+    uiPileScript.SetHP(hp, shellsInside)
 end
 
 function UpdateSize(currentHealth)
@@ -127,17 +151,19 @@ function UpdatePileDestruction()
         if(hp > 0)then
             hp = hp - (petPower/10)
             UpdateSize(hp)
-            --uiPileScript.SetPile(hp, shellsInside)
+            uiPileScript.SetHP(hp, shellsInside)
+            Audio:PlayShader(sfx_dig)
         else
             --Timer Ended
             lastPetInteracted.SetTarget(client.localPlayer.character.gameObject)
             SpawnShells()
             SpawnPearls()
-            GameObject.Find(parentObj):GetComponent(StageManager).SpawnPile(self.transform.position, parentObj)
+            stageManager.SpawnPile(self.transform.position)
             local particles = Object.Instantiate(objParticles)
             particles.gameObject.transform.position = self.gameObject.transform.position
             achievementsManagerScript.UpdateDigQuestProgress()
             newTimer:Stop()
+            Audio:PlayShader(sfx_pileExplosion)
             Object.Destroy(self.gameObject)
         end
     end

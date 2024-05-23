@@ -212,7 +212,10 @@ MonoBehaviour:
   _uiOutput: 3
   _uiOutputSettings:
     rid: -2
-  _copyFromPropertiesVersion: 1
+  _upconverted: 0
+  m_sfx_popup: {fileID: 11400000, guid: 353cfe56991f513448c89f0a702a8299, type: 2}
+  m_sfx_uiClose: {fileID: 11400000, guid: ad03cf6933d452f45b1cba67351ee48b, type: 2}
+  m_sfx_uiNotEnough: {fileID: 11400000, guid: 297fdb07480f13241a664e4341b6117c, type: 2}
   references:
     version: 2
     RefIds:
@@ -285,7 +288,7 @@ MonoBehaviour:
   _uiOutput: 1
   _uiOutputSettings:
     rid: 9189313617003020621
-  _copyFromPropertiesVersion: 1
+  _upconverted: 0
   references:
     version: 2
     RefIds:

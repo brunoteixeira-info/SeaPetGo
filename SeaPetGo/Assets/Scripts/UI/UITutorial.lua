@@ -50,6 +50,14 @@ local imagePanel6 : UIImage = nil
 --!Bind
 local textPanel6 : UILabel = nil
 
+--!SerializeField
+local sfx_uiOpen : AudioShader = nil
+--!SerializeField
+local sfx_uiClose : AudioShader = nil
+--!SerializeField
+local sfx_uiNextPage : AudioShader = nil
+
+
 local currentPage : number = 1
 pages = {}
 
@@ -78,9 +86,14 @@ function self:ClientStart()
     end
 
     buttonClose:RegisterPressCallback(function () CloseTutorial() end)   
-    buttonTutorial:RegisterPressCallback(function () SetPage(1) end)   
+    buttonTutorial:RegisterPressCallback(function () OpenTutorial() end)   
     buttonNextPage:RegisterPressCallback(function () SetPage(currentPage + 1) end)   
     buttonPreviousPage:RegisterPressCallback(function () SetPage(currentPage - 1) end)   
+end
+
+function OpenTutorial()
+    SetPage(1)
+    Audio:PlayShader(sfx_uiOpen)
 end
 
 function SetPage(page)
@@ -102,7 +115,8 @@ function SetPage(page)
     pages[currentPage].panel:AddToClassList("hide")
     currentPage = page
     textPanelTop:SetPrelocalizedText(pages[currentPage].name)
-    pages[currentPage].panel:RemoveFromClassList("hide")    
+    pages[currentPage].panel:RemoveFromClassList("hide")
+    Audio:PlayShader(sfx_uiNextPage)    
 end
 
 function CloseTutorial()
@@ -113,4 +127,5 @@ function CloseTutorial()
         pages[i].panel:AddToClassList("hide")
     end
     buttonTutorial:RemoveFromClassList("hide")
+    Audio:PlayShader(sfx_uiClose)   
 end

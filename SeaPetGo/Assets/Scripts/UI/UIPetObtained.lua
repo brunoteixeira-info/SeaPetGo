@@ -18,6 +18,11 @@ local buttonPetAccept : UIButton = nil
 
 local gachapon : Gachapon
 
+--!SerializeField
+local sfx_acceptPet : AudioShader = nil
+--!SerializeField
+local sfx_releasePet : AudioShader = nil
+
 textPetName:SetPrelocalizedText("Colobus")
 textPetPower:SetPrelocalizedText("000")
 textPetRarity:SetPrelocalizedText("C")
@@ -40,11 +45,13 @@ end
 function AcceptPet()
     containerPet:AddToClassList("hide")
     gachapon.AcceptPet()
+    Audio:PlayShader(sfx_acceptPet)
 end
 
 function DenyPet()
     containerPet:AddToClassList("hide")
     gachapon.DenyPet()
+    Audio:PlayShader(sfx_releasePet)
 end
 
 function HideUI()

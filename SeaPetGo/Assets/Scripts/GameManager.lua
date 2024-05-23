@@ -27,6 +27,9 @@ local uiManagerScript : UIManager
 local uiPetInventory : UIPetInventory
 local petManagerScript : module = require("PetManager")
 
+--!SerializeField
+local music : AudioShader = nil
+
 local function TrackPlayers(game, characterCallback)
     scene.PlayerJoined:Connect(function(scene, player)
         players[player] = {
@@ -63,6 +66,8 @@ local function TrackPlayers(game, characterCallback)
 end
 
 function self:ClientAwake()
+    Audio:PlayMusic(music, 0.4)
+
     function OnCharacterInstantiate(playerinfo)
         local player = playerinfo.player
         local character = player.character

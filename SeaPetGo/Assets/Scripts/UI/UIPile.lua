@@ -10,7 +10,6 @@ local cam : GameObject
 
 function self:ClientStart()
     cam = GameObject.Find("MainCamera")
-    textProgressBar:SetPrelocalizedText("<b>000</b>")
     progressBar.value = 1
 end
 
@@ -19,6 +18,8 @@ function self:ClientUpdate()
 end
 
 function SetHP(hp, hpMax)
+    print(hp)
+    print(hpMax)
     textProgressBar:SetPrelocalizedText("<b>" .. hp .. "</b>")
     progressBar.value = hp / hpMax
 end

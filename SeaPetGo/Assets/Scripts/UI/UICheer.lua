@@ -22,6 +22,19 @@ local petHappyChance : number = 33
 --!SerializeField
 local petCuriousChance : number = 66
 
+--!SerializeField
+local sfx_cheerHappyStart : AudioShader = nil
+--!SerializeField
+local sfx_cheerHappyEnd : AudioShader = nil
+--!SerializeField
+local sfx_cheerCuriousStart : AudioShader = nil
+--!SerializeField
+local sfx_cheerCuriousEnd : AudioShader = nil
+--!SerializeField
+local sfx_cheerEnthusiasticStart : AudioShader = nil
+--!SerializeField
+local sfx_cheerEnthusiasticEnd : AudioShader = nil
+
 local canBuff : boolean = true
 
 function self:ClientStart()
@@ -46,7 +59,8 @@ function AddBuffs()
                 client.localPlayer.character.speed = 5.5 + (pet.Power * 0.001)
                 imagePlayerCheer.image = spriteHappy
                 textPlayerCheer:SetPrelocalizedText("Your pet feels happy\nand runs like the wind!")
-
+                Audio:PlayShader(sfx_cheerHappyStart)
+                
                 -- Create a new Timer object. Interval: 5, Callback:function()..end, Repeating: false
                 local newTimer = Timer.new(durationBuff, function() RemoveHappyBuff() end, false)
             end
@@ -57,10 +71,11 @@ function AddBuffs()
                 pet.Curious = true
                 imagePlayerCheer.image = spriteCurious
                 textPlayerCheer:SetPrelocalizedText("Your pet feels curious\nand wants to find secret treasures!")
+                Audio:PlayShader(sfx_cheerCuriousStart)
+                
+                -- Create a new Timer object. Interval: 5, Callback:function()..end, Repeating: false
+                local newTimer = Timer.new(durationBuff, function() RemoveCuriousBuff() end, false)            
             end
-
-            -- Create a new Timer object. Interval: 5, Callback:function()..end, Repeating: false
-            local newTimer = Timer.new(durationBuff, function() RemoveCuriousBuff() end, false)
         else
             --Pet gets Enthusiastic Bonus (Pet Digs Faster)        
             if(client.localPlayer.character.gameObject.transform:GetChild(2) ~= nil) then
@@ -68,11 +83,13 @@ function AddBuffs()
                 pet.Enthusiastic = true
                 imagePlayerCheer.image = spriteEnthusiastic
                 textPlayerCheer:SetPrelocalizedText("Your pet feels enthusiastic\nand wants to work faster!")
-            end
+                Audio:PlayShader(sfx_cheerEnthusiasticStart)
 
-            -- Create a new Timer object. Interval: 5, Callback:function()..end, Repeating: false
-            local newTimer = Timer.new(durationBuff, function() RemoveEnthusiasticBuff() end, false)
+                -- Create a new Timer object. Interval: 5, Callback:function()..end, Repeating: false
+                local newTimer = Timer.new(durationBuff, function() RemoveEnthusiasticBuff() end, false)                
+            end
         end
+
         canBuff = false
         buttonPlayerCheer:AddToClassList("unavailable")
         buttonPlayerCheer:RemoveFromClassList("available")
@@ -86,6 +103,7 @@ function RemoveHappyBuff()
     buttonPlayerCheer:AddToClassList("available")
     buttonPlayerCheer:RemoveFromClassList("unavailable")
     textPlayerCheer:SetPrelocalizedText("")
+    Audio:PlayShader(sfx_cheerHappyEnd)
 end
 
 function RemoveCuriousBuff()
@@ -99,6 +117,7 @@ function RemoveCuriousBuff()
     buttonPlayerCheer:AddToClassList("available")
     buttonPlayerCheer:RemoveFromClassList("unavailable")
     textPlayerCheer:SetPrelocalizedText("")
+    Audio:PlayShader(sfx_cheerCuriousEnd)
 end
 
 function RemoveEnthusiasticBuff()
@@ -112,6 +131,7 @@ function RemoveEnthusiasticBuff()
     buttonPlayerCheer:AddToClassList("available")
     buttonPlayerCheer:RemoveFromClassList("unavailable")
     textPlayerCheer:SetPrelocalizedText("")
+    Audio:PlayShader(sfx_cheerEnthusiasticEnd)
 end
 
 function HideButton()

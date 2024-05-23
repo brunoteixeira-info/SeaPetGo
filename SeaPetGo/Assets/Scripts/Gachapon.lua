@@ -23,6 +23,9 @@ local petRollCost : number = 150
 --!SerializeField
 local uiGachapon : GameObject = nil
 
+--!SerializeField
+local sfx_gachapon : AudioShader = nil
+
 local gameManagerScript : module = require("GameManager")
 local petManagerScript : module = require("PetManager")
 local achievementsManagerScript : module = require("AchievementsManager")
@@ -31,6 +34,7 @@ local uiPetUnlock : UIPetUnlock
 local newPet : GameObject
 
 function GetPet()
+    Audio:PlayShader(sfx_gachapon)
     local petRoll = math.random(1,100)
     print("Pet Roll: " .. petRoll)
 
@@ -67,10 +71,10 @@ function ManagerResponse(response)
         GetPet()
         gameManagerScript.AddShells(-petRollCost)
         achievementsManagerScript.UpdatePetsQuestProgress()
-        uiPetUnlock.DenyUnlockStage()
+        uiPetUnlock.DenyUnlockPet()
     else
         print("Not Enough Shells for Pet")
-        uiPetUnlock.DontUnlockStage()
+        uiPetUnlock.DontUnlockPet()
     end
 end
 
@@ -94,6 +98,6 @@ function self:ClientStart()
     local uiObj = GameObject.Find("UIManager")
     uiPetObtained = uiObj:GetComponent("UIPetObtained")
     uiGachapon:GetComponent("UIGachapon").SetPlayerShellsNeeded(petRollCost)
-    uiPetUnlock = self.gameObject:GetComponent("UIPetUnlock")
+    uiPetUnlock = self.gameObject:GetComponent(UIPetUnlock)
     uiPetUnlock.SetGachapon(petRollCost)
 end

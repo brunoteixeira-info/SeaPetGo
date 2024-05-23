@@ -179,7 +179,8 @@ MonoBehaviour:
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
-  _copyFromPropertiesVersion: 1
+  _upconverted: 0
+  m_sfx_gotPearls: {fileID: 11400000, guid: 801d7df17f6760e449b52d7251dff46e, type: 2}
   references:
     version: 2
     RefIds:

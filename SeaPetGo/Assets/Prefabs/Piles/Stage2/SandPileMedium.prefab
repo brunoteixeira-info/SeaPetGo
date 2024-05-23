@@ -216,11 +216,10 @@ MonoBehaviour:
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
-  _copyFromPropertiesVersion: 1
+  _upconverted: 0
   m_pileMesh: {fileID: 0}
   m_pileCollider: {fileID: 3459835796572557310}
   m_shells: 50
-  m_parentObj: 
   m_objShells: {fileID: 7009171218070513780, guid: d6958b6d1230f3a4f825f2cc7964229e,
     type: 3}
   m_objPearls: {fileID: 6384435644480617087, guid: 513f6ee4ddc87794db2b23deb6af867c,
@@ -228,6 +227,10 @@ MonoBehaviour:
   m_objParticles: {fileID: 1200444339368713354, guid: c7e3a1591e038194086509a8e779f700,
     type: 3}
   m_objUIPile: {fileID: 6141134459777922612}
+  m_sfx_dig: {fileID: 11400000, guid: a2ef936afbd26bd4d9dd71c5c619e613, type: 2}
+  m_sfx_pileExplosion: {fileID: 11400000, guid: 2b57d7155b30fff4d906f4358c96e490,
+    type: 2}
+  m_objParent: Stage2
   references:
     version: 2
     RefIds:
@@ -318,7 +321,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: -1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1895391552593013467}
@@ -341,7 +344,7 @@ MonoBehaviour:
   _uiOutput: 1
   _uiOutputSettings:
     rid: 9189313937370775687
-  _copyFromPropertiesVersion: 1
+  _upconverted: 0
   references:
     version: 2
     RefIds:

@@ -179,7 +179,8 @@ MonoBehaviour:
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
-  _copyFromPropertiesVersion: 1
+  _upconverted: 0
+  m_sfx_gotShells: {fileID: 11400000, guid: bcc6838be3c342b41b89190090af35f8, type: 2}
   references:
     version: 2
     RefIds:

@@ -45,6 +45,17 @@ local petAmount : number = 0
 local selectedPetIndex : number = 0
 petsOwned = {}
 
+--!SerializeField
+local sfx_uiOpen : AudioShader = nil
+--!SerializeField
+local sfx_uiClose : AudioShader = nil
+--!SerializeField
+local sfx_equipPet : AudioShader = nil
+--!SerializeField
+local sfx_removePet : AudioShader = nil
+--!SerializeField
+local sfx_selectPet : AudioShader = nil
+
 textPetEquipped:SetPrelocalizedText("Pet")
 
 textPetSlotName:SetPrelocalizedText("Name")
@@ -74,11 +85,13 @@ function CloseInventory()
     textPetEquipped:SetPrelocalizedText("")
     textPetInfoPower:SetPrelocalizedText("")
     textPetInfoRarity:SetPrelocalizedText("")
+    Audio:PlayShader(sfx_uiClose)
 end
 
 function OpenInventory()
     containerPetInventory:RemoveFromClassList("hide")
     buttonPlayerPets:AddToClassList("hide")
+    Audio:PlayShader(sfx_uiOpen)
 end
 
 function AddNewPet(pet)
@@ -98,6 +111,7 @@ function EquipPet()
         local petObtained = petManagerScript.GetPet(textPetEquipped.text)
         newPet = Object.Instantiate(petObtained.go)
         uiCheer.ShowButton()
+        Audio:PlayShader(sfx_equipPet)
     end
 end
 
@@ -112,6 +126,7 @@ function ReleasePet()
     
     petAmount = petAmount - 1
     textPetSlots:SetPrelocalizedText("Storage: " .. petAmount .. "/9")
+    Audio:PlayShader(sfx_removePet)
 end
 
 function CreatePetSlots()
@@ -185,6 +200,7 @@ function SetPet(pet, index)
     textPetInfoPower:SetPrelocalizedText(petObtained.cPower)
     textPetInfoRarity:SetPrelocalizedText(petObtained.rarity)
     selectedPetIndex = index
+    Audio:PlayShader(sfx_selectPet)
 end
 
 function GetPet(petName)
