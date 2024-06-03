@@ -82,9 +82,7 @@ function AcceptPet()
     print("Accept Pet")
     local petStats = newPet.gameObject:GetComponent(PetBehaviour)
     print(petStats.Name)
-    if(client.localPlayer.character.gameObject.transform:GetChild(2)) then
-        Object.Destroy(client.localPlayer.character.gameObject.transform:GetChild(2).gameObject)
-    end
+    Object.Destroy(newPet)
     gameManagerScript.AddPet(petStats.Name)
 
 end

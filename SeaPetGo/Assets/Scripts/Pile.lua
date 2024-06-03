@@ -44,7 +44,7 @@ function SetPile()
         uiPileScript = objUIPile:GetComponent(UIPile)
         shellsInside = math.random(shells - 10, shells + 10)
         pearlsInside = shellsInside * 0.1
-        hp = shellsInside
+        hp = shellsInside * 2
         print(hp)
         UpdateSize(hp)
         uiPileScript.SetHP(hp, shellsInside)
@@ -54,7 +54,7 @@ function SetPile()
         uiPileScript = objUIPile:GetComponent(UIPile)
         shellsInside = math.random(shells - 10, shells + 10)
         pearlsInside = shellsInside * 0.1
-        hp = shellsInside
+        hp = shellsInside * 2
         print(hp)
         UpdateSize(hp)
         uiPileScript.SetHP(hp, shellsInside)
@@ -68,7 +68,7 @@ function SetSpawnAndPile(spawnerObj, manager)
     uiPileScript = objUIPile:GetComponent(UIPile)
     shellsInside = math.random(shells - 10, shells + 10)
     pearlsInside = shellsInside * 0.1
-    hp = shellsInside
+    hp = shellsInside * 2
     timer = hp/1.5
     print(hp)
     UpdateSize(hp)

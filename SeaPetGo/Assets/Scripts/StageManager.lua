@@ -25,20 +25,43 @@ local achievementsManagerScript : module = require("AchievementsManager")
 
 function SpawnPile(oldPilePos)
     local pileRoll = math.random(1,100)
-    local newPile = nil
     if pileRoll <= pileSmallChance then
         --Spawn Small Pile
-        newPile = Object.Instantiate(pileSmall)    
+        -- Create a new Timer object. Interval: 5, Callback:function()..end, Repeating: false
+        local timeToSpawn = math.random(10,15)
+        local newTimer = Timer.new(timeToSpawn, function() CreateSmallPile(oldPilePos) end, false)
     elseif pileRoll > pileSmallChance and pileRoll <= pileMediumChance then
         --Spawn Medium Pile
-        newPile = Object.Instantiate(pileMedium)
+        -- Create a new Timer object. Interval: 5, Callback:function()..end, Repeating: false
+        local timeToSpawn = math.random(15,20)
+        local newTimer = Timer.new(timeToSpawn, function() CreateMediumPile(oldPilePos) end, false)
     else
         --Spawn Big Pile
-        newPile = Object.Instantiate(pileBig)
+        -- Create a new Timer object. Interval: 5, Callback:function()..end, Repeating: false
+        local timeToSpawn = math.random(20,25)
+        local newTimer = Timer.new(timeToSpawn, function() CreateBigPile(oldPilePos) end, false)
     end
+end
+
+function CreateSmallPile(oldPilePos)
+    local newPile = Object.Instantiate(pileSmall)
     newPile.transform.position = oldPilePos
     local pileScript = newPile:GetComponent(Pile)
-    pileScript.SetSpawnAndPile(self.gameObject, self)
+    pileScript.SetSpawnAndPile(self.gameObject, self)    
+end
+
+function CreateMediumPile(oldPilePos)
+    local newPile = Object.Instantiate(pileMedium)
+    newPile.transform.position = oldPilePos
+    local pileScript = newPile:GetComponent(Pile)
+    pileScript.SetSpawnAndPile(self.gameObject, self)    
+end
+
+function CreateBigPile(oldPilePos)
+    local newPile = Object.Instantiate(pileBig)
+    newPile.transform.position = oldPilePos
+    local pileScript = newPile:GetComponent(Pile)
+    pileScript.SetSpawnAndPile(self.gameObject, self)    
 end
 
 function UnlockStage()

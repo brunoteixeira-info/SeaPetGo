@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 53
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 258248712, guid: a215bd465061e3c4abe0b86c7c8c3d14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _assetMappings:
+  - Guid: 090d25b7037f58745b2c9dee17251cbd
+    StoreId: 661ebf1571d0a0535503a597
+    Name: Skull
+    ThumbnailUrl: https://d4v5j9dz6t9fz.cloudfront.net/web_uploads/world_builder_assets/647622d2106a74bac609d8ea/661ebf1571d0a0535503a597/18ee81c0430_0.jpg

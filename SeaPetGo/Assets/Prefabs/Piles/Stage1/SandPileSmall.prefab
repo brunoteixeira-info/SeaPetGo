@@ -457,7 +457,7 @@ MonoBehaviour:
   _upconverted: 0
   m_pileMesh: {fileID: 6765848962414453630}
   m_pileCollider: {fileID: 1942665089113592477}
-  m_shells: 30
+  m_shells: 15
   m_objShells: {fileID: 7009171218070513780, guid: d6958b6d1230f3a4f825f2cc7964229e,
     type: 3}
   m_objPearls: {fileID: 6384435644480617087, guid: 513f6ee4ddc87794db2b23deb6af867c,

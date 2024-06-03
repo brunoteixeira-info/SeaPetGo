@@ -13,3 +13,4 @@
 @import url("/Assets/Scripts/UI/UIGachaponPets.uxml");
 @import url("/Assets/Scripts/UI/UICheer.uxml");
 @import guid("a6e6ab8dff8954347b5c31b07983d688");
+@import guid("f3e6fea850c46c447b79353af83fb418");

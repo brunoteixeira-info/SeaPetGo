@@ -409,7 +409,7 @@ MonoBehaviour:
   _upconverted: 0
   m_pileMesh: {fileID: 2004206649164120312}
   m_pileCollider: {fileID: 7878920616183621486}
-  m_shells: 40
+  m_shells: 20
   m_objShells: {fileID: 7009171218070513780, guid: d6958b6d1230f3a4f825f2cc7964229e,
     type: 3}
   m_objPearls: {fileID: 6384435644480617087, guid: 513f6ee4ddc87794db2b23deb6af867c,
@@ -480,8 +480,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _checkDistance: 1
-  _distance: 1.5
-  _moveTo: 1
+  _distance: 3
+  _moveTo: 0
 --- !u!1 &7602053507460191038
 GameObject:
   m_ObjectHideFlags: 0

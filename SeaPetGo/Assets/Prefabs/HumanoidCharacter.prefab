@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7967116690595939721}
   - component: {fileID: 7815700824394431605}
   - component: {fileID: 8171041975421622856}
+  - component: {fileID: 5837143269197974707}
   m_Layer: 6
   m_Name: HumanoidCharacter
   m_TagString: Untagged
@@ -161,6 +162,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _networkId: 0
+--- !u!114 &5837143269197974707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3123393570936088168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1225344270, guid: 991a4badf00d28384a32b2c089782f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkId: 0
+  _script: {fileID: -974389366465450183, guid: 8948ecfa3414a3f4db30292d4aa0ed17, type: 3}
+  _properties: []
+  _uiOutput: 3
+  _uiOutputSettings:
+    rid: -2
+  _upconverted: 0
+  m_spriteJoystick_1: {fileID: 2800000, guid: 6355e3c0d708dcb43aad5c342192e1f6, type: 3}
+  m_spriteJoystick_1H: {fileID: 2800000, guid: eb9b5051dd78c3e43ad8a2905ad3f128, type: 3}
+  m_spriteJoystick_2: {fileID: 2800000, guid: 9303fbf2b3589354681ff77b0b443870, type: 3}
+  m_spriteJoystick_2H: {fileID: 2800000, guid: 735cbdf17424fd141ba1ffeaac3f82b1, type: 3}
+  m_spriteJoystick_3: {fileID: 2800000, guid: e6885d966ce344f4a9228e0a3c4d215b, type: 3}
+  m_spriteJoystick_3H: {fileID: 2800000, guid: 2e22cd78a12ba564fabf7ef161b8fb0a, type: 3}
+  m_spriteJoystick_4: {fileID: 2800000, guid: b894ca01d771a7f448de11079e044a9c, type: 3}
+  m_spriteJoystick_4H: {fileID: 2800000, guid: 2acdcd853b62bc14b962179c0aa8b6f4, type: 3}
+  m_spriteJoystick_5: {fileID: 2800000, guid: e67abb07e5033df4cb399eafc5991eba, type: 3}
+  m_spriteJoystick_5H: {fileID: 2800000, guid: 34c671140921d0f489d6b3bab062599e, type: 3}
+  m_spriteJoystick_6: {fileID: 2800000, guid: df0fc0e72d9d2f2419e271a0b990dfde, type: 3}
+  m_spriteJoystick_6H: {fileID: 2800000, guid: a252b2b428ba3a44a88e0aae9798b16a, type: 3}
+  m_spriteJoystick_7: {fileID: 2800000, guid: 0c40fcfeb7d87b846aac5781eeca574d, type: 3}
+  m_spriteJoystick_7H: {fileID: 2800000, guid: 7f2d05d6dd1847c4ea32657cec34331d, type: 3}
+  m_spriteJoystick_8: {fileID: 2800000, guid: c4d2d7cc575fe914e85397601d5fec5c, type: 3}
+  m_spriteJoystick_8H: {fileID: 2800000, guid: 124c043494c34644a80dde732d6bc063, type: 3}
+  m_spriteJoystick_9: {fileID: 2800000, guid: cd9507cd3bcc76c47823728f00401cee, type: 3}
+  m_spriteJoystick_9H: {fileID: 2800000, guid: 1666d06a3de0e6d4aa79081738dceaf8, type: 3}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!1 &5134029493359762933
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UILuaView class="joystick">
+    <hr:UIButton name="buttonJoystick_1">
+        <hr:UIImage name="imageJoystick_1">
+        </hr:UIImage>
+    </hr:UIButton>
+    <hr:UIButton name="buttonJoystick_2">
+        <hr:UIImage name="imageJoystick_2">
+        </hr:UIImage>
+    </hr:UIButton>
+    <hr:UIButton name="buttonJoystick_3">
+        <hr:UIImage name="imageJoystick_3">
+        </hr:UIImage>
+    </hr:UIButton>
+    <hr:UIButton name="buttonJoystick_4">
+        <hr:UIImage name="imageJoystick_4">
+        </hr:UIImage>
+    </hr:UIButton>
+    <hr:UIButton name="buttonJoystick_5">
+        <hr:UIImage name="imageJoystick_5">
+        </hr:UIImage>
+    </hr:UIButton>
+    <hr:UIButton name="buttonJoystick_6">
+        <hr:UIImage name="imageJoystick_6">
+        </hr:UIImage>
+    </hr:UIButton>
+    <hr:UIButton name="buttonJoystick_7">
+        <hr:UIImage name="imageJoystick_7">
+        </hr:UIImage>
+    </hr:UIButton>
+    <hr:UIButton name="buttonJoystick_8">
+        <hr:UIImage name="imageJoystick_8">
+        </hr:UIImage>
+    </hr:UIButton>
+    <hr:UIButton name="buttonJoystick_9">
+        <hr:UIImage name="imageJoystick_9">
+        </hr:UIImage>
+    </hr:UIButton>
+  </hr:UILuaView>
+
+</UXML>
